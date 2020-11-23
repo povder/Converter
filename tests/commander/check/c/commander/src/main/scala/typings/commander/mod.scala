@@ -8,7 +8,6 @@ import typings.node.NodeJS.EventEmitter
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -50,9 +49,9 @@ object mod extends Shortcut {
   @js.native
   trait CommandOptions extends StObject {
     
-    var isDefault: js.UndefOr[Boolean] = js.native
+    var isDefault: scala.Unit | Boolean = js.native
     
-    var noHelp: js.UndefOr[Boolean] = js.native
+    var noHelp: scala.Unit | Boolean = js.native
   }
   object CommandOptions {
     
@@ -69,13 +68,13 @@ object mod extends Shortcut {
       def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+      def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", ())
       
       @scala.inline
       def setNoHelp(value: Boolean): Self = StObject.set(x, "noHelp", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNoHelpUndefined: Self = StObject.set(x, "noHelp", js.undefined)
+      def setNoHelpUndefined: Self = StObject.set(x, "noHelp", ())
     }
   }
   
@@ -83,13 +82,13 @@ object mod extends Shortcut {
   trait CommanderStatic
     extends typings.commander.mod.local.Command {
     
-    var Command: Instantiable1[/* name */ js.UndefOr[String], typings.commander.mod.local.Command] = js.native
+    var Command: Instantiable1[/* name */ scala.Unit | String, typings.commander.mod.local.Command] = js.native
     
     var CommandOptions: typings.commander.mod.CommandOptions = js.native
     
     var Option: Instantiable2[
         /* flags */ String, 
-        /* description */ js.UndefOr[String], 
+        /* description */ scala.Unit | String, 
         typings.commander.mod.local.Option
       ] = js.native
     
@@ -246,9 +245,9 @@ object mod extends Shortcut {
         * @returns {Command} the new command
         */
       def command(name: String): typings.commander.mod.local.Command = js.native
-      def command(name: String, desc: js.UndefOr[scala.Nothing], opts: CommandOptions): typings.commander.mod.local.Command = js.native
       def command(name: String, desc: String): typings.commander.mod.local.Command = js.native
       def command(name: String, desc: String, opts: CommandOptions): typings.commander.mod.local.Command = js.native
+      def command(name: String, desc: Unit, opts: CommandOptions): typings.commander.mod.local.Command = js.native
       
       def description(): String = js.native
       /**
@@ -327,29 +326,8 @@ object mod extends Shortcut {
         * @returns {Command} for chaining
         */
       def option(flags: String): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: js.UndefOr[scala.Nothing], defaultValue: js.Any): typings.commander.mod.local.Command = js.native
-      def option(
-        flags: String,
-        description: js.UndefOr[scala.Nothing],
-        fn: js.UndefOr[scala.Nothing],
-        defaultValue: js.Any
-      ): typings.commander.mod.local.Command = js.native
-      def option(
-        flags: String,
-        description: js.UndefOr[scala.Nothing],
-        fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]
-      ): typings.commander.mod.local.Command = js.native
-      def option(
-        flags: String,
-        description: js.UndefOr[scala.Nothing],
-        fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit],
-        defaultValue: js.Any
-      ): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: js.UndefOr[scala.Nothing], fn: RegExp): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: js.UndefOr[scala.Nothing], fn: RegExp, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: String, fn: js.UndefOr[scala.Nothing], defaultValue: js.Any): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String, fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]): typings.commander.mod.local.Command = js.native
       def option(
         flags: String,
@@ -357,8 +335,20 @@ object mod extends Shortcut {
         fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit],
         defaultValue: js.Any
       ): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: String, fn: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String, fn: RegExp): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String, fn: RegExp, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]): typings.commander.mod.local.Command = js.native
+      def option(
+        flags: String,
+        description: Unit,
+        fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit],
+        defaultValue: js.Any
+      ): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: RegExp): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: RegExp, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
       
       /**
         * Return an object containing options as key-value pairs
@@ -439,7 +429,7 @@ object mod extends Shortcut {
       
       var required: Boolean = js.native
       
-      var short: js.UndefOr[String] = js.native
+      var short: scala.Unit | String = js.native
     }
     object Option {
       
@@ -481,7 +471,7 @@ object mod extends Shortcut {
         def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+        def setShortUndefined: Self = StObject.set(x, "short", ())
       }
     }
   }

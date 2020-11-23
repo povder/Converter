@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react"
-version := "16.9.2-c9d0c6"
-scalaVersion := "2.13.3"
+version := "16.9.2-7f834e"
+scalaVersion := "3.0.0-RC1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.7.5",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.7.5" withDottyCompat scalaVersion.value,
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "std" % "0.0-unknown-43ed0a")
+  "org.scalablytyped" %%% "std" % "0.0-unknown-baccf1")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "void-elements"
-version := "3.1-52f959"
-scalaVersion := "2.13.3"
+version := "3.1-7a843b"
+scalaVersion := "3.0.0-RC1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "std" % "0.0-unknown-72462e")
+  "org.scalablytyped" %%% "std" % "0.0-unknown-3a143e")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

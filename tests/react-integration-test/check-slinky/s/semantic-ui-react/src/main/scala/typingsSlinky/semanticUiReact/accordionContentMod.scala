@@ -7,7 +7,6 @@ import slinky.core.facade.ReactElement
 import typingsSlinky.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionContentMod extends Shortcut {
@@ -33,19 +32,19 @@ object accordionContentMod extends Shortcut {
   trait StrictAccordionContentProps extends StObject {
     
     /** Whether or not the content is visible. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: scala.Unit | Boolean = js.native
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: scala.Unit | js.Any = js.native
     
     /** Primary content. */
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: scala.Unit | ReactElement = js.native
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: scala.Unit | String = js.native
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: scala.Unit | SemanticShorthandContent = js.native
   }
   object StrictAccordionContentProps {
     
@@ -62,13 +61,13 @@ object accordionContentMod extends Shortcut {
       def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      def setActiveUndefined: Self = StObject.set(x, "active", ())
       
       @scala.inline
       def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      def setAsUndefined: Self = StObject.set(x, "as", ())
       
       @scala.inline
       def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -77,13 +76,13 @@ object accordionContentMod extends Shortcut {
       def setChildrenReactElement(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      def setChildrenUndefined: Self = StObject.set(x, "children", ())
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      def setClassNameUndefined: Self = StObject.set(x, "className", ())
       
       @scala.inline
       def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
@@ -92,7 +91,7 @@ object accordionContentMod extends Shortcut {
       def setContentReactElement(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      def setContentUndefined: Self = StObject.set(x, "content", ())
     }
   }
   

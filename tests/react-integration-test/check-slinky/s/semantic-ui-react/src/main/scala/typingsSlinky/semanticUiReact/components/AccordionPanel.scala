@@ -14,7 +14,6 @@ import typingsSlinky.semanticUiReact.accordionTitleMod.AccordionTitleProps
 import typingsSlinky.semanticUiReact.genericMod.SemanticShorthandItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AccordionPanel {
@@ -36,7 +35,7 @@ object AccordionPanel {
     
     @scala.inline
     def contentFunction3(
-      value: (/* component */ ReactType[AccordionContentProps], AccordionContentProps, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
+      value: (/* component */ ReactType[AccordionContentProps], AccordionContentProps, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
     ): this.type = set("content", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -53,7 +52,7 @@ object AccordionPanel {
     
     @scala.inline
     def titleFunction3(
-      value: (/* component */ ReactType[AccordionTitleProps], AccordionTitleProps, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
+      value: (/* component */ ReactType[AccordionTitleProps], AccordionTitleProps, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
     ): this.type = set("title", js.Any.fromFunction3(value))
     
     @scala.inline
