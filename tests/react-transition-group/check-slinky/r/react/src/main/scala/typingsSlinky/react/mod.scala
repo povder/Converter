@@ -203,12 +203,12 @@ object mod {
     
     var props: js.Any = js.native
     
-    var `type`: String | ReactComponentClass[?] = js.native
+    var `type`: String | ReactComponentClass[js.Any] = js.native
   }
   object ReactElement {
     
     @scala.inline
-    def apply(props: js.Any, `type`: String | ReactComponentClass[?]): slinky.core.facade.ReactElement = {
+    def apply(props: js.Any, `type`: String | ReactComponentClass[js.Any]): slinky.core.facade.ReactElement = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[slinky.core.facade.ReactElement]
@@ -227,13 +227,13 @@ object mod {
       def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: String | ReactComponentClass[?]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | ReactComponentClass[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeComponentClass(value: ReactComponentClass[?]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setTypeComponentClass(value: ReactComponentClass[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeStatelessComponent(value: ReactComponentClass[?]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setTypeStatelessComponent(value: ReactComponentClass[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

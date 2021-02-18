@@ -46,7 +46,7 @@ package object mod {
   type ComponentProps[T /* <: typingsSlinky.react.reactStrings.a_ | typingsSlinky.react.reactStrings.abbr | typingsSlinky.react.reactStrings.address | typingsSlinky.react.reactStrings.area | typingsSlinky.react.reactStrings.article | typingsSlinky.react.reactStrings.aside | typingsSlinky.react.reactStrings.audio | typingsSlinky.react.reactStrings.b | typingsSlinky.react.reactStrings.base | typingsSlinky.react.reactStrings.bdi | typingsSlinky.react.reactStrings.bdo | typingsSlinky.react.reactStrings.big | typingsSlinky.react.reactStrings.view | typingsSlinky.react.mod.JSXElementConstructor[js.Any] */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   
   type ComponentPropsWithRef[T /* <: slinky.core.facade.ReactElement */] = typingsSlinky.react.mod.PropsWithRef[typingsSlinky.react.mod.ComponentProps[T]] | (typingsSlinky.react.mod.PropsWithoutRef[js.Any] & (typingsSlinky.react.mod.RefAttributes[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InstanceType<T> */ ?
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InstanceType<T> */ js.Any
   ]))
   
   type ComponentPropsWithoutRef[T /* <: slinky.core.facade.ReactElement */] = typingsSlinky.react.mod.PropsWithoutRef[typingsSlinky.react.mod.ComponentProps[T]]
@@ -59,7 +59,7 @@ package object mod {
   
   type Consumer[T] = slinky.core.ReactComponentClass[typingsSlinky.react.mod.ConsumerProps[T]]
   
-  type ContextType[C /* <: typingsSlinky.react.mod.Context[?] */] = js.Any
+  type ContextType[C /* <: typingsSlinky.react.mod.Context[js.Any] */] = js.Any
   
   type DOMFactory[P /* <: typingsSlinky.react.mod.DOMAttributes[T] */, T /* <: org.scalajs.dom.raw.Element */] = js.Function2[
     /* props */ js.UndefOr[(typingsSlinky.react.mod.ClassAttributes[T] & P) | scala.Null], 
@@ -77,7 +77,7 @@ package object mod {
   ]) & (typingsSlinky.std.Partial[
     typingsSlinky.std.Pick[
       P, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Extract<keyof P, keyof D> */ ?
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Extract<keyof P, keyof D> */ js.Any
     ]
   ]) & (typingsSlinky.std.Partial[
     typingsSlinky.std.Pick[
@@ -110,7 +110,7 @@ package object mod {
   //
   // Event Handler Types
   // ----------------------------------------------------------------------
-  type EventHandler[E /* <: slinky.core.SyntheticEvent[org.scalajs.dom.raw.Event, ?] */] = js.Function1[/* event */ E, scala.Unit]
+  type EventHandler[E /* <: slinky.core.SyntheticEvent[org.scalajs.dom.raw.Event, js.Any] */] = js.Function1[/* event */ E, scala.Unit]
   
   type ExactlyAnyPropertyKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: react.react.IsExactlyAny<T[K]> extends true? K : never}[keyof T] */ js.Any
   
@@ -707,7 +707,7 @@ package object mod {
   @scala.inline
   def `lazy`[T /* <: slinky.core.ReactComponentClass[js.Any] */](
     factory: js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<{  default :T}> */ ?
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<{  default :T}> */ js.Any
     ]
   ): slinky.core.ReactComponentClass[T] = typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[slinky.core.ReactComponentClass[T]]
   
@@ -745,7 +745,7 @@ package object mod {
     */
   // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
   @scala.inline
-  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, ?] */](callback: T, deps: typingsSlinky.react.mod.DependencyList): T = (typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
+  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, deps: typingsSlinky.react.mod.DependencyList): T = (typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
   
   // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
   /**
@@ -772,7 +772,7 @@ package object mod {
   @scala.inline
   def useDebugValue[T](value: T): scala.Unit = typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
   @scala.inline
-  def useDebugValue[T](value: T, format: js.Function1[/* value */ T, ?]): scala.Unit = (typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  def useDebugValue[T](value: T, format: js.Function1[/* value */ T, js.Any]): scala.Unit = (typingsSlinky.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
   
   /**
     * Accepts a function that contains imperative, possibly effectful code.

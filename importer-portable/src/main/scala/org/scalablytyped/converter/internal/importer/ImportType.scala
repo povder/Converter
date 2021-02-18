@@ -76,7 +76,8 @@ class ImportType(stdNames: QualifiedName.StdNames) {
       case tr @ TsTypeRef(cs, base: TsQIdent, targs: IArray[TsType]) =>
         base match {
           case TsQIdent.any | TsQIdent.unknown =>
-            (if (wildcards.allowed) TypeRef.Wildcard else TypeRef.Any).withComments(cs)
+//            (if (wildcards.allowed) TypeRef.Wildcard else TypeRef.Any).withComments(cs)
+            TypeRef.Any.withComments(cs)
 
           case other =>
             // avoid "unreducible application of higher-kinded type [T] =>>"

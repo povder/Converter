@@ -186,12 +186,12 @@ object mod {
     
     var props: js.Any = js.native
     
-    var `type`: String | ComponentClassP[js.Object] | SFC[?] = js.native
+    var `type`: String | (ComponentClassP[js.Any & js.Object]) | SFC[js.Any] = js.native
   }
   object ReactElement {
     
     @scala.inline
-    def apply(props: js.Any, `type`: String | ComponentClassP[js.Object] | SFC[?]): Element = {
+    def apply(props: js.Any, `type`: String | (ComponentClassP[js.Any & js.Object]) | SFC[js.Any]): Element = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
@@ -210,10 +210,10 @@ object mod {
       def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: String | ComponentClassP[js.Object] | SFC[?]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | (ComponentClassP[js.Any & js.Object]) | SFC[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeComponentClass(value: ComponentClassP[js.Object]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setTypeComponentClass(value: ComponentClassP[js.Any & js.Object]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

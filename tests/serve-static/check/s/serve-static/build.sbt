@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "serve-static"
-version := "0.0-unknown-a179a4"
+version := "0.0-unknown-1a616c"
 scalaVersion := "3.0.0-RC1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

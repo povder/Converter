@@ -34,7 +34,7 @@ object global {
       
       @JSGlobal("monaco.Promise.any")
       @js.native
-      def any[T](promises: js.Array[T | js.Thenable[T]]): typings.monacoEditor.monaco.Promise[Key[T], ?] = js.native
+      def any[T](promises: js.Array[T | js.Thenable[T]]): typings.monacoEditor.monaco.Promise[Key[T], js.Any] = js.native
     }
   }
 }

@@ -136,7 +136,7 @@ object vuejs {
   @js.native
   trait HttpOptions extends StObject {
     
-    var before: js.UndefOr[js.Function1[/* request */ js.Any, ?]] = js.native
+    var before: js.UndefOr[js.Function1[/* request */ js.Any, js.Any]] = js.native
     
     var body: js.UndefOr[js.Any] = js.native
     
@@ -152,7 +152,7 @@ object vuejs {
     
     var params: js.UndefOr[js.Any] = js.native
     
-    var progress: js.UndefOr[js.Function1[/* event */ js.Any, ?]] = js.native
+    var progress: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.native
     
     var url: js.UndefOr[String] = js.native
   }
@@ -168,7 +168,7 @@ object vuejs {
     implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBefore(value: /* request */ js.Any => ?): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+      def setBefore(value: /* request */ js.Any => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeUndefined: Self = StObject.set(x, "before", ())
@@ -216,7 +216,7 @@ object vuejs {
       def setParamsUndefined: Self = StObject.set(x, "params", ())
       
       @scala.inline
-      def setProgress(value: /* event */ js.Any => ?): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      def setProgress(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProgressUndefined: Self = StObject.set(x, "progress", ())

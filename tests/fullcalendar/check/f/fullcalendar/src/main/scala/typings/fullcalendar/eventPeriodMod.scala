@@ -25,7 +25,7 @@ object eventPeriodMod {
     
     def on(types: js.Any, handler: js.Any): js.Any = js.native
     @JSName("on")
-    var on_Original: js.Function2[/* types */ js.Any, /* handler */ js.Any, ?] = js.native
+    var on_Original: js.Function2[/* types */ js.Any, /* handler */ js.Any, js.Any] = js.native
     
     var pendingCnt: Double = js.native
     

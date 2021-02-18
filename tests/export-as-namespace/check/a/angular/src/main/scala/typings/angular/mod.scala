@@ -95,7 +95,7 @@ object mod extends Shortcut {
       
       def annotate(fn: Function): js.Array[String] = js.native
       def annotate(fn: Function, strictDi: Boolean): js.Array[String] = js.native
-      def annotate(inlineAnnotatedFunction: js.Array[?]): js.Array[String] = js.native
+      def annotate(inlineAnnotatedFunction: js.Array[js.Any]): js.Array[String] = js.native
       
       def get[T](name: String): T = js.native
       def get[T](name: String, caller: String): T = js.native

@@ -66,7 +66,7 @@ object mod {
   
   @JSImport("react-contextmenu", "connectMenu")
   @js.native
-  def connectMenu(menuId: String): js.Function1[/* menu */ js.Any, ?] = js.native
+  def connectMenu(menuId: String): js.Function1[/* menu */ js.Any, js.Any] = js.native
   
   @JSImport("react-contextmenu", "hideMenu")
   @js.native
@@ -193,9 +193,9 @@ object mod {
   @js.native
   trait ContextMenuTriggerProps extends StObject {
     
-    var attributes: js.UndefOr[HTMLAttributes[?]] = js.native
+    var attributes: js.UndefOr[HTMLAttributes[js.Any]] = js.native
     
-    var collect: js.UndefOr[js.Function1[/* data */ js.Any, ?]] = js.native
+    var collect: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.native
     
     var disable: js.UndefOr[Boolean] = js.native
     
@@ -217,13 +217,13 @@ object mod {
     implicit class ContextMenuTriggerPropsMutableBuilder[Self <: ContextMenuTriggerProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttributes(value: HTMLAttributes[?]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      def setAttributes(value: HTMLAttributes[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttributesUndefined: Self = StObject.set(x, "attributes", ())
       
       @scala.inline
-      def setCollect(value: /* data */ js.Any => ?): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
+      def setCollect(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCollectUndefined: Self = StObject.set(x, "collect", ())

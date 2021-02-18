@@ -46,7 +46,7 @@ package object mod {
   type ComponentProps[T /* <: typingsJapgolly.react.reactStrings.a_ | typingsJapgolly.react.reactStrings.abbr | typingsJapgolly.react.reactStrings.address | typingsJapgolly.react.reactStrings.area | typingsJapgolly.react.reactStrings.article | typingsJapgolly.react.reactStrings.aside | typingsJapgolly.react.reactStrings.audio | typingsJapgolly.react.reactStrings.b | typingsJapgolly.react.reactStrings.base | typingsJapgolly.react.reactStrings.bdi | typingsJapgolly.react.reactStrings.bdo | typingsJapgolly.react.reactStrings.big | typingsJapgolly.react.reactStrings.view | typingsJapgolly.react.mod.JSXElementConstructor[js.Any] */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   
   type ComponentPropsWithRef[T /* <: japgolly.scalajs.react.raw.React.ElementType */] = typingsJapgolly.react.mod.PropsWithRef[typingsJapgolly.react.mod.ComponentProps[T]] | (typingsJapgolly.react.mod.PropsWithoutRef[js.Any] & (typingsJapgolly.react.mod.RefAttributes[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InstanceType<T> */ ?
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InstanceType<T> */ js.Any
   ]))
   
   type ComponentPropsWithoutRef[T /* <: japgolly.scalajs.react.raw.React.ElementType */] = typingsJapgolly.react.mod.PropsWithoutRef[typingsJapgolly.react.mod.ComponentProps[T]]
@@ -61,7 +61,7 @@ package object mod {
   
   type Consumer[T] = typingsJapgolly.react.mod.ExoticComponent[typingsJapgolly.react.mod.ConsumerProps[T]]
   
-  type ContextType[C /* <: typingsJapgolly.react.mod.Context[?] */] = js.Any
+  type ContextType[C /* <: typingsJapgolly.react.mod.Context[js.Any] */] = js.Any
   
   type DOMFactory[P /* <: typingsJapgolly.react.mod.DOMAttributes[T] */, T /* <: org.scalajs.dom.raw.Element */] = js.Function2[
     /* props */ js.UndefOr[(typingsJapgolly.react.mod.ClassAttributes[T] & P) | scala.Null], 
@@ -79,7 +79,7 @@ package object mod {
   ]) & (typingsJapgolly.std.Partial[
     typingsJapgolly.std.Pick[
       P, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Extract<keyof P, keyof D> */ ?
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Extract<keyof P, keyof D> */ js.Any
     ]
   ]) & (typingsJapgolly.std.Partial[
     typingsJapgolly.std.Pick[
@@ -112,7 +112,7 @@ package object mod {
   //
   // Event Handler Types
   // ----------------------------------------------------------------------
-  type EventHandler[E /* <: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element] */] = js.Function1[/* event */ E, scala.Unit]
+  type EventHandler[E /* <: japgolly.scalajs.react.ReactEventFrom[js.Any & org.scalajs.dom.raw.Element] */] = js.Function1[/* event */ E, scala.Unit]
   
   type ExactlyAnyPropertyKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: react.react.IsExactlyAny<T[K]> extends true? K : never}[keyof T] */ js.Any
   
@@ -729,7 +729,7 @@ package object mod {
   @scala.inline
   def `lazy`[T /* <: typingsJapgolly.react.mod.ComponentType[js.Any] */](
     factory: js.Function0[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<{  default :T}> */ ?
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<{  default :T}> */ js.Any
     ]
   ): typingsJapgolly.react.mod.LazyExoticComponent[T] = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.react.mod.LazyExoticComponent[T]]
   
@@ -767,7 +767,7 @@ package object mod {
     */
   // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
   @scala.inline
-  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, ?] */](callback: T, deps: typingsJapgolly.react.mod.DependencyList): T = (typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
+  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, deps: typingsJapgolly.react.mod.DependencyList): T = (typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
   
   // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
   /**
@@ -794,7 +794,7 @@ package object mod {
   @scala.inline
   def useDebugValue[T](value: T): scala.Unit = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
   @scala.inline
-  def useDebugValue[T](value: T, format: js.Function1[/* value */ T, ?]): scala.Unit = (typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  def useDebugValue[T](value: T, format: js.Function1[/* value */ T, js.Any]): scala.Unit = (typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
   
   /**
     * Accepts a function that contains imperative, possibly effectful code.

@@ -67,7 +67,7 @@ object toggleButtonGroupMod {
     
     var name: js.UndefOr[String] = js.native
     
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[?], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[js.Any], Unit]] = js.native
     
     var `type`: checkbox = js.native
   }

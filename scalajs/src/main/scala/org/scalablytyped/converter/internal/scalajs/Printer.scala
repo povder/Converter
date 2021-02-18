@@ -443,7 +443,7 @@ object Printer {
             s"$params => ${formatTypeRef(indent)(retType)}"
 
           case TypeRef.ThisType(_)           => "this.type"
-          case TypeRef.Wildcard              => "js.Any"
+          case TypeRef.Wildcard              => "?"
           case TypeRef.Singleton(underlying) => formatTypeRef(indent)(underlying) |+| ".type"
 
           case TypeRef.UndefOr(tpe, _) =>

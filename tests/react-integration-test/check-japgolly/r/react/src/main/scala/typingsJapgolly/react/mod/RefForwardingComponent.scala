@@ -11,7 +11,7 @@ trait RefForwardingComponent[T, P] extends StObject {
   
   def apply(props: PropsWithChildren[P], ref: japgolly.scalajs.react.raw.React.Ref): Element | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[?]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   

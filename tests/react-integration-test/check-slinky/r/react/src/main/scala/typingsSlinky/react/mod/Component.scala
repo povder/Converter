@@ -94,7 +94,7 @@ object Component {
   /* static member */
   @JSImport("react", "Component.contextType")
   @js.native
-  def contextType: js.UndefOr[Context[?]] = js.native
+  def contextType: js.UndefOr[Context[js.Any]] = js.native
   @scala.inline
-  def contextType_=(x: js.UndefOr[Context[?]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

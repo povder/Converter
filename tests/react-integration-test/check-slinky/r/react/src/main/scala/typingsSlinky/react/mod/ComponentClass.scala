@@ -14,11 +14,11 @@ trait ComponentClass[P, S]
      with Instantiable1[/* props */ P, ReactComponentClass[P]]
      with Instantiable2[/* props */ P, /* context */ js.Any, ReactComponentClass[P]] {
   
-  var childContextTypes: js.UndefOr[ValidationMap[?]] = js.native
+  var childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
-  var contextType: js.UndefOr[Context[?]] = js.native
+  var contextType: js.UndefOr[Context[js.Any]] = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[?]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   

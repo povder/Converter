@@ -136,7 +136,7 @@ object optionsMod {
     
     var updated: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[?] | WatchHandler[js.Any] | String]] = js.native
+    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]] = js.native
   }
   object ComponentOptions {
     
@@ -402,7 +402,7 @@ object optionsMod {
       def setUpdatedUndefined: Self = StObject.set(x, "updated", ())
       
       @scala.inline
-      def setWatch(value: Record[String, WatchOptionsWithHandler[?] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      def setWatch(value: Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWatchUndefined: Self = StObject.set(x, "watch", ())
@@ -741,11 +741,11 @@ object optionsMod {
   
   type ThisTypedComponentOptionsWithArrayProps[V /* <: Vue */, Data, Methods, Computed, PropNames /* <: String */] = js.Object & (ComponentOptions[
     V, 
-    Data | (js.ThisFunction0[/* this */ (Record[PropNames, ?]) & V, Data]), 
+    Data | (js.ThisFunction0[/* this */ (Record[PropNames, js.Any]) & V, Data]), 
     Methods, 
     Computed, 
     js.Array[PropNames]
-  ]) & (ThisType[CombinedVueInstance[V, Data, Methods, Computed, Record[PropNames, ?]]])
+  ]) & (ThisType[CombinedVueInstance[V, Data, Methods, Computed, Record[PropNames, js.Any]]])
   
   type ThisTypedComponentOptionsWithRecordProps[V /* <: Vue */, Data, Methods, Computed, Props] = js.Object & (ComponentOptions[
     V, 
