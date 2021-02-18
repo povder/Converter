@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProviderProps[T] extends StObject {
   
-  var children: scala.Unit | slinky.core.facade.ReactElement = js.native
+  var children: js.UndefOr[slinky.core.facade.ReactElement] = js.native
   
   var value: T = js.native
 }

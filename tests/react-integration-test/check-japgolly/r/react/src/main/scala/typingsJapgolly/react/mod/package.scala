@@ -25,7 +25,7 @@ package object mod {
     * a single argument, which is useful for many top-level API defs.
     * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
     */
-  type ClassType[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */, C /* <: japgolly.scalajs.react.raw.React.ComponentClassP[P & js.Object] */] = C & (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ scala.Unit | js.Any, T])
+  type ClassType[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */, C /* <: japgolly.scalajs.react.raw.React.ComponentClassP[P & js.Object] */] = C & (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[js.Any], T])
   
   type ClassicElement[P] = typingsJapgolly.react.mod.CElement[P, typingsJapgolly.react.mod.ClassicComponent[P, js.Object]]
   
@@ -34,7 +34,7 @@ package object mod {
   type ClipboardEventHandler[T] = typingsJapgolly.react.mod.EventHandler[japgolly.scalajs.react.ReactClipboardEventFrom[T & org.scalajs.dom.raw.Element]]
   
   type ComponentFactory[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */] = js.Function2[
-    /* props */ scala.Unit | (typingsJapgolly.react.mod.ClassAttributes[T] & P), 
+    /* props */ js.UndefOr[typingsJapgolly.react.mod.ClassAttributes[T] & P], 
     /* repeated */ japgolly.scalajs.react.raw.React.Node, 
     typingsJapgolly.react.mod.CElement[P, T]
   ]
@@ -64,7 +64,7 @@ package object mod {
   type ContextType[C /* <: typingsJapgolly.react.mod.Context[?] */] = js.Any
   
   type DOMFactory[P /* <: typingsJapgolly.react.mod.DOMAttributes[T] */, T /* <: org.scalajs.dom.raw.Element */] = js.Function2[
-    /* props */ scala.Unit | (typingsJapgolly.react.mod.ClassAttributes[T] & P) | scala.Null, 
+    /* props */ js.UndefOr[(typingsJapgolly.react.mod.ClassAttributes[T] & P) | scala.Null], 
     /* repeated */ japgolly.scalajs.react.raw.React.Node, 
     japgolly.scalajs.react.raw.React.DomElement
   ]
@@ -102,7 +102,7 @@ package object mod {
   
   // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
   // The destructor is itself only allowed to return void.
-  type EffectCallback = js.Function0[scala.Unit | (js.Function0[scala.Unit | scala.Unit])]
+  type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Unit]]]
   
   //
   // React Elements
@@ -122,7 +122,7 @@ package object mod {
   // Factories
   // ----------------------------------------------------------------------
   type Factory[P] = js.Function2[
-    /* props */ scala.Unit | (typingsJapgolly.react.mod.Attributes & P), 
+    /* props */ js.UndefOr[typingsJapgolly.react.mod.Attributes & P], 
     /* repeated */ japgolly.scalajs.react.raw.React.Node, 
     japgolly.scalajs.react.raw.React.Element
   ]
@@ -138,7 +138,7 @@ package object mod {
   def Fragment: typingsJapgolly.react.mod.ExoticComponent[typingsJapgolly.react.anon.Children] = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Fragment").asInstanceOf[typingsJapgolly.react.mod.ExoticComponent[typingsJapgolly.react.anon.Children]]
   
   type FunctionComponentFactory[P] = js.Function2[
-    /* props */ scala.Unit | (typingsJapgolly.react.mod.Attributes & P), 
+    /* props */ js.UndefOr[typingsJapgolly.react.mod.Attributes & P], 
     /* repeated */ japgolly.scalajs.react.raw.React.Node, 
     typingsJapgolly.react.mod.FunctionComponentElement[P]
   ]
@@ -283,7 +283,9 @@ package object mod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PropTypes.InferProps<T> */ js.Any
   ])
   
-  type ReactNode = scala.Unit | typingsJapgolly.react.mod.ReactChild | typingsJapgolly.react.mod.ReactFragment | typingsJapgolly.react.mod.ReactPortal | scala.Boolean
+  type ReactNode = js.UndefOr[
+    typingsJapgolly.react.mod.ReactChild | typingsJapgolly.react.mod.ReactFragment | typingsJapgolly.react.mod.ReactPortal | scala.Boolean
+  ]
   
   //
   // React Nodes
@@ -942,7 +944,7 @@ package object mod {
     */
   // TODO (TypeScript 3.0): <T extends unknown>
   @scala.inline
-  def useRef[T](): typingsJapgolly.react.mod.MutableRefObject[scala.Unit | T] = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[typingsJapgolly.react.mod.MutableRefObject[scala.Unit | T]]
+  def useRef[T](): typingsJapgolly.react.mod.MutableRefObject[js.UndefOr[T]] = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[typingsJapgolly.react.mod.MutableRefObject[js.UndefOr[T]]]
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
     * (`initialValue`). The returned object will persist for the full lifetime of the component.
@@ -986,11 +988,11 @@ package object mod {
     */
   @scala.inline
   def useState[S](): js.Tuple2[
-    scala.Unit | S, 
-    typingsJapgolly.react.mod.Dispatch[typingsJapgolly.react.mod.SetStateAction[scala.Unit | S]]
+    js.UndefOr[S], 
+    typingsJapgolly.react.mod.Dispatch[typingsJapgolly.react.mod.SetStateAction[js.UndefOr[S]]]
   ] = typingsJapgolly.react.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[
-    scala.Unit | S, 
-    typingsJapgolly.react.mod.Dispatch[typingsJapgolly.react.mod.SetStateAction[scala.Unit | S]]
+    js.UndefOr[S], 
+    typingsJapgolly.react.mod.Dispatch[typingsJapgolly.react.mod.SetStateAction[js.UndefOr[S]]]
   ]]
   /**
     * Returns a stateful value, and a function to update it.

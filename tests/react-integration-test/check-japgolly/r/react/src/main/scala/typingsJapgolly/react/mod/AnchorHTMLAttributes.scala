@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AnchorHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var download: scala.Unit | js.Any = js.native
+  var download: js.UndefOr[js.Any] = js.native
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var hrefLang: scala.Unit | String = js.native
+  var hrefLang: js.UndefOr[String] = js.native
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var ping: scala.Unit | String = js.native
+  var ping: js.UndefOr[String] = js.native
   
-  var referrerPolicy: scala.Unit | String = js.native
+  var referrerPolicy: js.UndefOr[String] = js.native
   
-  var rel: scala.Unit | String = js.native
+  var rel: js.UndefOr[String] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 object AnchorHTMLAttributes {
   

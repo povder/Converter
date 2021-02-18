@@ -7,35 +7,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IframeHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var allow: scala.Unit | String = js.native
+  var allow: js.UndefOr[String] = js.native
   
-  var allowFullScreen: scala.Unit | Boolean = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.native
   
-  var allowTransparency: scala.Unit | Boolean = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.native
   
-  var frameBorder: scala.Unit | Double | String = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var marginHeight: scala.Unit | Double = js.native
+  var marginHeight: js.UndefOr[Double] = js.native
   
-  var marginWidth: scala.Unit | Double = js.native
+  var marginWidth: js.UndefOr[Double] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var referrerPolicy: scala.Unit | String = js.native
+  var referrerPolicy: js.UndefOr[String] = js.native
   
-  var sandbox: scala.Unit | String = js.native
+  var sandbox: js.UndefOr[String] = js.native
   
-  var scrolling: scala.Unit | String = js.native
+  var scrolling: js.UndefOr[String] = js.native
   
-  var seamless: scala.Unit | Boolean = js.native
+  var seamless: js.UndefOr[Boolean] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var srcDoc: scala.Unit | String = js.native
+  var srcDoc: js.UndefOr[String] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 object IframeHTMLAttributes {
   

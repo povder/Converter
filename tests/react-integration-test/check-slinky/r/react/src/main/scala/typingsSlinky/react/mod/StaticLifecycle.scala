@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StaticLifecycle[P, S] extends StObject {
   
-  var getDerivedStateFromError: scala.Unit | (GetDerivedStateFromError[P, S]) = js.native
+  var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[P, S]] = js.native
   
-  var getDerivedStateFromProps: scala.Unit | (GetDerivedStateFromProps[P, S]) = js.native
+  var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[P, S]] = js.native
 }
 object StaticLifecycle {
   

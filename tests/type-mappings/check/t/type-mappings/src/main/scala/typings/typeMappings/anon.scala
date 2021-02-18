@@ -30,7 +30,7 @@ object anon {
   @js.native
   trait Get extends StObject {
     
-    def get(): scala.Unit | scala.Double | Null = js.native
+    def get(): js.UndefOr[scala.Double | Null] = js.native
     
     def set(): Unit = js.native
     def set(v: scala.Double): Unit = js.native

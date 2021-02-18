@@ -7,36 +7,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextareaHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var autoComplete: scala.Unit | String = js.native
+  var autoComplete: js.UndefOr[String] = js.native
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var cols: scala.Unit | Double = js.native
+  var cols: js.UndefOr[Double] = js.native
   
-  var dirName: scala.Unit | String = js.native
+  var dirName: js.UndefOr[String] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var maxLength: scala.Unit | Double = js.native
+  var maxLength: js.UndefOr[Double] = js.native
   
-  var minLength: scala.Unit | Double = js.native
+  var minLength: js.UndefOr[Double] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
   @JSName("onChange")
-  var onChange_TextareaHTMLAttributes: scala.Unit | ChangeEventHandler[T] = js.native
+  var onChange_TextareaHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
   
-  var readOnly: scala.Unit | Boolean = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
   
-  var required: scala.Unit | Boolean = js.native
+  var required: js.UndefOr[Boolean] = js.native
   
-  var rows: scala.Unit | Double = js.native
+  var rows: js.UndefOr[Double] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
   
-  var wrap: scala.Unit | String = js.native
+  var wrap: js.UndefOr[String] = js.native
 }
 object TextareaHTMLAttributes {
   

@@ -9,9 +9,9 @@ object anon {
   @js.native
   trait LowerBound extends StObject {
     
-    var lowerBound: scala.Unit | js.Array[Double] = js.native
+    var lowerBound: js.UndefOr[js.Array[Double]] = js.native
     
-    var upperBound: scala.Unit | js.Array[Double] = js.native
+    var upperBound: js.UndefOr[js.Array[Double]] = js.native
   }
   object LowerBound {
     

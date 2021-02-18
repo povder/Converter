@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MeterHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var high: scala.Unit | Double = js.native
+  var high: js.UndefOr[Double] = js.native
   
-  var low: scala.Unit | Double = js.native
+  var low: js.UndefOr[Double] = js.native
   
-  var max: scala.Unit | Double | String = js.native
+  var max: js.UndefOr[Double | String] = js.native
   
-  var min: scala.Unit | Double | String = js.native
+  var min: js.UndefOr[Double | String] = js.native
   
-  var optimum: scala.Unit | Double = js.native
+  var optimum: js.UndefOr[Double] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 object MeterHTMLAttributes {
   

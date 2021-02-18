@@ -41,13 +41,13 @@ object accordionPanelMod {
   trait StrictAccordionPanelProps extends StObject {
     
     /** Whether or not the title is in the open state. */
-    var active: scala.Unit | Boolean = js.native
+    var active: js.UndefOr[Boolean] = js.native
     
     /** A shorthand for Accordion.Content. */
-    var content: scala.Unit | SemanticShorthandItem[AccordionContentProps] = js.native
+    var content: js.UndefOr[SemanticShorthandItem[AccordionContentProps]] = js.native
     
     /** A panel index. */
-    var index: scala.Unit | Double | String = js.native
+    var index: js.UndefOr[Double | String] = js.native
     
     /**
       * Called when a panel title is clicked.
@@ -55,14 +55,16 @@ object accordionPanelMod {
       * @param {SyntheticEvent} event - React's original SyntheticEvent.
       * @param {AccordionTitleProps} data - All item props.
       */
-    var onTitleClick: scala.Unit | (js.Function2[
-        /* event */ SyntheticMouseEvent[HTMLDivElement], 
-        /* data */ AccordionTitleProps, 
-        Unit
-      ]) = js.native
+    var onTitleClick: js.UndefOr[
+        js.Function2[
+          /* event */ SyntheticMouseEvent[HTMLDivElement], 
+          /* data */ AccordionTitleProps, 
+          Unit
+        ]
+      ] = js.native
     
     /** A shorthand for Accordion.Title. */
-    var title: scala.Unit | SemanticShorthandItem[AccordionTitleProps] = js.native
+    var title: js.UndefOr[SemanticShorthandItem[AccordionTitleProps]] = js.native
   }
   object StrictAccordionPanelProps {
     
@@ -86,7 +88,7 @@ object accordionPanelMod {
       
       @scala.inline
       def setContentFunction3(
-        value: (/* component */ ReactType[AccordionContentProps], AccordionContentProps, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
+        value: (/* component */ ReactType[AccordionContentProps], AccordionContentProps, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "content", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -112,7 +114,7 @@ object accordionPanelMod {
       
       @scala.inline
       def setTitleFunction3(
-        value: (/* component */ ReactType[AccordionTitleProps], AccordionTitleProps, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
+        value: (/* component */ ReactType[AccordionTitleProps], AccordionTitleProps, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "title", js.Any.fromFunction3(value))
       
       @scala.inline

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OptionHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var label: scala.Unit | String = js.native
+  var label: js.UndefOr[String] = js.native
   
-  var selected: scala.Unit | Boolean = js.native
+  var selected: js.UndefOr[Boolean] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 object OptionHTMLAttributes {
   

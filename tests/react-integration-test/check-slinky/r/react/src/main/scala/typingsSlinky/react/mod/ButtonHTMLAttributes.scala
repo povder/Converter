@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ButtonHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var formAction: scala.Unit | String = js.native
+  var formAction: js.UndefOr[String] = js.native
   
-  var formEncType: scala.Unit | String = js.native
+  var formEncType: js.UndefOr[String] = js.native
   
-  var formMethod: scala.Unit | String = js.native
+  var formMethod: js.UndefOr[String] = js.native
   
-  var formNoValidate: scala.Unit | Boolean = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.native
   
-  var formTarget: scala.Unit | String = js.native
+  var formTarget: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | submit | reset | button = js.native
+  var `type`: js.UndefOr[submit | reset | button] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 object ButtonHTMLAttributes {
   

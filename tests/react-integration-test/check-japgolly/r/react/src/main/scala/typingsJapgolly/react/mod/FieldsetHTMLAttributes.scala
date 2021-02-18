@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldsetHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
 }
 object FieldsetHTMLAttributes {
   

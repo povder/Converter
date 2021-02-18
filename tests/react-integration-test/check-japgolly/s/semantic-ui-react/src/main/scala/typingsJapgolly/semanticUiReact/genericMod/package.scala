@@ -15,7 +15,7 @@ package object genericMod {
   type SemanticShorthandItemFunc[TProps] = js.Function3[
     /* component */ typingsJapgolly.react.mod.ReactType[TProps], 
     /* props */ TProps, 
-    /* children */ scala.Unit | japgolly.scalajs.react.raw.React.Node | typingsJapgolly.react.mod.ReactNodeArray, 
+    /* children */ js.UndefOr[japgolly.scalajs.react.raw.React.Node | typingsJapgolly.react.mod.ReactNodeArray], 
     japgolly.scalajs.react.raw.React.Element | scala.Null
   ]
 }

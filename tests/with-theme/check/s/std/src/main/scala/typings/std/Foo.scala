@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Foo extends StObject {
   
-  var f: scala.Unit | (js.Function1[/* n */ Double, String]) = js.native
+  var f: js.UndefOr[js.Function1[/* n */ Double, String]] = js.native
 }
 object Foo {
   

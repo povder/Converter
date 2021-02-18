@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait C extends StObject {
   
-  var c: scala.Unit | Double = js.native
+  var c: js.UndefOr[Double] = js.native
 }
 object C {
   

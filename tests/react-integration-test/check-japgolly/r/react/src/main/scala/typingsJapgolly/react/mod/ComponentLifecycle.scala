@@ -20,22 +20,24 @@ trait ComponentLifecycle[P, S, SS]
     * Catches exceptions generated in descendant components. Unhandled exceptions will cause
     * the entire component tree to unmount.
     */
-  var componentDidCatch: scala.Unit | (js.Function2[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Error */ /* error */ js.Any, 
-    /* errorInfo */ ErrorInfo, 
-    Unit
-  ]) = js.native
+  var componentDidCatch: js.UndefOr[
+    js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Error */ /* error */ js.Any, 
+      /* errorInfo */ ErrorInfo, 
+      Unit
+    ]
+  ] = js.native
   
   /**
     * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
     */
-  var componentDidMount: scala.Unit | js.Function0[Unit] = js.native
+  var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
     * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
     * cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
     */
-  var componentWillUnmount: scala.Unit | js.Function0[Unit] = js.native
+  var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
     * Called to determine whether the change in props and state should trigger a re-render.
@@ -47,7 +49,9 @@ trait ComponentLifecycle[P, S, SS]
     * If false is returned, `Component#render`, `componentWillUpdate`
     * and `componentDidUpdate` will not be called.
     */
-  var shouldComponentUpdate: scala.Unit | (js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Boolean]) = js.native
+  var shouldComponentUpdate: js.UndefOr[
+    js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Boolean]
+  ] = js.native
 }
 object ComponentLifecycle {
   

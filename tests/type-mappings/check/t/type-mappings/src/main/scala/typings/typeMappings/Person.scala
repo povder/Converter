@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Person extends StObject {
   
-  var age: scala.Unit | scala.Double | Null = js.native
+  var age: js.UndefOr[scala.Double | Null] = js.native
   
   var name: String = js.native
 }

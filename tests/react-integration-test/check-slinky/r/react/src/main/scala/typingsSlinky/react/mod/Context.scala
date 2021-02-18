@@ -12,7 +12,7 @@ trait Context[T] extends StObject {
   
   var Provider: ReactComponentClass[ProviderProps[T]] = js.native
   
-  var displayName: scala.Unit | String = js.native
+  var displayName: js.UndefOr[String] = js.native
 }
 object Context {
   

@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AreaHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var alt: scala.Unit | String = js.native
+  var alt: js.UndefOr[String] = js.native
   
-  var coords: scala.Unit | String = js.native
+  var coords: js.UndefOr[String] = js.native
   
-  var download: scala.Unit | js.Any = js.native
+  var download: js.UndefOr[js.Any] = js.native
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var hrefLang: scala.Unit | String = js.native
+  var hrefLang: js.UndefOr[String] = js.native
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var rel: scala.Unit | String = js.native
+  var rel: js.UndefOr[String] = js.native
   
-  var shape: scala.Unit | String = js.native
+  var shape: js.UndefOr[String] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
 }
 object AreaHTMLAttributes {
   

@@ -25,7 +25,7 @@ trait Queue[S, T] extends StObject {
   /**
     * Removes and returns an element from the beginning
     */
-  def pop(): scala.Unit | T = js.native
+  def pop(): js.UndefOr[T] = js.native
   
   /**
     * Inserts a new element at the end
@@ -35,7 +35,7 @@ trait Queue[S, T] extends StObject {
 object Queue {
   
   @scala.inline
-  def apply[S, T](empty: Boolean, full: Boolean, length: Double, pop: () => scala.Unit | T, push: S => Queue[S, T]): Queue[S, T] = {
+  def apply[S, T](empty: Boolean, full: Boolean, length: Double, pop: () => js.UndefOr[T], push: S => Queue[S, T]): Queue[S, T] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], full = full.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push))
     __obj.asInstanceOf[Queue[S, T]]
   }
@@ -53,7 +53,7 @@ object Queue {
     def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPop(value: () => scala.Unit | T): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    def setPop(value: () => js.UndefOr[T]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
     @scala.inline
     def setPush(value: S => Queue[S, T]): Self = StObject.set(x, "push", js.Any.fromFunction1(value))

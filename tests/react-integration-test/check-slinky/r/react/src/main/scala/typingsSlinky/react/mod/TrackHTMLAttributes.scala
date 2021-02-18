@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TrackHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var default: scala.Unit | Boolean = js.native
+  var default: js.UndefOr[Boolean] = js.native
   
-  var kind: scala.Unit | String = js.native
+  var kind: js.UndefOr[String] = js.native
   
-  var label: scala.Unit | String = js.native
+  var label: js.UndefOr[String] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var srcLang: scala.Unit | String = js.native
+  var srcLang: js.UndefOr[String] = js.native
 }
 object TrackHTMLAttributes {
   

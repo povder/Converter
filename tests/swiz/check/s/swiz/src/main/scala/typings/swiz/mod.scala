@@ -87,11 +87,11 @@ object mod {
   @js.native
   trait ISwizOptions extends StObject {
     
-    var `for`: scala.Unit | String = js.native
+    var `for`: js.UndefOr[String] = js.native
     
-    var stripNulls: scala.Unit | Boolean = js.native
+    var stripNulls: js.UndefOr[Boolean] = js.native
     
-    var stripSerializerType: scala.Unit | Boolean = js.native
+    var stripSerializerType: js.UndefOr[Boolean] = js.native
   }
   object ISwizOptions {
     

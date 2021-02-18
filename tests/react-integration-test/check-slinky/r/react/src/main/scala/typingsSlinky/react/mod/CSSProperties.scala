@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSSProperties extends StObject {
   
   /* fake member to keep old syntax */
-  val hack: scala.Unit | js.Any = js.native
+  val hack: js.UndefOr[js.Any] = js.native
 }
 object CSSProperties {
   

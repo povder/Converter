@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebViewHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var allowFullScreen: scala.Unit | Boolean = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.native
   
-  var allowpopups: scala.Unit | Boolean = js.native
+  var allowpopups: js.UndefOr[Boolean] = js.native
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var autosize: scala.Unit | Boolean = js.native
+  var autosize: js.UndefOr[Boolean] = js.native
   
-  var blinkfeatures: scala.Unit | String = js.native
+  var blinkfeatures: js.UndefOr[String] = js.native
   
-  var disableblinkfeatures: scala.Unit | String = js.native
+  var disableblinkfeatures: js.UndefOr[String] = js.native
   
-  var disableguestresize: scala.Unit | Boolean = js.native
+  var disableguestresize: js.UndefOr[Boolean] = js.native
   
-  var disablewebsecurity: scala.Unit | Boolean = js.native
+  var disablewebsecurity: js.UndefOr[Boolean] = js.native
   
-  var guestinstance: scala.Unit | String = js.native
+  var guestinstance: js.UndefOr[String] = js.native
   
-  var httpreferrer: scala.Unit | String = js.native
+  var httpreferrer: js.UndefOr[String] = js.native
   
-  var nodeintegration: scala.Unit | Boolean = js.native
+  var nodeintegration: js.UndefOr[Boolean] = js.native
   
-  var partition: scala.Unit | String = js.native
+  var partition: js.UndefOr[String] = js.native
   
-  var plugins: scala.Unit | Boolean = js.native
+  var plugins: js.UndefOr[Boolean] = js.native
   
-  var preload: scala.Unit | String = js.native
+  var preload: js.UndefOr[String] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var useragent: scala.Unit | String = js.native
+  var useragent: js.UndefOr[String] = js.native
   
-  var webpreferences: scala.Unit | String = js.native
+  var webpreferences: js.UndefOr[String] = js.native
 }
 object WebViewHTMLAttributes {
   

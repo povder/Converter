@@ -32,19 +32,19 @@ object accordionContentMod extends Shortcut {
   trait StrictAccordionContentProps extends StObject {
     
     /** Whether or not the content is visible. */
-    var active: scala.Unit | Boolean = js.native
+    var active: js.UndefOr[Boolean] = js.native
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | ReactElement = js.native
+    var children: js.UndefOr[ReactElement] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
   }
   object StrictAccordionContentProps {
     

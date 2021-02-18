@@ -9,7 +9,7 @@ object mod {
   @js.native
   trait FormProps extends StObject {
     
-    var name: scala.Unit | String = js.native
+    var name: js.UndefOr[String] = js.native
   }
   object FormProps {
     

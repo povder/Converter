@@ -11,9 +11,9 @@ object mod {
   @js.native
   trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
     
-    var accept: scala.Unit | String = js.native
+    var accept: js.UndefOr[String] = js.native
     
-    var acceptCharset: scala.Unit | String = js.native
+    var acceptCharset: js.UndefOr[String] = js.native
   }
   object AllHTMLAttributes {
     
@@ -49,9 +49,9 @@ object mod {
   @js.native
   trait DOMAttributes[T] extends StObject {
     
-    var children: scala.Unit | ReactNode = js.native
+    var children: js.UndefOr[ReactNode] = js.native
     
-    var dangerouslySetInnerHTML: scala.Unit | Html = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   }
   object DOMAttributes {
     
@@ -81,7 +81,7 @@ object mod {
   @js.native
   trait HTMLAttributes[T] extends DOMAttributes[T] {
     
-    var defaultChecked: scala.Unit | Boolean = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.native
   }
   object HTMLAttributes {
     

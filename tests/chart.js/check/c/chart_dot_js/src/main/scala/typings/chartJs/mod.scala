@@ -99,7 +99,7 @@ object mod extends Shortcut {
   @js.native
   trait ChartData extends StObject {
     
-    var labels: scala.Unit | (js.Array[String | js.Array[String]]) = js.native
+    var labels: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
   }
   object ChartData {
     
@@ -148,9 +148,9 @@ object mod extends Shortcut {
   trait ChartOptions extends StObject {
     
     // Plugins can require any options
-    var plugins: scala.Unit | StringDictionary[js.Any] = js.native
+    var plugins: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var responsive: scala.Unit | Boolean = js.native
+    var responsive: js.UndefOr[Boolean] = js.native
   }
   object ChartOptions {
     

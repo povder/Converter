@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SuspenseProps extends StObject {
   
-  var children: scala.Unit | slinky.core.facade.ReactElement = js.native
+  var children: js.UndefOr[slinky.core.facade.ReactElement] = js.native
   
   /** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
   var fallback: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NonNullable<ReactNode> */ js.Any) | Null = js.native

@@ -35,7 +35,7 @@ object anon {
   @js.native
   trait `1` extends StObject {
     
-    var ref: scala.Unit | (Exclude[js.Any, String]) = js.native
+    var ref: js.UndefOr[Exclude[js.Any, String]] = js.native
   }
   object `1` {
     
@@ -59,7 +59,7 @@ object anon {
   @js.native
   trait Children extends StObject {
     
-    var children: scala.Unit | ReactElement = js.native
+    var children: js.UndefOr[ReactElement] = js.native
   }
   object Children {
     
@@ -157,7 +157,9 @@ object anon {
   @js.native
   trait Ref extends StObject {
     
-    var ref: scala.Unit | (/* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any) = js.native
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
+      ] = js.native
   }
   object Ref {
     

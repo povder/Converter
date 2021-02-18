@@ -19,7 +19,7 @@ object mod {
   @js.native
   trait IconBaseProps extends ClassAttributes[ReactSVGElement] {
     
-    var size: scala.Unit | String | Double = js.native
+    var size: js.UndefOr[String | Double] = js.native
   }
   object IconBaseProps {
     

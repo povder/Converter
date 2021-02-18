@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var autoPlay: scala.Unit | Boolean = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
   
-  var controls: scala.Unit | Boolean = js.native
+  var controls: js.UndefOr[Boolean] = js.native
   
-  var controlsList: scala.Unit | String = js.native
+  var controlsList: js.UndefOr[String] = js.native
   
-  var crossOrigin: scala.Unit | String = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
   
-  var loop: scala.Unit | Boolean = js.native
+  var loop: js.UndefOr[Boolean] = js.native
   
-  var mediaGroup: scala.Unit | String = js.native
+  var mediaGroup: js.UndefOr[String] = js.native
   
-  var muted: scala.Unit | Boolean = js.native
+  var muted: js.UndefOr[Boolean] = js.native
   
-  var playsinline: scala.Unit | Boolean = js.native
+  var playsinline: js.UndefOr[Boolean] = js.native
   
-  var preload: scala.Unit | String = js.native
+  var preload: js.UndefOr[String] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
 }
 object MediaHTMLAttributes {
   

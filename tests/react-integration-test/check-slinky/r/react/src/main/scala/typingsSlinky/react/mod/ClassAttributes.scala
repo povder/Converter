@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClassAttributes[T] extends Attributes {
   
-  var ref: scala.Unit | LegacyRef[T] = js.native
+  var ref: js.UndefOr[LegacyRef[T]] = js.native
 }
 object ClassAttributes {
   

@@ -42,7 +42,7 @@ object FirebaseFirestore {
   @js.native
   trait Settings extends StObject {
     
-    var projectId: scala.Unit | String = js.native
+    var projectId: js.UndefOr[String] = js.native
   }
   object Settings {
     

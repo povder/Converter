@@ -19,9 +19,9 @@ object mod {
   @js.native
   trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
     
-    var accept: scala.Unit | String = js.native
+    var accept: js.UndefOr[String] = js.native
     
-    var acceptCharset: scala.Unit | String = js.native
+    var acceptCharset: js.UndefOr[String] = js.native
   }
   object AllHTMLAttributes {
     
@@ -51,7 +51,7 @@ object mod {
   @js.native
   trait Attributes extends StObject {
     
-    var key: scala.Unit | Key = js.native
+    var key: js.UndefOr[Key] = js.native
   }
   object Attributes {
     
@@ -75,7 +75,7 @@ object mod {
   @js.native
   trait ClassAttributes[T] extends Attributes {
     
-    var ref: scala.Unit | Ref[T] = js.native
+    var ref: js.UndefOr[Ref[T]] = js.native
   }
   object ClassAttributes {
     
@@ -108,9 +108,9 @@ object mod {
        with Instantiable1[/* props */ P, Component[P, ComponentState]]
        with Instantiable2[/* props */ P, /* context */ js.Any, Component[P, ComponentState]] {
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
   
   type ComponentState = js.Object
@@ -124,9 +124,9 @@ object mod {
   @js.native
   trait DOMAttributes[T] extends StObject {
     
-    var children: scala.Unit | ReactNode = js.native
+    var children: js.UndefOr[ReactNode] = js.native
     
-    var dangerouslySetInnerHTML: scala.Unit | Html = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   }
   object DOMAttributes {
     
@@ -186,7 +186,7 @@ object mod {
   }
   
   type DOMFactory[P /* <: DOMAttributes[T] */, T /* <: Element */] = js.Function2[
-    /* props */ scala.Unit | (ClassAttributes[T] & P) | Null, 
+    /* props */ js.UndefOr[(ClassAttributes[T] & P) | Null], 
     /* repeated */ ReactNode, 
     DOMElement[P, T]
   ]
@@ -194,7 +194,7 @@ object mod {
   @js.native
   trait HTMLAttributes[T] extends DOMAttributes[T] {
     
-    var defaultChecked: scala.Unit | Boolean = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.native
   }
   object HTMLAttributes {
     
@@ -252,7 +252,7 @@ object mod {
     }
   }
   
-  type ReactNode = scala.Unit | String | Double | Boolean
+  type ReactNode = js.UndefOr[String | Double | Boolean]
   
   @js.native
   trait ReactSVG extends StObject {
@@ -318,11 +318,11 @@ object mod {
     
     // Attributes which also defined in HTMLAttributes
     // See comment in SVGDOMPropertyConfig.js
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
-    var color: scala.Unit | String = js.native
+    var color: js.UndefOr[String] = js.native
     
-    var height: scala.Unit | Double | String = js.native
+    var height: js.UndefOr[Double | String] = js.native
   }
   object SVGAttributes {
     
@@ -371,8 +371,8 @@ object mod {
     def apply(props: P & Children): ReactElement | Null = js.native
     def apply(props: P & Children, context: js.Any): ReactElement | Null = js.native
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
 }

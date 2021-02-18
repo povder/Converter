@@ -17,35 +17,35 @@ object vnodeMod {
   @js.native
   trait VNode extends StObject {
     
-    var children: scala.Unit | js.Array[VNode] = js.native
+    var children: js.UndefOr[js.Array[VNode]] = js.native
     
-    var componentInstance: scala.Unit | Vue = js.native
+    var componentInstance: js.UndefOr[Vue] = js.native
     
-    var componentOptions: scala.Unit | VNodeComponentOptions = js.native
+    var componentOptions: js.UndefOr[VNodeComponentOptions] = js.native
     
-    var context: scala.Unit | Vue = js.native
+    var context: js.UndefOr[Vue] = js.native
     
-    var data: scala.Unit | VNodeData = js.native
+    var data: js.UndefOr[VNodeData] = js.native
     
-    var elm: scala.Unit | Node = js.native
+    var elm: js.UndefOr[Node] = js.native
     
     var isComment: Boolean = js.native
     
     var isRootInsert: Boolean = js.native
     
-    var isStatic: scala.Unit | Boolean = js.native
+    var isStatic: js.UndefOr[Boolean] = js.native
     
-    var key: scala.Unit | String | Double = js.native
+    var key: js.UndefOr[String | Double] = js.native
     
-    var ns: scala.Unit | String = js.native
+    var ns: js.UndefOr[String] = js.native
     
-    var parent: scala.Unit | VNode = js.native
+    var parent: js.UndefOr[VNode] = js.native
     
-    var raw: scala.Unit | Boolean = js.native
+    var raw: js.UndefOr[Boolean] = js.native
     
-    var tag: scala.Unit | String = js.native
+    var tag: js.UndefOr[String] = js.native
     
-    var text: scala.Unit | String = js.native
+    var text: js.UndefOr[String] = js.native
   }
   object VNode {
     
@@ -165,13 +165,13 @@ object vnodeMod {
     
     var Ctor: VueConstructor[Vue] = js.native
     
-    var children: scala.Unit | VNodeChildren = js.native
+    var children: js.UndefOr[VNodeChildren] = js.native
     
-    var listeners: scala.Unit | js.Object = js.native
+    var listeners: js.UndefOr[js.Object] = js.native
     
-    var propsData: scala.Unit | js.Object = js.native
+    var propsData: js.UndefOr[js.Object] = js.native
     
-    var tag: scala.Unit | String = js.native
+    var tag: js.UndefOr[String] = js.native
   }
   object VNodeComponentOptions {
     
@@ -219,45 +219,45 @@ object vnodeMod {
   @js.native
   trait VNodeData extends StObject {
     
-    var attrs: scala.Unit | StringDictionary[js.Any] = js.native
+    var attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var `class`: scala.Unit | js.Any = js.native
+    var `class`: js.UndefOr[js.Any] = js.native
     
-    var directives: scala.Unit | js.Array[VNodeDirective] = js.native
+    var directives: js.UndefOr[js.Array[VNodeDirective]] = js.native
     
-    var domProps: scala.Unit | StringDictionary[js.Any] = js.native
+    var domProps: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var hook: scala.Unit | StringDictionary[js.Function] = js.native
+    var hook: js.UndefOr[StringDictionary[js.Function]] = js.native
     
-    var inlineTemplate: scala.Unit | Render = js.native
+    var inlineTemplate: js.UndefOr[Render] = js.native
     
-    var keepAlive: scala.Unit | Boolean = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.native
     
-    var key: scala.Unit | String | Double = js.native
+    var key: js.UndefOr[String | Double] = js.native
     
-    var nativeOn: scala.Unit | (StringDictionary[js.Function | js.Array[js.Function]]) = js.native
+    var nativeOn: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.native
     
-    var on: scala.Unit | (StringDictionary[js.Function | js.Array[js.Function]]) = js.native
+    var on: js.UndefOr[StringDictionary[js.Function | js.Array[js.Function]]] = js.native
     
-    var props: scala.Unit | StringDictionary[js.Any] = js.native
+    var props: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var ref: scala.Unit | String = js.native
+    var ref: js.UndefOr[String] = js.native
     
-    var scopedSlots: scala.Unit | StringDictionary[ScopedSlot] = js.native
+    var scopedSlots: js.UndefOr[StringDictionary[ScopedSlot]] = js.native
     
-    var show: scala.Unit | Boolean = js.native
+    var show: js.UndefOr[Boolean] = js.native
     
-    var slot: scala.Unit | String = js.native
+    var slot: js.UndefOr[String] = js.native
     
-    var staticClass: scala.Unit | String = js.native
+    var staticClass: js.UndefOr[String] = js.native
     
-    var staticStyle: scala.Unit | StringDictionary[js.Any] = js.native
+    var staticStyle: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var style: scala.Unit | js.Array[js.Object] | js.Object = js.native
+    var style: js.UndefOr[js.Array[js.Object] | js.Object] = js.native
     
-    var tag: scala.Unit | String = js.native
+    var tag: js.UndefOr[String] = js.native
     
-    var transition: scala.Unit | js.Object = js.native
+    var transition: js.UndefOr[js.Object] = js.native
   }
   object VNodeData {
     

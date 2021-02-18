@@ -8,7 +8,7 @@ object mod {
   
   type Handler = RequestHandler
   
-  type NextFunction = js.Function1[/* err */ scala.Unit | js.Any, Unit]
+  type NextFunction = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
   
   @js.native
   trait Request

@@ -44,236 +44,236 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AriaAttributes extends StObject {
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
-  var `aria-activedescendant`: scala.Unit | String = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.native
   
   /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-  var `aria-atomic`: scala.Unit | Boolean = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: scala.Unit | none | `inline` | list | both = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-  var `aria-busy`: scala.Unit | Boolean = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
     * @see aria-pressed @see aria-selected.
     */
-  var `aria-checked`: scala.Unit | Boolean | mixed = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
   
   /**
     * Defines the total number of columns in a table, grid, or treegrid.
     * @see aria-colindex.
     */
-  var `aria-colcount`: scala.Unit | Double = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.native
   
   /**
     * Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
     * @see aria-colcount @see aria-colspan.
     */
-  var `aria-colindex`: scala.Unit | Double = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.native
   
   /**
     * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-colindex @see aria-rowspan.
     */
-  var `aria-colspan`: scala.Unit | Double = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.native
   
   /**
     * Identifies the element (or elements) whose contents or presence are controlled by the current element.
     * @see aria-owns.
     */
-  var `aria-controls`: scala.Unit | String = js.native
+  var `aria-controls`: js.UndefOr[String] = js.native
   
   /** Indicates the element that represents the current item within a container or set of related elements. */
-  var `aria-current`: scala.Unit | Boolean | page | step | location | date | time = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
   
   /**
     * Identifies the element (or elements) that describes the object.
     * @see aria-labelledby
     */
-  var `aria-describedby`: scala.Unit | String = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.native
   
   /**
     * Identifies the element that provides a detailed, extended description for the object.
     * @see aria-describedby.
     */
-  var `aria-details`: scala.Unit | String = js.native
+  var `aria-details`: js.UndefOr[String] = js.native
   
   /**
     * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
     * @see aria-hidden @see aria-readonly.
     */
-  var `aria-disabled`: scala.Unit | Boolean = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates what functions can be performed when a dragged object is released on the drop target.
     * @deprecated in ARIA 1.1
     */
-  var `aria-dropeffect`: scala.Unit | none | copy | execute | link | move | popup = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
   
   /**
     * Identifies the element that provides an error message for the object.
     * @see aria-invalid @see aria-describedby.
     */
-  var `aria-errormessage`: scala.Unit | String = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
   
   /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-  var `aria-expanded`: scala.Unit | Boolean = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.native
   
   /**
     * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
     * allows assistive technology to override the general default of reading in document source order.
     */
-  var `aria-flowto`: scala.Unit | String = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.native
   
   /**
     * Indicates an element's "grabbed" state in a drag-and-drop operation.
     * @deprecated in ARIA 1.1
     */
-  var `aria-grabbed`: scala.Unit | Boolean = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-  var `aria-haspopup`: scala.Unit | Boolean | menu | listbox | tree | grid | dialog = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
   
   /**
     * Indicates whether the element is exposed to an accessibility API.
     * @see aria-disabled.
     */
-  var `aria-hidden`: scala.Unit | Boolean = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates the entered value does not conform to the format expected by the application.
     * @see aria-errormessage.
     */
-  var `aria-invalid`: scala.Unit | Boolean | grammar | spelling = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
   
   /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
-  var `aria-keyshortcuts`: scala.Unit | String = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
   
   /**
     * Defines a string value that labels the current element.
     * @see aria-labelledby.
     */
-  var `aria-label`: scala.Unit | String = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
   
   /**
     * Identifies the element (or elements) that labels the current element.
     * @see aria-describedby.
     */
-  var `aria-labelledby`: scala.Unit | String = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
   
   /** Defines the hierarchical level of an element within a structure. */
-  var `aria-level`: scala.Unit | Double = js.native
+  var `aria-level`: js.UndefOr[Double] = js.native
   
   /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-  var `aria-live`: scala.Unit | off | assertive | polite = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
   
   /** Indicates whether an element is modal when displayed. */
-  var `aria-modal`: scala.Unit | Boolean = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.native
   
   /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-  var `aria-multiline`: scala.Unit | Boolean = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.native
   
   /** Indicates that the user may select more than one item from the current selectable descendants. */
-  var `aria-multiselectable`: scala.Unit | Boolean = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-  var `aria-orientation`: scala.Unit | horizontal | vertical = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
   
   /**
     * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
     * between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
     * @see aria-controls.
     */
-  var `aria-owns`: scala.Unit | String = js.native
+  var `aria-owns`: js.UndefOr[String] = js.native
   
   /**
     * Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
     * A hint could be a sample value or a brief description of the expected format.
     */
-  var `aria-placeholder`: scala.Unit | String = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.native
   
   /**
     * Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-setsize.
     */
-  var `aria-posinset`: scala.Unit | Double = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.native
   
   /**
     * Indicates the current "pressed" state of toggle buttons.
     * @see aria-checked @see aria-selected.
     */
-  var `aria-pressed`: scala.Unit | Boolean | mixed = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
   
   /**
     * Indicates that the element is not editable, but is otherwise operable.
     * @see aria-disabled.
     */
-  var `aria-readonly`: scala.Unit | Boolean = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
     * @see aria-atomic.
     */
-  var `aria-relevant`: scala.Unit | additions | (`additions text`) | all | removals | text = js.native
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.native
   
   /** Indicates that user input is required on the element before a form may be submitted. */
-  var `aria-required`: scala.Unit | Boolean = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.native
   
   /** Defines a human-readable, author-localized description for the role of an element. */
-  var `aria-roledescription`: scala.Unit | String = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.native
   
   /**
     * Defines the total number of rows in a table, grid, or treegrid.
     * @see aria-rowindex.
     */
-  var `aria-rowcount`: scala.Unit | Double = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.native
   
   /**
     * Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
     * @see aria-rowcount @see aria-rowspan.
     */
-  var `aria-rowindex`: scala.Unit | Double = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.native
   
   /**
     * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-rowindex @see aria-colspan.
     */
-  var `aria-rowspan`: scala.Unit | Double = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.native
   
   /**
     * Indicates the current "selected" state of various widgets.
     * @see aria-checked @see aria-pressed.
     */
-  var `aria-selected`: scala.Unit | Boolean = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.native
   
   /**
     * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-posinset.
     */
-  var `aria-setsize`: scala.Unit | Double = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.native
   
   /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-  var `aria-sort`: scala.Unit | none | ascending | descending | other = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
   
   /** Defines the maximum allowed value for a range widget. */
-  var `aria-valuemax`: scala.Unit | Double = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.native
   
   /** Defines the minimum allowed value for a range widget. */
-  var `aria-valuemin`: scala.Unit | Double = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.native
   
   /**
     * Defines the current value for a range widget.
     * @see aria-valuetext.
     */
-  var `aria-valuenow`: scala.Unit | Double = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.native
   
   /** Defines the human readable text alternative of aria-valuenow for a range widget. */
-  var `aria-valuetext`: scala.Unit | String = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.native
 }
 object AriaAttributes {
   

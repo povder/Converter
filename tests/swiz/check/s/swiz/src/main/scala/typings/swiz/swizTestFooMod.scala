@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object swizTestFooMod extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): scala.Unit | (SERIALIZATION & Double) = js.native
+  def apply(value: Double): js.UndefOr[SERIALIZATION & Double] = js.native
   
   /* 4 */ val SERIALIZATION_JSON: typings.swiz.mod.SERIALIZATION.SERIALIZATION_JSON & Double = js.native
   

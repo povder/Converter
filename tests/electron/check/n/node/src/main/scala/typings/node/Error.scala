@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Error extends StObject {
   
-  var stack: scala.Unit | String = js.native
+  var stack: js.UndefOr[String] = js.native
 }
 object Error {
   

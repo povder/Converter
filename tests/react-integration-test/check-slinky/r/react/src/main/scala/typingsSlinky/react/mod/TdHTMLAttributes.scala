@@ -16,17 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TdHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var align: scala.Unit | left | center | right | justify | char = js.native
+  var align: js.UndefOr[left | center | right | justify | char] = js.native
   
-  var colSpan: scala.Unit | Double = js.native
+  var colSpan: js.UndefOr[Double] = js.native
   
-  var headers: scala.Unit | String = js.native
+  var headers: js.UndefOr[String] = js.native
   
-  var rowSpan: scala.Unit | Double = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
   
-  var scope: scala.Unit | String = js.native
+  var scope: js.UndefOr[String] = js.native
   
-  var valign: scala.Unit | top | middle | bottom | baseline = js.native
+  var valign: js.UndefOr[top | middle | bottom | baseline] = js.native
 }
 object TdHTMLAttributes {
   

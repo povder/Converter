@@ -32,7 +32,7 @@ object optionsMod {
   
   type AsyncComponent[Data, Methods, Computed, Props] = js.Function2[
     /* resolve */ js.Function1[/* component */ Component[Data, Methods, Computed, Props], Unit], 
-    /* reject */ js.Function1[/* reason */ scala.Unit | js.Any, Unit], 
+    /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
     (js.Promise[
       (Component[DefaultData[Vue], DefaultMethods[Vue], DefaultComputed, DefaultProps]) | EsModuleComponent
     ]) | Unit
@@ -43,58 +43,44 @@ object optionsMod {
   @js.native
   trait ComponentOptions[V /* <: Vue */, Data, Methods, Computed, PropsDef] extends StObject {
     
-    var activated: scala.Unit | js.Function0[Unit] = js.native
+    var activated: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var beforeCreate: scala.Unit | (js.ThisFunction0[/* this */ V, Unit]) = js.native
+    var beforeCreate: js.UndefOr[js.ThisFunction0[/* this */ V, Unit]] = js.native
     
-    var beforeDestroy: scala.Unit | js.Function0[Unit] = js.native
+    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var beforeMount: scala.Unit | js.Function0[Unit] = js.native
+    var beforeMount: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var beforeUpdate: scala.Unit | js.Function0[Unit] = js.native
+    var beforeUpdate: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var comments: scala.Unit | Boolean = js.native
+    var comments: js.UndefOr[Boolean] = js.native
     
-    var components: scala.Unit | (StringDictionary[
-        (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
-      ]) = js.native
+    var components: js.UndefOr[
+        StringDictionary[
+          (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
+        ]
+      ] = js.native
     
-    var computed: scala.Unit | Accessors[Computed] = js.native
+    var computed: js.UndefOr[Accessors[Computed]] = js.native
     
-    var created: scala.Unit | js.Function0[Unit] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var data: scala.Unit | Data = js.native
+    var data: js.UndefOr[Data] = js.native
     
-    var deactivated: scala.Unit | js.Function0[Unit] = js.native
+    var deactivated: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var delimiters: scala.Unit | (js.Tuple2[String, String]) = js.native
+    var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.native
     
-    var destroyed: scala.Unit | js.Function0[Unit] = js.native
+    var destroyed: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var directives: scala.Unit | (StringDictionary[DirectiveFunction | DirectiveOptions]) = js.native
+    var directives: js.UndefOr[StringDictionary[DirectiveFunction | DirectiveOptions]] = js.native
     
-    var el: scala.Unit | Element | String = js.native
+    var el: js.UndefOr[Element | String] = js.native
     
-    var errorCaptured: scala.Unit | (js.Function0[Boolean | Unit]) = js.native
+    var errorCaptured: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
     
     // TODO: support properly inferred 'extends'
-    var `extends`: scala.Unit | (ComponentOptions[
-        Vue, 
-        DefaultData[Vue], 
-        DefaultMethods[Vue], 
-        DefaultComputed, 
-        PropsDefinition[DefaultProps]
-      ]) | VueConstructor[Vue] = js.native
-    
-    var filters: scala.Unit | StringDictionary[js.Function] = js.native
-    
-    var inheritAttrs: scala.Unit | Boolean = js.native
-    
-    var inject: scala.Unit | InjectOptions = js.native
-    
-    var methods: scala.Unit | Methods = js.native
-    
-    var mixins: scala.Unit | (js.Array[
+    var `extends`: js.UndefOr[
         (ComponentOptions[
           Vue, 
           DefaultData[Vue], 
@@ -102,35 +88,55 @@ object optionsMod {
           DefaultComputed, 
           PropsDefinition[DefaultProps]
         ]) | VueConstructor[Vue]
-      ]) = js.native
+      ] = js.native
     
-    var model: scala.Unit | Event = js.native
+    var filters: js.UndefOr[StringDictionary[js.Function]] = js.native
     
-    var mounted: scala.Unit | js.Function0[Unit] = js.native
+    var inheritAttrs: js.UndefOr[Boolean] = js.native
     
-    var name: scala.Unit | String = js.native
+    var inject: js.UndefOr[InjectOptions] = js.native
     
-    var parent: scala.Unit | Vue = js.native
+    var methods: js.UndefOr[Methods] = js.native
     
-    var props: scala.Unit | PropsDef = js.native
+    var mixins: js.UndefOr[
+        js.Array[
+          (ComponentOptions[
+            Vue, 
+            DefaultData[Vue], 
+            DefaultMethods[Vue], 
+            DefaultComputed, 
+            PropsDefinition[DefaultProps]
+          ]) | VueConstructor[Vue]
+        ]
+      ] = js.native
     
-    var propsData: scala.Unit | js.Object = js.native
+    var model: js.UndefOr[Event] = js.native
     
-    var provide: scala.Unit | js.Object | js.Function0[js.Object] = js.native
+    var mounted: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var render: scala.Unit | (js.Function1[/* createElement */ CreateElement, VNode]) = js.native
+    var name: js.UndefOr[String] = js.native
     
-    var renderError: scala.Unit | (js.Function2[/* h */ js.Function0[VNode], /* err */ Error, VNode]) = js.native
+    var parent: js.UndefOr[Vue] = js.native
     
-    var staticRenderFns: scala.Unit | (js.Array[js.Function1[/* createElement */ CreateElement, VNode]]) = js.native
+    var props: js.UndefOr[PropsDef] = js.native
     
-    var template: scala.Unit | String = js.native
+    var propsData: js.UndefOr[js.Object] = js.native
     
-    var transitions: scala.Unit | StringDictionary[js.Object] = js.native
+    var provide: js.UndefOr[js.Object | js.Function0[js.Object]] = js.native
     
-    var updated: scala.Unit | js.Function0[Unit] = js.native
+    var render: js.UndefOr[js.Function1[/* createElement */ CreateElement, VNode]] = js.native
     
-    var watch: scala.Unit | (Record[String, WatchOptionsWithHandler[?] | WatchHandler[js.Any] | String]) = js.native
+    var renderError: js.UndefOr[js.Function2[/* h */ js.Function0[VNode], /* err */ Error, VNode]] = js.native
+    
+    var staticRenderFns: js.UndefOr[js.Array[js.Function1[/* createElement */ CreateElement, VNode]]] = js.native
+    
+    var template: js.UndefOr[String] = js.native
+    
+    var transitions: js.UndefOr[StringDictionary[js.Object]] = js.native
+    
+    var updated: js.UndefOr[js.Function0[Unit]] = js.native
+    
+    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[?] | WatchHandler[js.Any] | String]] = js.native
   }
   object ComponentOptions {
     
@@ -406,11 +412,11 @@ object optionsMod {
   @js.native
   trait ComputedOptions[T] extends StObject {
     
-    var cache: scala.Unit | Boolean = js.native
+    var cache: js.UndefOr[Boolean] = js.native
     
-    var get: scala.Unit | js.Function0[T] = js.native
+    var get: js.UndefOr[js.Function0[T]] = js.native
     
-    var set: scala.Unit | (js.Function1[/* value */ T, Unit]) = js.native
+    var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
   }
   object ComputedOptions {
     
@@ -466,15 +472,15 @@ object optionsMod {
   @js.native
   trait DirectiveOptions extends StObject {
     
-    var bind: scala.Unit | DirectiveFunction = js.native
+    var bind: js.UndefOr[DirectiveFunction] = js.native
     
-    var componentUpdated: scala.Unit | DirectiveFunction = js.native
+    var componentUpdated: js.UndefOr[DirectiveFunction] = js.native
     
-    var inserted: scala.Unit | DirectiveFunction = js.native
+    var inserted: js.UndefOr[DirectiveFunction] = js.native
     
-    var unbind: scala.Unit | DirectiveFunction = js.native
+    var unbind: js.UndefOr[DirectiveFunction] = js.native
     
-    var update: scala.Unit | DirectiveFunction = js.native
+    var update: js.UndefOr[DirectiveFunction] = js.native
   }
   object DirectiveOptions {
     
@@ -555,11 +561,11 @@ object optionsMod {
     
     var functional: Boolean = js.native
     
-    var inject: scala.Unit | InjectOptions = js.native
+    var inject: js.UndefOr[InjectOptions] = js.native
     
-    var name: scala.Unit | String = js.native
+    var name: js.UndefOr[String] = js.native
     
-    var props: scala.Unit | PropDefs = js.native
+    var props: js.UndefOr[PropDefs] = js.native
     
     def render(createElement: CreateElement, context: RenderContext[Props]): VNode = js.native
   }
@@ -612,13 +618,13 @@ object optionsMod {
   @js.native
   trait PropOptions[T] extends StObject {
     
-    var default: scala.Unit | T | Null | js.Function0[js.Object] = js.native
+    var default: js.UndefOr[T | Null | js.Function0[js.Object]] = js.native
     
-    var required: scala.Unit | Boolean = js.native
+    var required: js.UndefOr[Boolean] = js.native
     
-    var `type`: scala.Unit | Prop[T] | js.Array[Prop[T]] = js.native
+    var `type`: js.UndefOr[Prop[T] | js.Array[Prop[T]]] = js.native
     
-    var validator: scala.Unit | (js.Function1[/* value */ T, Boolean]) = js.native
+    var validator: js.UndefOr[js.Function1[/* value */ T, Boolean]] = js.native
   }
   object PropOptions {
     
@@ -754,9 +760,9 @@ object optionsMod {
   @js.native
   trait WatchOptions extends StObject {
     
-    var deep: scala.Unit | Boolean = js.native
+    var deep: js.UndefOr[Boolean] = js.native
     
-    var immediate: scala.Unit | Boolean = js.native
+    var immediate: js.UndefOr[Boolean] = js.native
   }
   object WatchOptions {
     

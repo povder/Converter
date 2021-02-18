@@ -20,7 +20,7 @@ object mod {
   @js.native
   trait WithTheme extends StObject {
     
-    var innerRef: scala.Unit | Ref[?] | RefObject[?] = js.native
+    var innerRef: js.UndefOr[Ref[?] | RefObject[?]] = js.native
     
     var theme: String = js.native
   }

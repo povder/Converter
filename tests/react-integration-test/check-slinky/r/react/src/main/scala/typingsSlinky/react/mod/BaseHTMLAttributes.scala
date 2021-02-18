@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BaseHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
 }
 object BaseHTMLAttributes {
   

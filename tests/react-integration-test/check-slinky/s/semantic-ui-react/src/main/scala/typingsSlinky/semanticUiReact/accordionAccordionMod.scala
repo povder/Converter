@@ -81,13 +81,13 @@ object accordionAccordionMod {
   trait StrictAccordionProps extends StrictAccordionAccordionProps {
     
     /** Format to take up the width of its container. */
-    var fluid: scala.Unit | Boolean = js.native
+    var fluid: js.UndefOr[Boolean] = js.native
     
     /** Format for dark backgrounds. */
-    var inverted: scala.Unit | Boolean = js.native
+    var inverted: js.UndefOr[Boolean] = js.native
     
     /** Adds some basic styling to accordion panels. */
-    var styled: scala.Unit | Boolean = js.native
+    var styled: js.UndefOr[Boolean] = js.native
   }
   object StrictAccordionProps {
     

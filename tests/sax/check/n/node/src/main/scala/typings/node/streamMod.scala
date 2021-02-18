@@ -76,7 +76,7 @@ object streamMod {
     extends ReadableOptions
        with WritableOptions {
     
-    var allowHalfOpen: scala.Unit | Boolean = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.native
   }
   object DuplexOptions {
     
@@ -100,15 +100,15 @@ object streamMod {
   @js.native
   trait ReadableOptions extends StObject {
     
-    var destroy: scala.Unit | (js.Function1[/* error */ scala.Unit | Error, ?]) = js.native
+    var destroy: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], ?]] = js.native
     
-    var encoding: scala.Unit | String = js.native
+    var encoding: js.UndefOr[String] = js.native
     
-    var highWaterMark: scala.Unit | Double = js.native
+    var highWaterMark: js.UndefOr[Double] = js.native
     
-    var objectMode: scala.Unit | Boolean = js.native
+    var objectMode: js.UndefOr[Boolean] = js.native
     
-    var read: scala.Unit | (js.ThisFunction1[/* this */ Readable, /* size */ scala.Unit | Double, ?]) = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ js.UndefOr[Double], ?]] = js.native
   }
   object ReadableOptions {
     
@@ -122,7 +122,7 @@ object streamMod {
     implicit class ReadableOptionsMutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDestroy(value: /* error */ scala.Unit | Error => ?): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      def setDestroy(value: /* error */ js.UndefOr[Error] => ?): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDestroyUndefined: Self = StObject.set(x, "destroy", ())
@@ -146,7 +146,7 @@ object streamMod {
       def setObjectModeUndefined: Self = StObject.set(x, "objectMode", ())
       
       @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ scala.Unit | Double, ?]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ js.UndefOr[Double], ?]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReadUndefined: Self = StObject.set(x, "read", ())
@@ -156,7 +156,9 @@ object streamMod {
   @js.native
   trait WritableOptions extends StObject {
     
-    var `final`: scala.Unit | (js.Function1[/* callback */ js.Function1[/* error */ scala.Unit | Error, Unit], Unit]) = js.native
+    var `final`: js.UndefOr[
+        js.Function1[/* callback */ js.Function1[/* error */ js.UndefOr[Error], Unit], Unit]
+      ] = js.native
   }
   object WritableOptions {
     
@@ -170,7 +172,7 @@ object streamMod {
     implicit class WritableOptionsMutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFinal(value: /* callback */ js.Function1[/* error */ scala.Unit | Error, Unit] => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
+      def setFinal(value: /* callback */ js.Function1[/* error */ js.UndefOr[Error], Unit] => Unit): Self = StObject.set(x, "final", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFinalUndefined: Self = StObject.set(x, "final", ())

@@ -10,13 +10,13 @@ object NodeJS {
   @js.native
   trait ErrnoException extends Error {
     
-    var code: scala.Unit | String = js.native
+    var code: js.UndefOr[String] = js.native
     
-    var errno: scala.Unit | Double = js.native
+    var errno: js.UndefOr[Double] = js.native
     
-    var path: scala.Unit | String = js.native
+    var path: js.UndefOr[String] = js.native
     
-    var syscall: scala.Unit | String = js.native
+    var syscall: js.UndefOr[String] = js.native
   }
   object ErrnoException {
     

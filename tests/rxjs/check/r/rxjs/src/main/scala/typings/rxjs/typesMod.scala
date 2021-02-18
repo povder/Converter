@@ -11,13 +11,13 @@ object typesMod {
   @js.native
   trait CompletionObserver[T] extends PartialObserver[T] {
     
-    var closed: scala.Unit | Boolean = js.native
+    var closed: js.UndefOr[Boolean] = js.native
     
     def complete(): Unit = js.native
     
-    var error: scala.Unit | (js.Function1[/* err */ js.Any, Unit]) = js.native
+    var error: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.native
     
-    var next: scala.Unit | (js.Function1[/* value */ T, Unit]) = js.native
+    var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
   }
   object CompletionObserver {
     
@@ -56,13 +56,13 @@ object typesMod {
   @js.native
   trait ErrorObserver[T] extends PartialObserver[T] {
     
-    var closed: scala.Unit | Boolean = js.native
+    var closed: js.UndefOr[Boolean] = js.native
     
-    var complete: scala.Unit | js.Function0[Unit] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.native
     
     def error(err: js.Any): Unit = js.native
     
-    var next: scala.Unit | (js.Function1[/* value */ T, Unit]) = js.native
+    var next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
   }
   object ErrorObserver {
     
@@ -101,11 +101,11 @@ object typesMod {
   @js.native
   trait NextObserver[T] extends PartialObserver[T] {
     
-    var closed: scala.Unit | Boolean = js.native
+    var closed: js.UndefOr[Boolean] = js.native
     
-    var complete: scala.Unit | js.Function0[Unit] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var error: scala.Unit | (js.Function1[/* err */ js.Any, Unit]) = js.native
+    var error: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.native
     
     def next(value: T): Unit = js.native
   }
@@ -146,7 +146,7 @@ object typesMod {
   @js.native
   trait Observer[T] extends StObject {
     
-    var closed: scala.Unit | Boolean = js.native
+    var closed: js.UndefOr[Boolean] = js.native
     
     def complete(): Unit = js.native
     
@@ -225,18 +225,18 @@ object typesMod {
     
     def now(): Double = js.native
     
-    def schedule[T](work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ scala.Unit | T, Unit]): Subscription = js.native
+    def schedule[T](work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit]): Subscription = js.native
     def schedule[T](
-      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ scala.Unit | T, Unit],
+      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit],
       delay: Double
     ): Subscription = js.native
     def schedule[T](
-      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ scala.Unit | T, Unit],
+      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit],
       delay: Double,
       state: T
     ): Subscription = js.native
     def schedule[T](
-      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ scala.Unit | T, Unit],
+      work: js.ThisFunction1[/* this */ SchedulerAction[T], /* state */ js.UndefOr[T], Unit],
       delay: Unit,
       state: T
     ): Subscription = js.native

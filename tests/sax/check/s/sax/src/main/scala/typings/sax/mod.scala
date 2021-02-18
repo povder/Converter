@@ -168,17 +168,17 @@ object mod {
   @js.native
   trait SAXOptions extends StObject {
     
-    var lowercase: scala.Unit | Boolean = js.native
+    var lowercase: js.UndefOr[Boolean] = js.native
     
-    var normalize: scala.Unit | Boolean = js.native
+    var normalize: js.UndefOr[Boolean] = js.native
     
-    var noscript: scala.Unit | Boolean = js.native
+    var noscript: js.UndefOr[Boolean] = js.native
     
-    var position: scala.Unit | Boolean = js.native
+    var position: js.UndefOr[Boolean] = js.native
     
-    var trim: scala.Unit | Boolean = js.native
+    var trim: js.UndefOr[Boolean] = js.native
     
-    var xmlns: scala.Unit | Boolean = js.native
+    var xmlns: js.UndefOr[Boolean] = js.native
   }
   object SAXOptions {
     

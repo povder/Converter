@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ComponentElement[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */] extends ReactElement {
   
-  var ref: scala.Unit | LegacyRef[T] = js.native
+  var ref: js.UndefOr[LegacyRef[T]] = js.native
 }
 object ComponentElement {
   

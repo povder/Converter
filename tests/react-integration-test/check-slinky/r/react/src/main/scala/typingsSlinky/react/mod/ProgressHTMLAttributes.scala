@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProgressHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var max: scala.Unit | Double | String = js.native
+  var max: js.UndefOr[Double | String] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 object ProgressHTMLAttributes {
   

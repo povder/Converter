@@ -9,7 +9,7 @@ trait ConsumerProps[T] extends StObject {
   
   def children(value: T): slinky.core.facade.ReactElement = js.native
   
-  var unstable_observedBits: scala.Unit | Double = js.native
+  var unstable_observedBits: js.UndefOr[Double] = js.native
 }
 object ConsumerProps {
   

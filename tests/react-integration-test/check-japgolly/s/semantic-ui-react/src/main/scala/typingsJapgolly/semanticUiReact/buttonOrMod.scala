@@ -30,13 +30,13 @@ object buttonOrMod extends Shortcut {
   trait StrictButtonOrProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Or buttons can have their text localized, or adjusted by using the text prop. */
-    var text: scala.Unit | Double | String = js.native
+    var text: js.UndefOr[Double | String] = js.native
   }
   object StrictButtonOrProps {
     

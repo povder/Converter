@@ -45,70 +45,70 @@ object buttonGroupMod extends Shortcut {
   trait StrictButtonGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Groups can be attached to other content. */
-    var attached: scala.Unit | Boolean | left | right | top | bottom = js.native
+    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.native
     
     /** Groups can be less pronounced. */
-    var basic: scala.Unit | Boolean = js.native
+    var basic: js.UndefOr[Boolean] = js.native
     
     /** Array of shorthand Button values. */
-    var buttons: scala.Unit | SemanticShorthandCollection[ButtonProps] = js.native
+    var buttons: js.UndefOr[SemanticShorthandCollection[ButtonProps]] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Groups can have a shared color. */
-    var color: scala.Unit | SemanticCOLORS = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.native
     
     /** Groups can reduce their padding to fit into tighter spaces. */
-    var compact: scala.Unit | Boolean = js.native
+    var compact: js.UndefOr[Boolean] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
     
     /** Groups can be aligned to the left or right of its container. */
-    var floated: scala.Unit | SemanticFLOATS = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.native
     
     /** Groups can take the width of their container. */
-    var fluid: scala.Unit | Boolean = js.native
+    var fluid: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted as icons. */
-    var icon: scala.Unit | Boolean = js.native
+    var icon: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted to appear on dark backgrounds. */
-    var inverted: scala.Unit | Boolean = js.native
+    var inverted: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted as labeled icon buttons. */
-    var labeled: scala.Unit | Boolean = js.native
+    var labeled: js.UndefOr[Boolean] = js.native
     
     /** Groups can hint towards a negative consequence. */
-    var negative: scala.Unit | Boolean = js.native
+    var negative: js.UndefOr[Boolean] = js.native
     
     /** Groups can hint towards a positive consequence. */
-    var positive: scala.Unit | Boolean = js.native
+    var positive: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted to show different levels of emphasis. */
-    var primary: scala.Unit | Boolean = js.native
+    var primary: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted to show different levels of emphasis. */
-    var secondary: scala.Unit | Boolean = js.native
+    var secondary: js.UndefOr[Boolean] = js.native
     
     /** Groups can have different sizes. */
-    var size: scala.Unit | SemanticSIZES = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.native
     
     /** Groups can be formatted to toggle on and off. */
-    var toggle: scala.Unit | Boolean = js.native
+    var toggle: js.UndefOr[Boolean] = js.native
     
     /** Groups can be formatted to appear vertically. */
-    var vertical: scala.Unit | Boolean = js.native
+    var vertical: js.UndefOr[Boolean] = js.native
     
     /** Groups can have their widths divided evenly. */
-    var widths: scala.Unit | SemanticWIDTHS = js.native
+    var widths: js.UndefOr[SemanticWIDTHS] = js.native
   }
   object StrictButtonGroupProps {
     

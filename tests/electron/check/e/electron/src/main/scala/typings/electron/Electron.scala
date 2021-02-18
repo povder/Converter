@@ -45,17 +45,17 @@ object Electron {
   trait Event
     extends typings.std.Event {
     
-    var altKey: scala.Unit | Boolean = js.native
+    var altKey: js.UndefOr[Boolean] = js.native
     
-    var ctrlKey: scala.Unit | Boolean = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.native
     
-    var metaKey: scala.Unit | Boolean = js.native
+    var metaKey: js.UndefOr[Boolean] = js.native
     
     def preventDefault(): Unit = js.native
     
     var returnValue: js.Any = js.native
     
-    var shiftKey: scala.Unit | Boolean = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.native
   }
   object Event {
     

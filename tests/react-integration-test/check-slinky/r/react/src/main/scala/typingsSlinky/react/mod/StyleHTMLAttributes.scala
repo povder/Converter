@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StyleHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var nonce: scala.Unit | String = js.native
+  var nonce: js.UndefOr[String] = js.native
   
-  var scoped: scala.Unit | Boolean = js.native
+  var scoped: js.UndefOr[Boolean] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 object StyleHTMLAttributes {
   

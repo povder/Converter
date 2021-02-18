@@ -13,9 +13,9 @@ object anon {
   @js.native
   trait Default extends StObject {
     
-    var default: scala.Unit | js.Any = js.native
+    var default: js.UndefOr[js.Any] = js.native
     
-    var from: scala.Unit | InjectKey = js.native
+    var from: js.UndefOr[InjectKey] = js.native
   }
   object Default {
     
@@ -45,9 +45,9 @@ object anon {
   @js.native
   trait Event extends StObject {
     
-    var event: scala.Unit | String = js.native
+    var event: js.UndefOr[String] = js.native
     
-    var prop: scala.Unit | String = js.native
+    var prop: js.UndefOr[String] = js.native
   }
   object Event {
     

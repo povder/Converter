@@ -22,9 +22,9 @@ object mod {
   @js.native
   trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
     
-    var accept: scala.Unit | String = js.native
+    var accept: js.UndefOr[String] = js.native
     
-    var acceptCharset: scala.Unit | String = js.native
+    var acceptCharset: js.UndefOr[String] = js.native
   }
   object AllHTMLAttributes {
     
@@ -34,7 +34,7 @@ object mod {
       acceptCharset: String = null,
       children: VdomNode = null,
       dangerouslySetInnerHTML: Html = null,
-      defaultChecked: scala.Unit | Boolean = ()
+      defaultChecked: js.UndefOr[Boolean] = ()
     ): AllHTMLAttributes[T] = {
       val __obj = js.Dynamic.literal()
       if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
@@ -55,7 +55,7 @@ object mod {
   @js.native
   trait Attributes extends StObject {
     
-    var key: scala.Unit | Key = js.native
+    var key: js.UndefOr[Key] = js.native
   }
   object Attributes {
     
@@ -70,7 +70,7 @@ object mod {
   @js.native
   trait ClassAttributes[T] extends Attributes {
     
-    var ref: scala.Unit | japgolly.scalajs.react.raw.React.Ref = js.native
+    var ref: js.UndefOr[japgolly.scalajs.react.raw.React.Ref] = js.native
   }
   object ClassAttributes {
     
@@ -98,9 +98,9 @@ object mod {
           japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object]
         ] {
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
   
   type ComponentState = js.Object
@@ -110,9 +110,9 @@ object mod {
   @js.native
   trait DOMAttributes[T] extends StObject {
     
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
-    var dangerouslySetInnerHTML: scala.Unit | Html = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   }
   object DOMAttributes {
     
@@ -130,7 +130,7 @@ object mod {
   @js.native
   trait HTMLAttributes[T] extends DOMAttributes[T] {
     
-    var defaultChecked: scala.Unit | Boolean = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.native
   }
   object HTMLAttributes {
     
@@ -138,7 +138,7 @@ object mod {
     def apply[T](
       children: VdomNode = null,
       dangerouslySetInnerHTML: Html = null,
-      defaultChecked: scala.Unit | Boolean = ()
+      defaultChecked: js.UndefOr[Boolean] = ()
     ): HTMLAttributes[T] = {
       val __obj = js.Dynamic.literal()
       if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
@@ -160,7 +160,7 @@ object mod {
       acceptCharset: String = null,
       children: VdomNode = null,
       dangerouslySetInnerHTML: Html = null,
-      defaultChecked: scala.Unit | Boolean = (),
+      defaultChecked: js.UndefOr[Boolean] = (),
       key: Key = null,
       ref: japgolly.scalajs.react.raw.React.Ref = null
     ): HTMLProps[T] = {
@@ -199,7 +199,7 @@ object mod {
     }
   }
   
-  type ReactNode = scala.Unit | String | Double | Boolean
+  type ReactNode = js.UndefOr[String | Double | Boolean]
   
   type ReactType[P] = String | ComponentType[P]
   
@@ -217,9 +217,9 @@ object mod {
     def apply(props: P & Children): Element | Null = js.native
     def apply(props: P & Children, context: js.Any): Element | Null = js.native
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
   
   object global {

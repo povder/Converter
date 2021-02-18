@@ -45,7 +45,7 @@ class SharedBuilder_AccordionTitleProps1986434512[R <: js.Object] (val args: js.
   def iconFunction3(
     value: (/* component */ ReactType[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
-    ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
+    ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
   ): this.type = set("icon", js.Any.fromFunction3(value))
   
   @scala.inline

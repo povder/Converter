@@ -35,25 +35,25 @@ object containerContainerMod extends Shortcut {
   trait StrictContainerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
     
     /** Container has no maximum width. */
-    var fluid: scala.Unit | Boolean = js.native
+    var fluid: js.UndefOr[Boolean] = js.native
     
     /** Reduce maximum width to more naturally accommodate text. */
-    var text: scala.Unit | Boolean = js.native
+    var text: js.UndefOr[Boolean] = js.native
     
     /** Describes how the text inside this component should be aligned. */
-    var textAlign: scala.Unit | SemanticTEXTALIGNMENTS = js.native
+    var textAlign: js.UndefOr[SemanticTEXTALIGNMENTS] = js.native
   }
   object StrictContainerProps {
     

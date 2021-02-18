@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColgroupHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var span: scala.Unit | Double = js.native
+  var span: js.UndefOr[Double] = js.native
 }
 object ColgroupHTMLAttributes {
   

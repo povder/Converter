@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProviderExoticComponent[P] extends ExoticComponent[P] {
   
-  var propTypes: scala.Unit | WeakValidationMap[P] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[P]] = js.native
 }

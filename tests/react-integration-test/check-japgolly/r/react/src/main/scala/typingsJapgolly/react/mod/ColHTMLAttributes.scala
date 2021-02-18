@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var span: scala.Unit | Double = js.native
+  var span: js.UndefOr[Double] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 object ColHTMLAttributes {
   

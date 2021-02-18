@@ -36,7 +36,7 @@ object global {
     object blendModes extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): scala.Unit | (typings.phaser.PIXI.blendModes & Double) = js.native
+      def apply(value: Double): js.UndefOr[typings.phaser.PIXI.blendModes & Double] = js.native
       
       /* 1 */ val ADD: typings.phaser.PIXI.blendModes.ADD & Double = js.native
       
@@ -48,7 +48,7 @@ object global {
     object scaleModes extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): scala.Unit | (typings.phaser.PIXI.scaleModes & Double) = js.native
+      def apply(value: Double): js.UndefOr[typings.phaser.PIXI.scaleModes & Double] = js.native
       
       /* 0 */ val DEFAULT: typings.phaser.PIXI.scaleModes.DEFAULT & Double = js.native
       

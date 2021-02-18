@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PartialPerson extends StObject {
   
-  var age: scala.Unit | scala.Double | Null = js.native
+  var age: js.UndefOr[scala.Double | Null] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
 }
 object PartialPerson {
   

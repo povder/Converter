@@ -16,7 +16,7 @@ object MaterialUI {
       
       var children: Double = js.native
       
-      var className: scala.Unit | String = js.native
+      var className: js.UndefOr[String] = js.native
     }
     object BottomNavigationItemProps {
       
@@ -46,7 +46,7 @@ object MaterialUI {
     @js.native
     trait MuiTheme extends StObject {
       
-      var spacing: scala.Unit | js.Any = js.native
+      var spacing: js.UndefOr[js.Any] = js.native
     }
     object MuiTheme {
       

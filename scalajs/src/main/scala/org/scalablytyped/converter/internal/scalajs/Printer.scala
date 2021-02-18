@@ -446,6 +446,9 @@ object Printer {
           case TypeRef.Wildcard              => "?"
           case TypeRef.Singleton(underlying) => formatTypeRef(indent)(underlying) |+| ".type"
 
+          case TypeRef.UndefOr(tpe, _) =>
+            formatTypeRef(indent)(TypeRef(QualifiedName.UndefOr, IArray(tpe), NoComments))
+
           case TypeRef.Intersection(types, _) =>
             types.map(formatTypeRef(indent)).map(paramsIfNeeded).mkString(" & ")
 

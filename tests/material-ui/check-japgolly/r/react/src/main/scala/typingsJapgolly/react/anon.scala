@@ -11,7 +11,7 @@ object anon {
   @js.native
   trait Children extends StObject {
     
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
   }
   object Children {
     

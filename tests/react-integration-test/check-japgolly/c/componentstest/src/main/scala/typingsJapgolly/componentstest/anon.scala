@@ -10,12 +10,12 @@ object anon {
   trait Equals extends StObject {
     
     @JSName("equals")
-    var equals_FEquals: scala.Unit | Boolean = js.native
+    var equals_FEquals: js.UndefOr[Boolean] = js.native
     
     def finalize(other: js.Object): Boolean = js.native
     
     @JSName("ne")
-    var ne_FEquals: scala.Unit | (js.Function1[/* other */ js.Object, Boolean]) = js.native
+    var ne_FEquals: js.UndefOr[js.Function1[/* other */ js.Object, Boolean]] = js.native
   }
   object Equals {
     

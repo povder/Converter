@@ -49,520 +49,522 @@ trait SVGAttributes[T]
      with DOMAttributes[T] {
   
   // SVG Specific attributes
-  var accentHeight: scala.Unit | Double | String = js.native
+  var accentHeight: js.UndefOr[Double | String] = js.native
   
-  var accumulate: scala.Unit | none | sum = js.native
+  var accumulate: js.UndefOr[none | sum] = js.native
   
-  var additive: scala.Unit | replace | sum = js.native
+  var additive: js.UndefOr[replace | sum] = js.native
   
-  var alignmentBaseline: scala.Unit | auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit = js.native
+  var alignmentBaseline: js.UndefOr[
+    auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+  ] = js.native
   
-  var allowReorder: scala.Unit | no | yes = js.native
+  var allowReorder: js.UndefOr[no | yes] = js.native
   
-  var alphabetic: scala.Unit | Double | String = js.native
+  var alphabetic: js.UndefOr[Double | String] = js.native
   
-  var amplitude: scala.Unit | Double | String = js.native
+  var amplitude: js.UndefOr[Double | String] = js.native
   
-  var arabicForm: scala.Unit | initial | medial | terminal | isolated = js.native
+  var arabicForm: js.UndefOr[initial | medial | terminal | isolated] = js.native
   
-  var ascent: scala.Unit | Double | String = js.native
+  var ascent: js.UndefOr[Double | String] = js.native
   
-  var attributeName: scala.Unit | String = js.native
+  var attributeName: js.UndefOr[String] = js.native
   
-  var attributeType: scala.Unit | String = js.native
+  var attributeType: js.UndefOr[String] = js.native
   
-  var autoReverse: scala.Unit | Double | String = js.native
+  var autoReverse: js.UndefOr[Double | String] = js.native
   
-  var azimuth: scala.Unit | Double | String = js.native
+  var azimuth: js.UndefOr[Double | String] = js.native
   
-  var baseFrequency: scala.Unit | Double | String = js.native
+  var baseFrequency: js.UndefOr[Double | String] = js.native
   
-  var baseProfile: scala.Unit | Double | String = js.native
+  var baseProfile: js.UndefOr[Double | String] = js.native
   
-  var baselineShift: scala.Unit | Double | String = js.native
+  var baselineShift: js.UndefOr[Double | String] = js.native
   
-  var bbox: scala.Unit | Double | String = js.native
+  var bbox: js.UndefOr[Double | String] = js.native
   
-  var begin: scala.Unit | Double | String = js.native
+  var begin: js.UndefOr[Double | String] = js.native
   
-  var bias: scala.Unit | Double | String = js.native
+  var bias: js.UndefOr[Double | String] = js.native
   
-  var by: scala.Unit | Double | String = js.native
+  var by: js.UndefOr[Double | String] = js.native
   
-  var calcMode: scala.Unit | Double | String = js.native
+  var calcMode: js.UndefOr[Double | String] = js.native
   
-  var capHeight: scala.Unit | Double | String = js.native
+  var capHeight: js.UndefOr[Double | String] = js.native
   
   // Attributes which also defined in HTMLAttributes
   // See comment in SVGDOMPropertyConfig.js
-  var className: scala.Unit | String = js.native
+  var className: js.UndefOr[String] = js.native
   
-  var clip: scala.Unit | Double | String = js.native
+  var clip: js.UndefOr[Double | String] = js.native
   
-  var clipPath: scala.Unit | String = js.native
+  var clipPath: js.UndefOr[String] = js.native
   
-  var clipPathUnits: scala.Unit | Double | String = js.native
+  var clipPathUnits: js.UndefOr[Double | String] = js.native
   
-  var clipRule: scala.Unit | Double | String = js.native
+  var clipRule: js.UndefOr[Double | String] = js.native
   
-  var color: scala.Unit | String = js.native
+  var color: js.UndefOr[String] = js.native
   
-  var colorInterpolation: scala.Unit | Double | String = js.native
+  var colorInterpolation: js.UndefOr[Double | String] = js.native
   
-  var colorInterpolationFilters: scala.Unit | auto | sRGB | linearRGB | inherit = js.native
+  var colorInterpolationFilters: js.UndefOr[auto | sRGB | linearRGB | inherit] = js.native
   
-  var colorProfile: scala.Unit | Double | String = js.native
+  var colorProfile: js.UndefOr[Double | String] = js.native
   
-  var colorRendering: scala.Unit | Double | String = js.native
+  var colorRendering: js.UndefOr[Double | String] = js.native
   
-  var contentScriptType: scala.Unit | Double | String = js.native
+  var contentScriptType: js.UndefOr[Double | String] = js.native
   
-  var contentStyleType: scala.Unit | Double | String = js.native
+  var contentStyleType: js.UndefOr[Double | String] = js.native
   
-  var cursor: scala.Unit | Double | String = js.native
+  var cursor: js.UndefOr[Double | String] = js.native
   
-  var cx: scala.Unit | Double | String = js.native
+  var cx: js.UndefOr[Double | String] = js.native
   
-  var cy: scala.Unit | Double | String = js.native
+  var cy: js.UndefOr[Double | String] = js.native
   
-  var d: scala.Unit | String = js.native
+  var d: js.UndefOr[String] = js.native
   
-  var decelerate: scala.Unit | Double | String = js.native
+  var decelerate: js.UndefOr[Double | String] = js.native
   
-  var descent: scala.Unit | Double | String = js.native
+  var descent: js.UndefOr[Double | String] = js.native
   
-  var diffuseConstant: scala.Unit | Double | String = js.native
+  var diffuseConstant: js.UndefOr[Double | String] = js.native
   
-  var direction: scala.Unit | Double | String = js.native
+  var direction: js.UndefOr[Double | String] = js.native
   
-  var display: scala.Unit | Double | String = js.native
+  var display: js.UndefOr[Double | String] = js.native
   
-  var divisor: scala.Unit | Double | String = js.native
+  var divisor: js.UndefOr[Double | String] = js.native
   
-  var dominantBaseline: scala.Unit | Double | String = js.native
+  var dominantBaseline: js.UndefOr[Double | String] = js.native
   
-  var dur: scala.Unit | Double | String = js.native
+  var dur: js.UndefOr[Double | String] = js.native
   
-  var dx: scala.Unit | Double | String = js.native
+  var dx: js.UndefOr[Double | String] = js.native
   
-  var dy: scala.Unit | Double | String = js.native
+  var dy: js.UndefOr[Double | String] = js.native
   
-  var edgeMode: scala.Unit | Double | String = js.native
+  var edgeMode: js.UndefOr[Double | String] = js.native
   
-  var elevation: scala.Unit | Double | String = js.native
+  var elevation: js.UndefOr[Double | String] = js.native
   
-  var enableBackground: scala.Unit | Double | String = js.native
+  var enableBackground: js.UndefOr[Double | String] = js.native
   
-  var end: scala.Unit | Double | String = js.native
+  var end: js.UndefOr[Double | String] = js.native
   
-  var exponent: scala.Unit | Double | String = js.native
+  var exponent: js.UndefOr[Double | String] = js.native
   
-  var externalResourcesRequired: scala.Unit | Double | String = js.native
+  var externalResourcesRequired: js.UndefOr[Double | String] = js.native
   
-  var fill: scala.Unit | String = js.native
+  var fill: js.UndefOr[String] = js.native
   
-  var fillOpacity: scala.Unit | Double | String = js.native
+  var fillOpacity: js.UndefOr[Double | String] = js.native
   
-  var fillRule: scala.Unit | nonzero | evenodd | inherit = js.native
+  var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.native
   
-  var filter: scala.Unit | String = js.native
+  var filter: js.UndefOr[String] = js.native
   
-  var filterRes: scala.Unit | Double | String = js.native
+  var filterRes: js.UndefOr[Double | String] = js.native
   
-  var filterUnits: scala.Unit | Double | String = js.native
+  var filterUnits: js.UndefOr[Double | String] = js.native
   
-  var floodColor: scala.Unit | Double | String = js.native
+  var floodColor: js.UndefOr[Double | String] = js.native
   
-  var floodOpacity: scala.Unit | Double | String = js.native
+  var floodOpacity: js.UndefOr[Double | String] = js.native
   
-  var focusable: scala.Unit | Double | String = js.native
+  var focusable: js.UndefOr[Double | String] = js.native
   
-  var fontFamily: scala.Unit | String = js.native
+  var fontFamily: js.UndefOr[String] = js.native
   
-  var fontSize: scala.Unit | Double | String = js.native
+  var fontSize: js.UndefOr[Double | String] = js.native
   
-  var fontSizeAdjust: scala.Unit | Double | String = js.native
+  var fontSizeAdjust: js.UndefOr[Double | String] = js.native
   
-  var fontStretch: scala.Unit | Double | String = js.native
+  var fontStretch: js.UndefOr[Double | String] = js.native
   
-  var fontStyle: scala.Unit | Double | String = js.native
+  var fontStyle: js.UndefOr[Double | String] = js.native
   
-  var fontVariant: scala.Unit | Double | String = js.native
+  var fontVariant: js.UndefOr[Double | String] = js.native
   
-  var fontWeight: scala.Unit | Double | String = js.native
+  var fontWeight: js.UndefOr[Double | String] = js.native
   
-  var format: scala.Unit | Double | String = js.native
+  var format: js.UndefOr[Double | String] = js.native
   
-  var from: scala.Unit | Double | String = js.native
+  var from: js.UndefOr[Double | String] = js.native
   
-  var fx: scala.Unit | Double | String = js.native
+  var fx: js.UndefOr[Double | String] = js.native
   
-  var fy: scala.Unit | Double | String = js.native
+  var fy: js.UndefOr[Double | String] = js.native
   
-  var g1: scala.Unit | Double | String = js.native
+  var g1: js.UndefOr[Double | String] = js.native
   
-  var g2: scala.Unit | Double | String = js.native
+  var g2: js.UndefOr[Double | String] = js.native
   
-  var glyphName: scala.Unit | Double | String = js.native
+  var glyphName: js.UndefOr[Double | String] = js.native
   
-  var glyphOrientationHorizontal: scala.Unit | Double | String = js.native
+  var glyphOrientationHorizontal: js.UndefOr[Double | String] = js.native
   
-  var glyphOrientationVertical: scala.Unit | Double | String = js.native
+  var glyphOrientationVertical: js.UndefOr[Double | String] = js.native
   
-  var glyphRef: scala.Unit | Double | String = js.native
+  var glyphRef: js.UndefOr[Double | String] = js.native
   
-  var gradientTransform: scala.Unit | String = js.native
+  var gradientTransform: js.UndefOr[String] = js.native
   
-  var gradientUnits: scala.Unit | String = js.native
+  var gradientUnits: js.UndefOr[String] = js.native
   
-  var hanging: scala.Unit | Double | String = js.native
+  var hanging: js.UndefOr[Double | String] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var horizAdvX: scala.Unit | Double | String = js.native
+  var horizAdvX: js.UndefOr[Double | String] = js.native
   
-  var horizOriginX: scala.Unit | Double | String = js.native
+  var horizOriginX: js.UndefOr[Double | String] = js.native
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var id: scala.Unit | String = js.native
+  var id: js.UndefOr[String] = js.native
   
-  var ideographic: scala.Unit | Double | String = js.native
+  var ideographic: js.UndefOr[Double | String] = js.native
   
-  var imageRendering: scala.Unit | Double | String = js.native
+  var imageRendering: js.UndefOr[Double | String] = js.native
   
-  var in: scala.Unit | String = js.native
+  var in: js.UndefOr[String] = js.native
   
-  var in2: scala.Unit | Double | String = js.native
+  var in2: js.UndefOr[Double | String] = js.native
   
-  var intercept: scala.Unit | Double | String = js.native
+  var intercept: js.UndefOr[Double | String] = js.native
   
-  var k: scala.Unit | Double | String = js.native
+  var k: js.UndefOr[Double | String] = js.native
   
-  var k1: scala.Unit | Double | String = js.native
+  var k1: js.UndefOr[Double | String] = js.native
   
-  var k2: scala.Unit | Double | String = js.native
+  var k2: js.UndefOr[Double | String] = js.native
   
-  var k3: scala.Unit | Double | String = js.native
+  var k3: js.UndefOr[Double | String] = js.native
   
-  var k4: scala.Unit | Double | String = js.native
+  var k4: js.UndefOr[Double | String] = js.native
   
-  var kernelMatrix: scala.Unit | Double | String = js.native
+  var kernelMatrix: js.UndefOr[Double | String] = js.native
   
-  var kernelUnitLength: scala.Unit | Double | String = js.native
+  var kernelUnitLength: js.UndefOr[Double | String] = js.native
   
-  var kerning: scala.Unit | Double | String = js.native
+  var kerning: js.UndefOr[Double | String] = js.native
   
-  var keyPoints: scala.Unit | Double | String = js.native
+  var keyPoints: js.UndefOr[Double | String] = js.native
   
-  var keySplines: scala.Unit | Double | String = js.native
+  var keySplines: js.UndefOr[Double | String] = js.native
   
-  var keyTimes: scala.Unit | Double | String = js.native
+  var keyTimes: js.UndefOr[Double | String] = js.native
   
-  var lang: scala.Unit | String = js.native
+  var lang: js.UndefOr[String] = js.native
   
-  var lengthAdjust: scala.Unit | Double | String = js.native
+  var lengthAdjust: js.UndefOr[Double | String] = js.native
   
-  var letterSpacing: scala.Unit | Double | String = js.native
+  var letterSpacing: js.UndefOr[Double | String] = js.native
   
-  var lightingColor: scala.Unit | Double | String = js.native
+  var lightingColor: js.UndefOr[Double | String] = js.native
   
-  var limitingConeAngle: scala.Unit | Double | String = js.native
+  var limitingConeAngle: js.UndefOr[Double | String] = js.native
   
-  var local: scala.Unit | Double | String = js.native
+  var local: js.UndefOr[Double | String] = js.native
   
-  var markerEnd: scala.Unit | String = js.native
+  var markerEnd: js.UndefOr[String] = js.native
   
-  var markerHeight: scala.Unit | Double | String = js.native
+  var markerHeight: js.UndefOr[Double | String] = js.native
   
-  var markerMid: scala.Unit | String = js.native
+  var markerMid: js.UndefOr[String] = js.native
   
-  var markerStart: scala.Unit | String = js.native
+  var markerStart: js.UndefOr[String] = js.native
   
-  var markerUnits: scala.Unit | Double | String = js.native
+  var markerUnits: js.UndefOr[Double | String] = js.native
   
-  var markerWidth: scala.Unit | Double | String = js.native
+  var markerWidth: js.UndefOr[Double | String] = js.native
   
-  var mask: scala.Unit | String = js.native
+  var mask: js.UndefOr[String] = js.native
   
-  var maskContentUnits: scala.Unit | Double | String = js.native
+  var maskContentUnits: js.UndefOr[Double | String] = js.native
   
-  var maskUnits: scala.Unit | Double | String = js.native
+  var maskUnits: js.UndefOr[Double | String] = js.native
   
-  var mathematical: scala.Unit | Double | String = js.native
+  var mathematical: js.UndefOr[Double | String] = js.native
   
-  var max: scala.Unit | Double | String = js.native
+  var max: js.UndefOr[Double | String] = js.native
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var method: scala.Unit | String = js.native
+  var method: js.UndefOr[String] = js.native
   
-  var min: scala.Unit | Double | String = js.native
+  var min: js.UndefOr[Double | String] = js.native
   
-  var mode: scala.Unit | Double | String = js.native
+  var mode: js.UndefOr[Double | String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var numOctaves: scala.Unit | Double | String = js.native
+  var numOctaves: js.UndefOr[Double | String] = js.native
   
-  var offset: scala.Unit | Double | String = js.native
+  var offset: js.UndefOr[Double | String] = js.native
   
-  var opacity: scala.Unit | Double | String = js.native
+  var opacity: js.UndefOr[Double | String] = js.native
   
-  var operator: scala.Unit | Double | String = js.native
+  var operator: js.UndefOr[Double | String] = js.native
   
-  var order: scala.Unit | Double | String = js.native
+  var order: js.UndefOr[Double | String] = js.native
   
-  var orient: scala.Unit | Double | String = js.native
+  var orient: js.UndefOr[Double | String] = js.native
   
-  var orientation: scala.Unit | Double | String = js.native
+  var orientation: js.UndefOr[Double | String] = js.native
   
-  var origin: scala.Unit | Double | String = js.native
+  var origin: js.UndefOr[Double | String] = js.native
   
-  var overflow: scala.Unit | Double | String = js.native
+  var overflow: js.UndefOr[Double | String] = js.native
   
-  var overlinePosition: scala.Unit | Double | String = js.native
+  var overlinePosition: js.UndefOr[Double | String] = js.native
   
-  var overlineThickness: scala.Unit | Double | String = js.native
+  var overlineThickness: js.UndefOr[Double | String] = js.native
   
-  var paintOrder: scala.Unit | Double | String = js.native
+  var paintOrder: js.UndefOr[Double | String] = js.native
   
-  var panose1: scala.Unit | Double | String = js.native
+  var panose1: js.UndefOr[Double | String] = js.native
   
-  var pathLength: scala.Unit | Double | String = js.native
+  var pathLength: js.UndefOr[Double | String] = js.native
   
-  var patternContentUnits: scala.Unit | String = js.native
+  var patternContentUnits: js.UndefOr[String] = js.native
   
-  var patternTransform: scala.Unit | Double | String = js.native
+  var patternTransform: js.UndefOr[Double | String] = js.native
   
-  var patternUnits: scala.Unit | String = js.native
+  var patternUnits: js.UndefOr[String] = js.native
   
-  var pointerEvents: scala.Unit | Double | String = js.native
+  var pointerEvents: js.UndefOr[Double | String] = js.native
   
-  var points: scala.Unit | String = js.native
+  var points: js.UndefOr[String] = js.native
   
-  var pointsAtX: scala.Unit | Double | String = js.native
+  var pointsAtX: js.UndefOr[Double | String] = js.native
   
-  var pointsAtY: scala.Unit | Double | String = js.native
+  var pointsAtY: js.UndefOr[Double | String] = js.native
   
-  var pointsAtZ: scala.Unit | Double | String = js.native
+  var pointsAtZ: js.UndefOr[Double | String] = js.native
   
-  var preserveAlpha: scala.Unit | Double | String = js.native
+  var preserveAlpha: js.UndefOr[Double | String] = js.native
   
-  var preserveAspectRatio: scala.Unit | String = js.native
+  var preserveAspectRatio: js.UndefOr[String] = js.native
   
-  var primitiveUnits: scala.Unit | Double | String = js.native
+  var primitiveUnits: js.UndefOr[Double | String] = js.native
   
-  var r: scala.Unit | Double | String = js.native
+  var r: js.UndefOr[Double | String] = js.native
   
-  var radius: scala.Unit | Double | String = js.native
+  var radius: js.UndefOr[Double | String] = js.native
   
-  var refX: scala.Unit | Double | String = js.native
+  var refX: js.UndefOr[Double | String] = js.native
   
-  var refY: scala.Unit | Double | String = js.native
+  var refY: js.UndefOr[Double | String] = js.native
   
-  var renderingIntent: scala.Unit | Double | String = js.native
+  var renderingIntent: js.UndefOr[Double | String] = js.native
   
-  var repeatCount: scala.Unit | Double | String = js.native
+  var repeatCount: js.UndefOr[Double | String] = js.native
   
-  var repeatDur: scala.Unit | Double | String = js.native
+  var repeatDur: js.UndefOr[Double | String] = js.native
   
-  var requiredExtensions: scala.Unit | Double | String = js.native
+  var requiredExtensions: js.UndefOr[Double | String] = js.native
   
-  var requiredFeatures: scala.Unit | Double | String = js.native
+  var requiredFeatures: js.UndefOr[Double | String] = js.native
   
-  var restart: scala.Unit | Double | String = js.native
+  var restart: js.UndefOr[Double | String] = js.native
   
-  var result: scala.Unit | String = js.native
+  var result: js.UndefOr[String] = js.native
   
   // Other HTML properties supported by SVG elements in browsers
-  var role: scala.Unit | String = js.native
+  var role: js.UndefOr[String] = js.native
   
-  var rotate: scala.Unit | Double | String = js.native
+  var rotate: js.UndefOr[Double | String] = js.native
   
-  var rx: scala.Unit | Double | String = js.native
+  var rx: js.UndefOr[Double | String] = js.native
   
-  var ry: scala.Unit | Double | String = js.native
+  var ry: js.UndefOr[Double | String] = js.native
   
-  var scale: scala.Unit | Double | String = js.native
+  var scale: js.UndefOr[Double | String] = js.native
   
-  var seed: scala.Unit | Double | String = js.native
+  var seed: js.UndefOr[Double | String] = js.native
   
-  var shapeRendering: scala.Unit | Double | String = js.native
+  var shapeRendering: js.UndefOr[Double | String] = js.native
   
-  var slope: scala.Unit | Double | String = js.native
+  var slope: js.UndefOr[Double | String] = js.native
   
-  var spacing: scala.Unit | Double | String = js.native
+  var spacing: js.UndefOr[Double | String] = js.native
   
-  var specularConstant: scala.Unit | Double | String = js.native
+  var specularConstant: js.UndefOr[Double | String] = js.native
   
-  var specularExponent: scala.Unit | Double | String = js.native
+  var specularExponent: js.UndefOr[Double | String] = js.native
   
-  var speed: scala.Unit | Double | String = js.native
+  var speed: js.UndefOr[Double | String] = js.native
   
-  var spreadMethod: scala.Unit | String = js.native
+  var spreadMethod: js.UndefOr[String] = js.native
   
-  var startOffset: scala.Unit | Double | String = js.native
+  var startOffset: js.UndefOr[Double | String] = js.native
   
-  var stdDeviation: scala.Unit | Double | String = js.native
+  var stdDeviation: js.UndefOr[Double | String] = js.native
   
-  var stemh: scala.Unit | Double | String = js.native
+  var stemh: js.UndefOr[Double | String] = js.native
   
-  var stemv: scala.Unit | Double | String = js.native
+  var stemv: js.UndefOr[Double | String] = js.native
   
-  var stitchTiles: scala.Unit | Double | String = js.native
+  var stitchTiles: js.UndefOr[Double | String] = js.native
   
-  var stopColor: scala.Unit | String = js.native
+  var stopColor: js.UndefOr[String] = js.native
   
-  var stopOpacity: scala.Unit | Double | String = js.native
+  var stopOpacity: js.UndefOr[Double | String] = js.native
   
-  var strikethroughPosition: scala.Unit | Double | String = js.native
+  var strikethroughPosition: js.UndefOr[Double | String] = js.native
   
-  var strikethroughThickness: scala.Unit | Double | String = js.native
+  var strikethroughThickness: js.UndefOr[Double | String] = js.native
   
-  var string: scala.Unit | Double | String = js.native
+  var string: js.UndefOr[Double | String] = js.native
   
-  var stroke: scala.Unit | String = js.native
+  var stroke: js.UndefOr[String] = js.native
   
-  var strokeDasharray: scala.Unit | String | Double = js.native
+  var strokeDasharray: js.UndefOr[String | Double] = js.native
   
-  var strokeDashoffset: scala.Unit | String | Double = js.native
+  var strokeDashoffset: js.UndefOr[String | Double] = js.native
   
-  var strokeLinecap: scala.Unit | butt | round | square | inherit = js.native
+  var strokeLinecap: js.UndefOr[butt | round | square | inherit] = js.native
   
-  var strokeLinejoin: scala.Unit | miter | round | bevel | inherit = js.native
+  var strokeLinejoin: js.UndefOr[miter | round | bevel | inherit] = js.native
   
-  var strokeMiterlimit: scala.Unit | Double | String = js.native
+  var strokeMiterlimit: js.UndefOr[Double | String] = js.native
   
-  var strokeOpacity: scala.Unit | Double | String = js.native
+  var strokeOpacity: js.UndefOr[Double | String] = js.native
   
-  var strokeWidth: scala.Unit | Double | String = js.native
+  var strokeWidth: js.UndefOr[Double | String] = js.native
   
-  var style: scala.Unit | CSSProperties = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
   
-  var surfaceScale: scala.Unit | Double | String = js.native
+  var surfaceScale: js.UndefOr[Double | String] = js.native
   
-  var systemLanguage: scala.Unit | Double | String = js.native
+  var systemLanguage: js.UndefOr[Double | String] = js.native
   
-  var tabIndex: scala.Unit | Double = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
   
-  var tableValues: scala.Unit | Double | String = js.native
+  var tableValues: js.UndefOr[Double | String] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
   
-  var targetX: scala.Unit | Double | String = js.native
+  var targetX: js.UndefOr[Double | String] = js.native
   
-  var targetY: scala.Unit | Double | String = js.native
+  var targetY: js.UndefOr[Double | String] = js.native
   
-  var textAnchor: scala.Unit | String = js.native
+  var textAnchor: js.UndefOr[String] = js.native
   
-  var textDecoration: scala.Unit | Double | String = js.native
+  var textDecoration: js.UndefOr[Double | String] = js.native
   
-  var textLength: scala.Unit | Double | String = js.native
+  var textLength: js.UndefOr[Double | String] = js.native
   
-  var textRendering: scala.Unit | Double | String = js.native
+  var textRendering: js.UndefOr[Double | String] = js.native
   
-  var to: scala.Unit | Double | String = js.native
+  var to: js.UndefOr[Double | String] = js.native
   
-  var transform: scala.Unit | String = js.native
+  var transform: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
   
-  var u1: scala.Unit | Double | String = js.native
+  var u1: js.UndefOr[Double | String] = js.native
   
-  var u2: scala.Unit | Double | String = js.native
+  var u2: js.UndefOr[Double | String] = js.native
   
-  var underlinePosition: scala.Unit | Double | String = js.native
+  var underlinePosition: js.UndefOr[Double | String] = js.native
   
-  var underlineThickness: scala.Unit | Double | String = js.native
+  var underlineThickness: js.UndefOr[Double | String] = js.native
   
-  var unicode: scala.Unit | Double | String = js.native
+  var unicode: js.UndefOr[Double | String] = js.native
   
-  var unicodeBidi: scala.Unit | Double | String = js.native
+  var unicodeBidi: js.UndefOr[Double | String] = js.native
   
-  var unicodeRange: scala.Unit | Double | String = js.native
+  var unicodeRange: js.UndefOr[Double | String] = js.native
   
-  var unitsPerEm: scala.Unit | Double | String = js.native
+  var unitsPerEm: js.UndefOr[Double | String] = js.native
   
-  var vAlphabetic: scala.Unit | Double | String = js.native
+  var vAlphabetic: js.UndefOr[Double | String] = js.native
   
-  var vHanging: scala.Unit | Double | String = js.native
+  var vHanging: js.UndefOr[Double | String] = js.native
   
-  var vIdeographic: scala.Unit | Double | String = js.native
+  var vIdeographic: js.UndefOr[Double | String] = js.native
   
-  var vMathematical: scala.Unit | Double | String = js.native
+  var vMathematical: js.UndefOr[Double | String] = js.native
   
-  var values: scala.Unit | String = js.native
+  var values: js.UndefOr[String] = js.native
   
-  var vectorEffect: scala.Unit | Double | String = js.native
+  var vectorEffect: js.UndefOr[Double | String] = js.native
   
-  var version: scala.Unit | String = js.native
+  var version: js.UndefOr[String] = js.native
   
-  var vertAdvY: scala.Unit | Double | String = js.native
+  var vertAdvY: js.UndefOr[Double | String] = js.native
   
-  var vertOriginX: scala.Unit | Double | String = js.native
+  var vertOriginX: js.UndefOr[Double | String] = js.native
   
-  var vertOriginY: scala.Unit | Double | String = js.native
+  var vertOriginY: js.UndefOr[Double | String] = js.native
   
-  var viewBox: scala.Unit | String = js.native
+  var viewBox: js.UndefOr[String] = js.native
   
-  var viewTarget: scala.Unit | Double | String = js.native
+  var viewTarget: js.UndefOr[Double | String] = js.native
   
-  var visibility: scala.Unit | Double | String = js.native
+  var visibility: js.UndefOr[Double | String] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
   
-  var widths: scala.Unit | Double | String = js.native
+  var widths: js.UndefOr[Double | String] = js.native
   
-  var wordSpacing: scala.Unit | Double | String = js.native
+  var wordSpacing: js.UndefOr[Double | String] = js.native
   
-  var writingMode: scala.Unit | Double | String = js.native
+  var writingMode: js.UndefOr[Double | String] = js.native
   
-  var x: scala.Unit | Double | String = js.native
+  var x: js.UndefOr[Double | String] = js.native
   
-  var x1: scala.Unit | Double | String = js.native
+  var x1: js.UndefOr[Double | String] = js.native
   
-  var x2: scala.Unit | Double | String = js.native
+  var x2: js.UndefOr[Double | String] = js.native
   
-  var xChannelSelector: scala.Unit | String = js.native
+  var xChannelSelector: js.UndefOr[String] = js.native
   
-  var xHeight: scala.Unit | Double | String = js.native
+  var xHeight: js.UndefOr[Double | String] = js.native
   
-  var xlinkActuate: scala.Unit | String = js.native
+  var xlinkActuate: js.UndefOr[String] = js.native
   
-  var xlinkArcrole: scala.Unit | String = js.native
+  var xlinkArcrole: js.UndefOr[String] = js.native
   
-  var xlinkHref: scala.Unit | String = js.native
+  var xlinkHref: js.UndefOr[String] = js.native
   
-  var xlinkRole: scala.Unit | String = js.native
+  var xlinkRole: js.UndefOr[String] = js.native
   
-  var xlinkShow: scala.Unit | String = js.native
+  var xlinkShow: js.UndefOr[String] = js.native
   
-  var xlinkTitle: scala.Unit | String = js.native
+  var xlinkTitle: js.UndefOr[String] = js.native
   
-  var xlinkType: scala.Unit | String = js.native
+  var xlinkType: js.UndefOr[String] = js.native
   
-  var xmlBase: scala.Unit | String = js.native
+  var xmlBase: js.UndefOr[String] = js.native
   
-  var xmlLang: scala.Unit | String = js.native
+  var xmlLang: js.UndefOr[String] = js.native
   
-  var xmlSpace: scala.Unit | String = js.native
+  var xmlSpace: js.UndefOr[String] = js.native
   
-  var xmlns: scala.Unit | String = js.native
+  var xmlns: js.UndefOr[String] = js.native
   
-  var xmlnsXlink: scala.Unit | String = js.native
+  var xmlnsXlink: js.UndefOr[String] = js.native
   
-  var y: scala.Unit | Double | String = js.native
+  var y: js.UndefOr[Double | String] = js.native
   
-  var y1: scala.Unit | Double | String = js.native
+  var y1: js.UndefOr[Double | String] = js.native
   
-  var y2: scala.Unit | Double | String = js.native
+  var y2: js.UndefOr[Double | String] = js.native
   
-  var yChannelSelector: scala.Unit | String = js.native
+  var yChannelSelector: js.UndefOr[String] = js.native
   
-  var z: scala.Unit | Double | String = js.native
+  var z: js.UndefOr[Double | String] = js.native
   
-  var zoomAndPan: scala.Unit | String = js.native
+  var zoomAndPan: js.UndefOr[String] = js.native
 }
 object SVGAttributes {
   

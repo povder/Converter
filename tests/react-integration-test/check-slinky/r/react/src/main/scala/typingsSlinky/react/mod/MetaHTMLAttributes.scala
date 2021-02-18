@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MetaHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var charSet: scala.Unit | String = js.native
+  var charSet: js.UndefOr[String] = js.native
   
-  var content: scala.Unit | String = js.native
+  var content: js.UndefOr[String] = js.native
   
-  var httpEquiv: scala.Unit | String = js.native
+  var httpEquiv: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
 }
 object MetaHTMLAttributes {
   

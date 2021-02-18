@@ -12,97 +12,97 @@ trait HTMLAttributes[T]
      with DOMAttributes[T] {
   
   // RDFa Attributes
-  var about: scala.Unit | String = js.native
+  var about: js.UndefOr[String] = js.native
   
   // Standard HTML Attributes
-  var accessKey: scala.Unit | String = js.native
+  var accessKey: js.UndefOr[String] = js.native
   
   // Non-standard Attributes
-  var autoCapitalize: scala.Unit | String = js.native
+  var autoCapitalize: js.UndefOr[String] = js.native
   
-  var autoCorrect: scala.Unit | String = js.native
+  var autoCorrect: js.UndefOr[String] = js.native
   
-  var autoSave: scala.Unit | String = js.native
+  var autoSave: js.UndefOr[String] = js.native
   
-  var className: scala.Unit | String = js.native
+  var className: js.UndefOr[String] = js.native
   
-  var color: scala.Unit | String = js.native
+  var color: js.UndefOr[String] = js.native
   
-  var contentEditable: scala.Unit | Boolean = js.native
+  var contentEditable: js.UndefOr[Boolean] = js.native
   
-  var contextMenu: scala.Unit | String = js.native
+  var contextMenu: js.UndefOr[String] = js.native
   
-  var datatype: scala.Unit | String = js.native
+  var datatype: js.UndefOr[String] = js.native
   
   // React-specific Attributes
-  var defaultChecked: scala.Unit | Boolean = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.native
   
-  var defaultValue: scala.Unit | String | js.Array[String] = js.native
+  var defaultValue: js.UndefOr[String | js.Array[String]] = js.native
   
-  var dir: scala.Unit | String = js.native
+  var dir: js.UndefOr[String] = js.native
   
-  var draggable: scala.Unit | Boolean = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
   
-  var hidden: scala.Unit | Boolean = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
   
-  var id: scala.Unit | String = js.native
+  var id: js.UndefOr[String] = js.native
   
-  var inlist: scala.Unit | js.Any = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
   
   // Unknown
-  var inputMode: scala.Unit | String = js.native
+  var inputMode: js.UndefOr[String] = js.native
   
-  var is: scala.Unit | String = js.native
+  var is: js.UndefOr[String] = js.native
   
-  var itemID: scala.Unit | String = js.native
+  var itemID: js.UndefOr[String] = js.native
   
-  var itemProp: scala.Unit | String = js.native
+  var itemProp: js.UndefOr[String] = js.native
   
-  var itemRef: scala.Unit | String = js.native
+  var itemRef: js.UndefOr[String] = js.native
   
-  var itemScope: scala.Unit | Boolean = js.native
+  var itemScope: js.UndefOr[Boolean] = js.native
   
-  var itemType: scala.Unit | String = js.native
+  var itemType: js.UndefOr[String] = js.native
   
-  var lang: scala.Unit | String = js.native
+  var lang: js.UndefOr[String] = js.native
   
-  var placeholder: scala.Unit | String = js.native
+  var placeholder: js.UndefOr[String] = js.native
   
-  var prefix: scala.Unit | String = js.native
+  var prefix: js.UndefOr[String] = js.native
   
-  var property: scala.Unit | String = js.native
+  var property: js.UndefOr[String] = js.native
   
-  var radioGroup: scala.Unit | String = js.native
+  var radioGroup: js.UndefOr[String] = js.native
   
-  var resource: scala.Unit | String = js.native
+  var resource: js.UndefOr[String] = js.native
   
-  var results: scala.Unit | Double = js.native
+  var results: js.UndefOr[Double] = js.native
   
   // <command>, <menuitem>
   // WAI-ARIA
-  var role: scala.Unit | String = js.native
+  var role: js.UndefOr[String] = js.native
   
-  var security: scala.Unit | String = js.native
+  var security: js.UndefOr[String] = js.native
   
-  var slot: scala.Unit | String = js.native
+  var slot: js.UndefOr[String] = js.native
   
-  var spellCheck: scala.Unit | Boolean = js.native
+  var spellCheck: js.UndefOr[Boolean] = js.native
   
-  var style: scala.Unit | CSSProperties = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
   
-  var suppressContentEditableWarning: scala.Unit | Boolean = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
   
-  var suppressHydrationWarning: scala.Unit | Boolean = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   
-  var tabIndex: scala.Unit | Double = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
   
-  var title: scala.Unit | String = js.native
+  var title: js.UndefOr[String] = js.native
   
-  var typeof: scala.Unit | String = js.native
+  var typeof: js.UndefOr[String] = js.native
   
-  var unselectable: scala.Unit | on | off = js.native
+  var unselectable: js.UndefOr[on | off] = js.native
   
-  var vocab: scala.Unit | String = js.native
+  var vocab: js.UndefOr[String] = js.native
 }
 object HTMLAttributes {
   

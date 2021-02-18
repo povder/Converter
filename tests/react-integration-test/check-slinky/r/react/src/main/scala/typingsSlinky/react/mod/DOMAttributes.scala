@@ -21,183 +21,183 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DOMAttributes[T] extends StObject {
   
-  var children: scala.Unit | slinky.core.facade.ReactElement = js.native
+  var children: js.UndefOr[slinky.core.facade.ReactElement] = js.native
   
-  var dangerouslySetInnerHTML: scala.Unit | Html = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   
   // Media Events
-  var onAbort: scala.Unit | ReactEventHandler[T] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onAnimationEnd: scala.Unit | AnimationEventHandler[T] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[T]] = js.native
   
-  var onAnimationIteration: scala.Unit | AnimationEventHandler[T] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[T]] = js.native
   
   // Animation Events
-  var onAnimationStart: scala.Unit | AnimationEventHandler[T] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.native
   
   // MouseEvents
-  var onAuxClick: scala.Unit | MouseEventHandler[T] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onBeforeInput: scala.Unit | FormEventHandler[T] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.native
   
-  var onBlur: scala.Unit | FocusEventHandler[T] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[T]] = js.native
   
-  var onCanPlay: scala.Unit | ReactEventHandler[T] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onCanPlayThrough: scala.Unit | ReactEventHandler[T] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[T]] = js.native
   
   // Form Events
-  var onChange: scala.Unit | FormEventHandler[T] = js.native
+  var onChange: js.UndefOr[FormEventHandler[T]] = js.native
   
-  var onClick: scala.Unit | MouseEventHandler[T] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[T]] = js.native
   
   // Composition Events
-  var onCompositionEnd: scala.Unit | CompositionEventHandler[T] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[T]] = js.native
   
-  var onCompositionStart: scala.Unit | CompositionEventHandler[T] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[T]] = js.native
   
-  var onCompositionUpdate: scala.Unit | CompositionEventHandler[T] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[T]] = js.native
   
-  var onContextMenu: scala.Unit | MouseEventHandler[T] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[T]] = js.native
   
   // Clipboard Events
-  var onCopy: scala.Unit | ClipboardEventHandler[T] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[T]] = js.native
   
-  var onCut: scala.Unit | ClipboardEventHandler[T] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[T]] = js.native
   
-  var onDoubleClick: scala.Unit | MouseEventHandler[T] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onDrag: scala.Unit | DragEventHandler[T] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragEnd: scala.Unit | DragEventHandler[T] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragEnter: scala.Unit | DragEventHandler[T] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragExit: scala.Unit | DragEventHandler[T] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragLeave: scala.Unit | DragEventHandler[T] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragOver: scala.Unit | DragEventHandler[T] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDragStart: scala.Unit | DragEventHandler[T] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDrop: scala.Unit | DragEventHandler[T] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[T]] = js.native
   
-  var onDurationChange: scala.Unit | ReactEventHandler[T] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onEmptied: scala.Unit | ReactEventHandler[T] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onEncrypted: scala.Unit | ReactEventHandler[T] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onEnded: scala.Unit | ReactEventHandler[T] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onError: scala.Unit | ReactEventHandler[T] = js.native
+  var onError: js.UndefOr[ReactEventHandler[T]] = js.native
   
   // Focus Events
-  var onFocus: scala.Unit | FocusEventHandler[T] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[T]] = js.native
   
-  var onInput: scala.Unit | FormEventHandler[T] = js.native
+  var onInput: js.UndefOr[FormEventHandler[T]] = js.native
   
-  var onInvalid: scala.Unit | FormEventHandler[T] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[T]] = js.native
   
   // also a Media Event
   // Keyboard Events
-  var onKeyDown: scala.Unit | KeyboardEventHandler[T] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.native
   
-  var onKeyPress: scala.Unit | KeyboardEventHandler[T] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.native
   
-  var onKeyUp: scala.Unit | KeyboardEventHandler[T] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.native
   
   // Image Events
-  var onLoad: scala.Unit | ReactEventHandler[T] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onLoadStart: scala.Unit | ReactEventHandler[T] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onLoadedData: scala.Unit | ReactEventHandler[T] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onLoadedMetadata: scala.Unit | ReactEventHandler[T] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onMouseDown: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseEnter: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseLeave: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseMove: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseOut: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseOver: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onMouseUp: scala.Unit | MouseEventHandler[T] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[T]] = js.native
   
-  var onPaste: scala.Unit | ClipboardEventHandler[T] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[T]] = js.native
   
-  var onPause: scala.Unit | ReactEventHandler[T] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onPlay: scala.Unit | ReactEventHandler[T] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onPlaying: scala.Unit | ReactEventHandler[T] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onPointerCancel: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[T]] = js.native
   
   // Pointer Events
-  var onPointerDown: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerEnter: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerLeave: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerMove: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerOut: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerOver: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onPointerUp: scala.Unit | PointerEventHandler[T] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[T]] = js.native
   
-  var onProgress: scala.Unit | ReactEventHandler[T] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onRateChange: scala.Unit | ReactEventHandler[T] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onReset: scala.Unit | FormEventHandler[T] = js.native
+  var onReset: js.UndefOr[FormEventHandler[T]] = js.native
   
   // UI Events
-  var onScroll: scala.Unit | UIEventHandler[T] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[T]] = js.native
   
-  var onSeeked: scala.Unit | ReactEventHandler[T] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onSeeking: scala.Unit | ReactEventHandler[T] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[T]] = js.native
   
   // Selection Events
-  var onSelect: scala.Unit | ReactEventHandler[T] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onStalled: scala.Unit | ReactEventHandler[T] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onSubmit: scala.Unit | FormEventHandler[T] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[T]] = js.native
   
-  var onSuspend: scala.Unit | ReactEventHandler[T] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onTimeUpdate: scala.Unit | ReactEventHandler[T] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[T]] = js.native
   
   // Touch Events
-  var onTouchCancel: scala.Unit | TouchEventHandler[T] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[T]] = js.native
   
-  var onTouchEnd: scala.Unit | TouchEventHandler[T] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[T]] = js.native
   
-  var onTouchMove: scala.Unit | TouchEventHandler[T] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[T]] = js.native
   
-  var onTouchStart: scala.Unit | TouchEventHandler[T] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[T]] = js.native
   
   // Transition Events
-  var onTransitionEnd: scala.Unit | TransitionEventHandler[T] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[T]] = js.native
   
-  var onVolumeChange: scala.Unit | ReactEventHandler[T] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[T]] = js.native
   
-  var onWaiting: scala.Unit | ReactEventHandler[T] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[T]] = js.native
   
   // Wheel Events
-  var onWheel: scala.Unit | WheelEventHandler[T] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[T]] = js.native
 }
 object DOMAttributes {
   

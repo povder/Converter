@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VideoHTMLAttributes[T] extends MediaHTMLAttributes[T] {
   
-  var disablePictureInPicture: scala.Unit | Boolean = js.native
+  var disablePictureInPicture: js.UndefOr[Boolean] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var playsInline: scala.Unit | Boolean = js.native
+  var playsInline: js.UndefOr[Boolean] = js.native
   
-  var poster: scala.Unit | String = js.native
+  var poster: js.UndefOr[String] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 object VideoHTMLAttributes {
   

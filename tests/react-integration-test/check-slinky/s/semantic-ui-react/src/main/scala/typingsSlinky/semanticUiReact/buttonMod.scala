@@ -69,60 +69,66 @@ object buttonMod {
   trait StrictButtonProps extends ButtonHTMLAttributes[HTMLButtonElement] {
     
     /** A button can show it is currently the active user selection. */
-    var active: scala.Unit | Boolean = js.native
+    var active: js.UndefOr[Boolean] = js.native
     
     /** A button can animate to show hidden content. */
-    var animated: scala.Unit | Boolean | fade | vertical = js.native
+    var animated: js.UndefOr[Boolean | fade | vertical] = js.native
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** A button can be attached to other content. */
-    var attached: scala.Unit | Boolean | left | right | top | bottom = js.native
+    var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.native
     
     /** A basic button is less pronounced. */
-    var basic: scala.Unit | Boolean = js.native
+    var basic: js.UndefOr[Boolean] = js.native
     
     /** A button can be circular. */
-    var circular: scala.Unit | Boolean = js.native
+    var circular: js.UndefOr[Boolean] = js.native
     
     /** A button can have different colors. */
     @JSName("color")
-    var color_StrictButtonProps: scala.Unit | SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube = js.native
+    var color_StrictButtonProps: js.UndefOr[
+        SemanticCOLORS | facebook | (`google plus`) | vk | twitter | linkedin | instagram | youtube
+      ] = js.native
     
     /** A button can reduce its padding to fit into tighter spaces. */
-    var compact: scala.Unit | Boolean = js.native
+    var compact: js.UndefOr[Boolean] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
     
     /** A button can be aligned to the left or right of its container. */
-    var floated: scala.Unit | SemanticFLOATS = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.native
     
     /** A button can take the width of its container. */
-    var fluid: scala.Unit | Boolean = js.native
+    var fluid: js.UndefOr[Boolean] = js.native
     
     /** Add an Icon by name, props object, or pass an <Icon />. */
-    var icon: scala.Unit | Boolean | (SemanticShorthandItem[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
-      ]) = js.native
+    var icon: js.UndefOr[
+        Boolean | (SemanticShorthandItem[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
+        ])
+      ] = js.native
     
     /** A button can be formatted to appear on dark backgrounds. */
-    var inverted: scala.Unit | Boolean = js.native
+    var inverted: js.UndefOr[Boolean] = js.native
     
     /** Add a Label by text, props object, or pass a <Label />. */
-    var label: scala.Unit | (SemanticShorthandItem[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any
-      ]) = js.native
+    var label: js.UndefOr[
+        SemanticShorthandItem[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any
+        ]
+      ] = js.native
     
     /** A labeled button can format a Label or Icon to appear on the left or right. */
-    var labelPosition: scala.Unit | right | left = js.native
+    var labelPosition: js.UndefOr[right | left] = js.native
     
     /** A button can show a loading indicator. */
-    var loading: scala.Unit | Boolean = js.native
+    var loading: js.UndefOr[Boolean] = js.native
     
     /** A button can hint towards a negative consequence. */
-    var negative: scala.Unit | Boolean = js.native
+    var negative: js.UndefOr[Boolean] = js.native
     
     /**
       * Called after user's click.
@@ -130,26 +136,28 @@ object buttonMod {
       * @param {object} data - All props.
       */
     @JSName("onClick")
-    var onClick_StrictButtonProps: scala.Unit | (js.Function2[/* event */ SyntheticMouseEvent[HTMLButtonElement], /* data */ ButtonProps, Unit]) = js.native
+    var onClick_StrictButtonProps: js.UndefOr[
+        js.Function2[/* event */ SyntheticMouseEvent[HTMLButtonElement], /* data */ ButtonProps, Unit]
+      ] = js.native
     
     /** A button can hint towards a positive consequence. */
-    var positive: scala.Unit | Boolean = js.native
+    var positive: js.UndefOr[Boolean] = js.native
     
     /** A button can be formatted to show different levels of emphasis. */
-    var primary: scala.Unit | Boolean = js.native
+    var primary: js.UndefOr[Boolean] = js.native
     
     /** A button can be formatted to show different levels of emphasis. */
-    var secondary: scala.Unit | Boolean = js.native
+    var secondary: js.UndefOr[Boolean] = js.native
     
     /** A button can have different sizes. */
-    var size: scala.Unit | SemanticSIZES = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.native
     
     /** A button can receive focus. */
     @JSName("tabIndex")
-    var tabIndex_StrictButtonProps: scala.Unit | Double | String = js.native
+    var tabIndex_StrictButtonProps: js.UndefOr[Double | String] = js.native
     
     /** A button can be formatted to toggle on and off. */
-    var toggle: scala.Unit | Boolean = js.native
+    var toggle: js.UndefOr[Boolean] = js.native
   }
   object StrictButtonProps {
     
@@ -242,7 +250,7 @@ object buttonMod {
       def setIconFunction3(
         value: (/* component */ ReactType[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
-            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
+            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "icon", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -268,7 +276,7 @@ object buttonMod {
       def setLabelFunction3(
         value: (/* component */ ReactType[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any
-            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any, /* children */ scala.Unit | ReactElement | ReactNodeArray) => ReactElement | Null
+            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any, /* children */ js.UndefOr[ReactElement | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "label", js.Any.fromFunction3(value))
       
       @scala.inline

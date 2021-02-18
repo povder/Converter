@@ -29,13 +29,13 @@ object toggleButtonGroupMod {
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var defaultValue: scala.Unit | js.Any = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.native
     
     /**
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var value: scala.Unit | js.Any = js.native
+    var value: js.UndefOr[js.Any] = js.native
   }
   object BaseProps {
     
@@ -65,9 +65,9 @@ object toggleButtonGroupMod {
   @js.native
   trait CheckboxProps extends StObject {
     
-    var name: scala.Unit | String = js.native
+    var name: js.UndefOr[String] = js.native
     
-    var onChange: scala.Unit | (js.Function1[/* values */ js.Array[?], Unit]) = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[?], Unit]] = js.native
     
     var `type`: checkbox = js.native
   }
@@ -106,7 +106,7 @@ object toggleButtonGroupMod {
     /** Required if `type` is set to "radio" */
     var name: String = js.native
     
-    var onChange: scala.Unit | (js.Function1[/* value */ js.Any, Unit]) = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
     
     var `type`: radio = js.native
   }

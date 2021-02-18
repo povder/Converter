@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StrictHtmlLabelProps extends StObject {
   
-  var children: scala.Unit | ReactElement = js.native
+  var children: js.UndefOr[ReactElement] = js.native
 }
 object StrictHtmlLabelProps {
   

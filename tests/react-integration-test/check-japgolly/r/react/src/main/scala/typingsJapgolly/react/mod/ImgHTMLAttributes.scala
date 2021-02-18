@@ -13,23 +13,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImgHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var alt: scala.Unit | String = js.native
+  var alt: js.UndefOr[String] = js.native
   
-  var crossOrigin: scala.Unit | anonymous | `use-credentials` | _empty = js.native
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
   
-  var decoding: scala.Unit | async | auto | sync = js.native
+  var decoding: js.UndefOr[async | auto | sync] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var sizes: scala.Unit | String = js.native
+  var sizes: js.UndefOr[String] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var srcSet: scala.Unit | String = js.native
+  var srcSet: js.UndefOr[String] = js.native
   
-  var useMap: scala.Unit | String = js.native
+  var useMap: js.UndefOr[String] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 object ImgHTMLAttributes {
   

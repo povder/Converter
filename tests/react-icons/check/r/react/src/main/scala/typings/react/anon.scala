@@ -10,7 +10,7 @@ object anon {
   @js.native
   trait Children extends StObject {
     
-    var children: scala.Unit | ReactNode = js.native
+    var children: js.UndefOr[ReactNode] = js.native
   }
   object Children {
     

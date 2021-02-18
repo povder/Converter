@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DelHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var cite: scala.Unit | String = js.native
+  var cite: js.UndefOr[String] = js.native
   
-  var dateTime: scala.Unit | String = js.native
+  var dateTime: js.UndefOr[String] = js.native
 }
 object DelHTMLAttributes {
   

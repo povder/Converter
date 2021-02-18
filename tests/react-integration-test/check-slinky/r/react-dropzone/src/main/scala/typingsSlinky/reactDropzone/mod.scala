@@ -34,7 +34,7 @@ object mod {
   @js.native
   trait DropzoneInputProps extends InputHTMLAttributes[HTMLInputElement] {
     
-    var refKey: scala.Unit | String = js.native
+    var refKey: js.UndefOr[String] = js.native
   }
   object DropzoneInputProps {
     
@@ -59,65 +59,73 @@ object mod {
   @js.native
   trait DropzoneOptions extends StObject {
     
-    var accept: scala.Unit | String | js.Array[String] = js.native
+    var accept: js.UndefOr[String | js.Array[String]] = js.native
     
-    var disabled: scala.Unit | Boolean = js.native
+    var disabled: js.UndefOr[Boolean] = js.native
     
-    var getFilesFromEvent: scala.Unit | (js.Function1[
-        /* event */ DropEvent, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<Array<File | DataTransferItem>> */ ?
-      ]) = js.native
+    var getFilesFromEvent: js.UndefOr[
+        js.Function1[
+          /* event */ DropEvent, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Promise<Array<File | DataTransferItem>> */ ?
+        ]
+      ] = js.native
     
-    var maxSize: scala.Unit | Double = js.native
+    var maxSize: js.UndefOr[Double] = js.native
     
-    var minSize: scala.Unit | Double = js.native
+    var minSize: js.UndefOr[Double] = js.native
     
-    var multiple: scala.Unit | Boolean = js.native
+    var multiple: js.UndefOr[Boolean] = js.native
     
-    var noClick: scala.Unit | Boolean = js.native
+    var noClick: js.UndefOr[Boolean] = js.native
     
-    var noDrag: scala.Unit | Boolean = js.native
+    var noDrag: js.UndefOr[Boolean] = js.native
     
-    var noDragEventsBubbling: scala.Unit | Boolean = js.native
+    var noDragEventsBubbling: js.UndefOr[Boolean] = js.native
     
-    var noKeyboard: scala.Unit | Boolean = js.native
+    var noKeyboard: js.UndefOr[Boolean] = js.native
     
-    var onDragEnter: scala.Unit | DragEventHandler[HTMLElement] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
     
-    var onDragLeave: scala.Unit | DragEventHandler[HTMLElement] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
     
-    var onDragOver: scala.Unit | DragEventHandler[HTMLElement] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
     
-    var onDrop: scala.Unit | (js.Function3[
-        /* acceptedFiles */ js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
-        ], 
-        /* rejectedFiles */ js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
-        ], 
-        /* event */ DropEvent, 
-        Unit
-      ]) = js.native
+    var onDrop: js.UndefOr[
+        js.Function3[
+          /* acceptedFiles */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
+          ], 
+          /* rejectedFiles */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
+          ], 
+          /* event */ DropEvent, 
+          Unit
+        ]
+      ] = js.native
     
-    var onDropAccepted: scala.Unit | (js.Function2[
-        /* files */ js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
-        ], 
-        /* event */ DropEvent, 
-        Unit
-      ]) = js.native
+    var onDropAccepted: js.UndefOr[
+        js.Function2[
+          /* files */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
+          ], 
+          /* event */ DropEvent, 
+          Unit
+        ]
+      ] = js.native
     
-    var onDropRejected: scala.Unit | (js.Function2[
-        /* files */ js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
-        ], 
-        /* event */ DropEvent, 
-        Unit
-      ]) = js.native
+    var onDropRejected: js.UndefOr[
+        js.Function2[
+          /* files */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify File */ ?
+          ], 
+          /* event */ DropEvent, 
+          Unit
+        ]
+      ] = js.native
     
-    var onFileDialogCancel: scala.Unit | js.Function0[Unit] = js.native
+    var onFileDialogCancel: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var preventDropOnDocument: scala.Unit | Boolean = js.native
+    var preventDropOnDocument: js.UndefOr[Boolean] = js.native
   }
   object DropzoneOptions {
     
@@ -262,7 +270,7 @@ object mod {
   @js.native
   trait DropzoneProps extends DropzoneOptions {
     
-    var children: scala.Unit | (js.Function1[/* state */ DropzoneState, ReactElement]) = js.native
+    var children: js.UndefOr[js.Function1[/* state */ DropzoneState, ReactElement]] = js.native
   }
   object DropzoneProps {
     
@@ -309,7 +317,7 @@ object mod {
     extends HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var refKey: scala.Unit | String = js.native
+    var refKey: js.UndefOr[String] = js.native
   }
   object DropzoneRootProps {
     

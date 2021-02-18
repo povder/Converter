@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OptgroupHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var label: scala.Unit | String = js.native
+  var label: js.UndefOr[String] = js.native
 }
 object OptgroupHTMLAttributes {
   

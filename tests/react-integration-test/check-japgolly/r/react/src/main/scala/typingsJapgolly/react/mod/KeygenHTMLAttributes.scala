@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KeygenHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var challenge: scala.Unit | String = js.native
+  var challenge: js.UndefOr[String] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var keyParams: scala.Unit | String = js.native
+  var keyParams: js.UndefOr[String] = js.native
   
-  var keyType: scala.Unit | String = js.native
+  var keyType: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
 }
 object KeygenHTMLAttributes {
   

@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FormHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var acceptCharset: scala.Unit | String = js.native
+  var acceptCharset: js.UndefOr[String] = js.native
   
-  var action: scala.Unit | String = js.native
+  var action: js.UndefOr[String] = js.native
   
-  var autoComplete: scala.Unit | String = js.native
+  var autoComplete: js.UndefOr[String] = js.native
   
-  var encType: scala.Unit | String = js.native
+  var encType: js.UndefOr[String] = js.native
   
-  var method: scala.Unit | String = js.native
+  var method: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var noValidate: scala.Unit | Boolean = js.native
+  var noValidate: js.UndefOr[Boolean] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
 }
 object FormHTMLAttributes {
   

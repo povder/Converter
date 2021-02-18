@@ -34,22 +34,22 @@ object buttonContentMod extends Shortcut {
   trait StrictButtonContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
     
     /** Initially hidden, visible on hover. */
-    var hidden: scala.Unit | Boolean = js.native
+    var hidden: js.UndefOr[Boolean] = js.native
     
     /** Initially visible, hidden on hover. */
-    var visible: scala.Unit | Boolean = js.native
+    var visible: js.UndefOr[Boolean] = js.native
   }
   object StrictButtonContentProps {
     

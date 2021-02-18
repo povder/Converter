@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OutputHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var htmlFor: scala.Unit | String = js.native
+  var htmlFor: js.UndefOr[String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
 }
 object OutputHTMLAttributes {
   

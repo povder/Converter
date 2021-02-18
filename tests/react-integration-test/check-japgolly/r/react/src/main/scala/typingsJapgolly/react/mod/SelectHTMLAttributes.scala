@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SelectHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var autoComplete: scala.Unit | String = js.native
+  var autoComplete: js.UndefOr[String] = js.native
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var multiple: scala.Unit | Boolean = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
   @JSName("onChange")
-  var onChange_SelectHTMLAttributes: scala.Unit | ChangeEventHandler[T] = js.native
+  var onChange_SelectHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
   
-  var required: scala.Unit | Boolean = js.native
+  var required: js.UndefOr[Boolean] = js.native
   
-  var size: scala.Unit | Double = js.native
+  var size: js.UndefOr[Double] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
 }
 object SelectHTMLAttributes {
   

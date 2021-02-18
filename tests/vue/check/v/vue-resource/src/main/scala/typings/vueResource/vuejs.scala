@@ -15,7 +15,7 @@ object vuejs {
   @js.native
   trait ComponentOption extends StObject {
     
-    var http: scala.Unit | headersHttpHeadersundefin = js.native
+    var http: js.UndefOr[headersHttpHeadersundefin] = js.native
   }
   object ComponentOption {
     
@@ -40,17 +40,17 @@ object vuejs {
   trait HttpHeaders
     extends /* key */ StringDictionary[js.Any] {
     
-    var common: scala.Unit | StringDictionary[String] = js.native
+    var common: js.UndefOr[StringDictionary[String]] = js.native
     
-    var custom: scala.Unit | StringDictionary[String] = js.native
+    var custom: js.UndefOr[StringDictionary[String]] = js.native
     
-    var delete: scala.Unit | StringDictionary[String] = js.native
+    var delete: js.UndefOr[StringDictionary[String]] = js.native
     
-    var patch: scala.Unit | StringDictionary[String] = js.native
+    var patch: js.UndefOr[StringDictionary[String]] = js.native
     
-    var post: scala.Unit | StringDictionary[String] = js.native
+    var post: js.UndefOr[StringDictionary[String]] = js.native
     
-    var put: scala.Unit | StringDictionary[String] = js.native
+    var put: js.UndefOr[StringDictionary[String]] = js.native
   }
   object HttpHeaders {
     
@@ -104,9 +104,9 @@ object vuejs {
   @js.native
   trait HttpInterceptor extends StObject {
     
-    var request: scala.Unit | (js.Function1[/* request */ HttpOptions, HttpOptions]) = js.native
+    var request: js.UndefOr[js.Function1[/* request */ HttpOptions, HttpOptions]] = js.native
     
-    var response: scala.Unit | (js.Function1[/* response */ HttpResponse, HttpResponse]) = js.native
+    var response: js.UndefOr[js.Function1[/* response */ HttpResponse, HttpResponse]] = js.native
   }
   object HttpInterceptor {
     
@@ -136,25 +136,25 @@ object vuejs {
   @js.native
   trait HttpOptions extends StObject {
     
-    var before: scala.Unit | (js.Function1[/* request */ js.Any, ?]) = js.native
+    var before: js.UndefOr[js.Function1[/* request */ js.Any, ?]] = js.native
     
-    var body: scala.Unit | js.Any = js.native
+    var body: js.UndefOr[js.Any] = js.native
     
-    var credentials: scala.Unit | Boolean = js.native
+    var credentials: js.UndefOr[Boolean] = js.native
     
-    var emulateHTTP: scala.Unit | Boolean = js.native
+    var emulateHTTP: js.UndefOr[Boolean] = js.native
     
-    var emulateJSON: scala.Unit | Boolean = js.native
+    var emulateJSON: js.UndefOr[Boolean] = js.native
     
-    var headers: scala.Unit | js.Any = js.native
+    var headers: js.UndefOr[js.Any] = js.native
     
-    var method: scala.Unit | String = js.native
+    var method: js.UndefOr[String] = js.native
     
-    var params: scala.Unit | js.Any = js.native
+    var params: js.UndefOr[js.Any] = js.native
     
-    var progress: scala.Unit | (js.Function1[/* event */ js.Any, ?]) = js.native
+    var progress: js.UndefOr[js.Function1[/* event */ js.Any, ?]] = js.native
     
-    var url: scala.Unit | String = js.native
+    var url: js.UndefOr[String] = js.native
   }
   object HttpOptions {
     
@@ -595,9 +595,9 @@ object vuejs {
   
   type resource = js.Function4[
     /* url */ String, 
-    /* params */ scala.Unit | js.Object, 
-    /* actions */ scala.Unit | js.Any, 
-    /* options */ scala.Unit | HttpOptions, 
+    /* params */ js.UndefOr[js.Object], 
+    /* actions */ js.UndefOr[js.Any], 
+    /* options */ js.UndefOr[HttpOptions], 
     ResourceMethods
   ]
 }

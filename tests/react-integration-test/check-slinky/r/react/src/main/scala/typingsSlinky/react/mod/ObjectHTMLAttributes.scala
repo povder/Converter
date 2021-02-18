@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var classID: scala.Unit | String = js.native
+  var classID: js.UndefOr[String] = js.native
   
-  var data: scala.Unit | String = js.native
+  var data: js.UndefOr[String] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
   
-  var useMap: scala.Unit | String = js.native
+  var useMap: js.UndefOr[String] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
   
-  var wmode: scala.Unit | String = js.native
+  var wmode: js.UndefOr[String] = js.native
 }
 object ObjectHTMLAttributes {
   

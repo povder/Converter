@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProfilerProps extends StObject {
   
-  var children: scala.Unit | Node = js.native
+  var children: js.UndefOr[Node] = js.native
   
   var id: String = js.native
   

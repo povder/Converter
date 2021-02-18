@@ -50,27 +50,29 @@ object accordionTitleMod extends Shortcut {
   trait StrictAccordionTitleProps extends StObject {
     
     /** Whether or not the title is in the open state. */
-    var active: scala.Unit | Boolean = js.native
+    var active: js.UndefOr[Boolean] = js.native
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Shorthand for primary content. */
-    var content: scala.Unit | SemanticShorthandContent = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.native
     
     /** Shorthand for Icon. */
-    var icon: scala.Unit | (SemanticShorthandItem[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
-      ]) = js.native
+    var icon: js.UndefOr[
+        SemanticShorthandItem[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
+        ]
+      ] = js.native
     
     /** AccordionTitle index inside Accordion. */
-    var index: scala.Unit | Double | String = js.native
+    var index: js.UndefOr[Double | String] = js.native
     
     /**
       * Called on click.
@@ -78,11 +80,13 @@ object accordionTitleMod extends Shortcut {
       * @param {SyntheticEvent} event - React's original SyntheticEvent.
       * @param {object} data - All props.
       */
-    var onClick: scala.Unit | (js.Function2[
-        /* event */ ReactMouseEventFrom[HTMLDivElement], 
-        /* data */ AccordionTitleProps, 
-        Unit
-      ]) = js.native
+    var onClick: js.UndefOr[
+        js.Function2[
+          /* event */ ReactMouseEventFrom[HTMLDivElement], 
+          /* data */ AccordionTitleProps, 
+          Unit
+        ]
+      ] = js.native
   }
   object StrictAccordionTitleProps {
     
@@ -142,7 +146,7 @@ object accordionTitleMod extends Shortcut {
       def setIconFunction3(
         value: (/* component */ ReactType[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any
-            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ scala.Unit | Node | ReactNodeArray) => Element | Null
+            ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconProps */ js.Any, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
       ): Self = StObject.set(x, "icon", js.Any.fromFunction3(value))
       
       @scala.inline

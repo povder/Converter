@@ -15,7 +15,7 @@ object mod {
   @js.native
   trait LoggerOptions extends StObject {
     
-    var levels: scala.Unit | AbstractConfigSetLevels = js.native
+    var levels: js.UndefOr[AbstractConfigSetLevels] = js.native
   }
   object LoggerOptions {
     

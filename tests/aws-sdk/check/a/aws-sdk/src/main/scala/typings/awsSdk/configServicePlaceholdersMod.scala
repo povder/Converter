@@ -12,13 +12,13 @@ object configServicePlaceholdersMod {
   @js.native
   abstract class ConfigurationServicePlaceholders () extends StObject {
     
-    var dynamodb: scala.Unit | ClientConfiguration = js.native
+    var dynamodb: js.UndefOr[ClientConfiguration] = js.native
   }
   
   @js.native
   trait ConfigurationServiceApiVersions extends StObject {
     
-    var dynamodb: scala.Unit | apiVersion = js.native
+    var dynamodb: js.UndefOr[apiVersion] = js.native
   }
   object ConfigurationServiceApiVersions {
     

@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LinkHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var as: scala.Unit | String = js.native
+  var as: js.UndefOr[String] = js.native
   
-  var crossOrigin: scala.Unit | String = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var hrefLang: scala.Unit | String = js.native
+  var hrefLang: js.UndefOr[String] = js.native
   
-  var integrity: scala.Unit | String = js.native
+  var integrity: js.UndefOr[String] = js.native
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var rel: scala.Unit | String = js.native
+  var rel: js.UndefOr[String] = js.native
   
-  var sizes: scala.Unit | String = js.native
+  var sizes: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 object LinkHTMLAttributes {
   

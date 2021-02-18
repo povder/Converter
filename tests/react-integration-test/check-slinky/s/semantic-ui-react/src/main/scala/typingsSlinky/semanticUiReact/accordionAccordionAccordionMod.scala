@@ -46,22 +46,22 @@ object accordionAccordionAccordionMod extends Shortcut {
   trait StrictAccordionAccordionProps extends StObject {
     
     /** Index of the currently active panel. */
-    var activeIndex: scala.Unit | Double | js.Array[Double] = js.native
+    var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.native
     
     /** An element type to render as (string or function). */
-    var as: scala.Unit | js.Any = js.native
+    var as: js.UndefOr[js.Any] = js.native
     
     /** Primary content. */
-    var children: scala.Unit | ReactElement = js.native
+    var children: js.UndefOr[ReactElement] = js.native
     
     /** Additional classes. */
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
     /** Initial activeIndex value. */
-    var defaultActiveIndex: scala.Unit | Double | js.Array[Double] = js.native
+    var defaultActiveIndex: js.UndefOr[Double | js.Array[Double]] = js.native
     
     /** Only allow one panel open at a time. */
-    var exclusive: scala.Unit | Boolean = js.native
+    var exclusive: js.UndefOr[Boolean] = js.native
     
     /**
       * Called when a panel title is clicked.
@@ -69,14 +69,16 @@ object accordionAccordionAccordionMod extends Shortcut {
       * @param {SyntheticEvent} event - React's original SyntheticEvent.
       * @param {AccordionTitleProps} data - All item props.
       */
-    var onTitleClick: scala.Unit | (js.Function2[
-        /* event */ SyntheticMouseEvent[HTMLDivElement], 
-        /* data */ AccordionTitleProps, 
-        Unit
-      ]) = js.native
+    var onTitleClick: js.UndefOr[
+        js.Function2[
+          /* event */ SyntheticMouseEvent[HTMLDivElement], 
+          /* data */ AccordionTitleProps, 
+          Unit
+        ]
+      ] = js.native
     
     /** Shorthand array of props for Accordion. */
-    var panels: scala.Unit | SemanticShorthandCollection[AccordionPanelProps] = js.native
+    var panels: js.UndefOr[SemanticShorthandCollection[AccordionPanelProps]] = js.native
   }
   object StrictAccordionAccordionProps {
     

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TableHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var cellPadding: scala.Unit | Double | String = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.native
   
-  var cellSpacing: scala.Unit | Double | String = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.native
   
-  var summary: scala.Unit | String = js.native
+  var summary: js.UndefOr[String] = js.native
 }
 object TableHTMLAttributes {
   

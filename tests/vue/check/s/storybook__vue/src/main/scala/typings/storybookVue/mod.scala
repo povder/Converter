@@ -118,7 +118,7 @@ object mod {
   @js.native
   trait StoryStore extends StObject {
     
-    var fileName: scala.Unit | String = js.native
+    var fileName: js.UndefOr[String] = js.native
     
     var kind: String = js.native
     

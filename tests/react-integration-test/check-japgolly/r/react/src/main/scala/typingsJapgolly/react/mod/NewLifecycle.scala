@@ -14,7 +14,9 @@ trait NewLifecycle[P, S, SS] extends StObject {
     *
     * The snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null.
     */
-  var componentDidUpdate: scala.Unit | (js.Function3[/* prevProps */ P, /* prevState */ S, /* snapshot */ scala.Unit | SS, Unit]) = js.native
+  var componentDidUpdate: js.UndefOr[
+    js.Function3[/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS], Unit]
+  ] = js.native
   
   /**
     * Runs before React applies the result of `render` to the document, and
@@ -24,7 +26,7 @@ trait NewLifecycle[P, S, SS] extends StObject {
     * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
     * lifecycle events from running.
     */
-  var getSnapshotBeforeUpdate: scala.Unit | (js.Function2[/* prevProps */ P, /* prevState */ S, SS | Null]) = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ P, /* prevState */ S, SS | Null]] = js.native
 }
 object NewLifecycle {
   
@@ -38,7 +40,7 @@ object NewLifecycle {
   implicit class NewLifecycleMutableBuilder[Self <: NewLifecycle[?, ?, ?], P, S, SS] (val x: Self & (NewLifecycle[P, S, SS])) extends AnyVal {
     
     @scala.inline
-    def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ scala.Unit | SS) => Callback): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction3((t0: /* prevProps */ P, t1: /* prevState */ S, t2: /* snapshot */ scala.Unit | SS) => (value(t0, t1, t2)).runNow()))
+    def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Callback): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction3((t0: /* prevProps */ P, t1: /* prevState */ S, t2: /* snapshot */ js.UndefOr[SS]) => (value(t0, t1, t2)).runNow()))
     
     @scala.inline
     def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", ())

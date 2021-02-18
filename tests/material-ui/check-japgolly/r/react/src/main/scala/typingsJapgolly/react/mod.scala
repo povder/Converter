@@ -20,9 +20,9 @@ object mod {
   @js.native
   trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
     
-    var accept: scala.Unit | String = js.native
+    var accept: js.UndefOr[String] = js.native
     
-    var acceptCharset: scala.Unit | String = js.native
+    var acceptCharset: js.UndefOr[String] = js.native
   }
   object AllHTMLAttributes {
     
@@ -64,9 +64,9 @@ object mod {
           japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object]
         ] {
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
   
   type ComponentState = js.Object
@@ -76,11 +76,11 @@ object mod {
   @js.native
   trait DOMAttributes[T] extends StObject {
     
-    var children: scala.Unit | Node = js.native
+    var children: js.UndefOr[Node] = js.native
     
-    var dangerouslySetInnerHTML: scala.Unit | Html = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
     
-    var onClick: scala.Unit | Double | (js.Function1[/* x */ String, Unit]) = js.native
+    var onClick: js.UndefOr[Double | (js.Function1[/* x */ String, Unit])] = js.native
   }
   object DOMAttributes {
     
@@ -119,7 +119,7 @@ object mod {
   @js.native
   trait HTMLAttributes[T] extends DOMAttributes[T] {
     
-    var defaultChecked: scala.Unit | Boolean = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.native
   }
   object HTMLAttributes {
     
@@ -217,7 +217,7 @@ object mod {
     }
   }
   
-  type ReactNode = scala.Unit | String | Double | Boolean
+  type ReactNode = js.UndefOr[String | Double | Boolean]
   
   type SFC[P] = StatelessComponent[P]
   
@@ -229,8 +229,8 @@ object mod {
     def apply(props: P & Children): Element | Null = js.native
     def apply(props: P & Children, context: js.Any): Element | Null = js.native
     
-    var defaultProps: scala.Unit | Partial[P] = js.native
+    var defaultProps: js.UndefOr[Partial[P]] = js.native
     
-    var displayName: scala.Unit | String = js.native
+    var displayName: js.UndefOr[String] = js.native
   }
 }

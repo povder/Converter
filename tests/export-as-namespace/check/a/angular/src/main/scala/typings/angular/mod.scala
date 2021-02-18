@@ -51,7 +51,7 @@ object mod extends Shortcut {
       * If window.name contains prefix NG_DEFER_BOOTSTRAP! when angular.bootstrap is called, the bootstrap process will be paused until angular.resumeBootstrap() is called.
       * @param extraModules An optional array of modules that should be added to the original list of modules that the app was about to be bootstrapped with.
       */
-    var resumeBootstrap: scala.Unit | (js.Function1[/* extraModules */ scala.Unit | js.Array[String], IInjectorService]) = js.native
+    var resumeBootstrap: js.UndefOr[js.Function1[/* extraModules */ js.UndefOr[js.Array[String]], IInjectorService]] = js.native
   }
   
   // All service providers extend this interface
@@ -129,7 +129,7 @@ object mod extends Shortcut {
     trait Function extends StObject {
       
       @JSName("$inject")
-      var $inject: scala.Unit | js.Array[String] = js.native
+      var $inject: js.UndefOr[js.Array[String]] = js.native
     }
   }
 }

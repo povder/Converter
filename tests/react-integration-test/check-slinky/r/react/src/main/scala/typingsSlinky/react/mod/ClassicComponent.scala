@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassicComponent[P, S]
   extends Component[P, S, js.Any] {
   
-  var getInitialState: scala.Unit | js.Function0[S] = js.native
+  var getInitialState: js.UndefOr[js.Function0[S]] = js.native
   
   def isMounted(): Boolean = js.native
   

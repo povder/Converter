@@ -69,27 +69,27 @@ object anon {
   @js.native
   trait HttpOptionsrootstring extends StObject {
     
-    var before: scala.Unit | (js.Function1[/* request */ js.Any, ?]) = js.native
+    var before: js.UndefOr[js.Function1[/* request */ js.Any, ?]] = js.native
     
-    var body: scala.Unit | js.Any = js.native
+    var body: js.UndefOr[js.Any] = js.native
     
-    var credentials: scala.Unit | Boolean = js.native
+    var credentials: js.UndefOr[Boolean] = js.native
     
-    var emulateHTTP: scala.Unit | Boolean = js.native
+    var emulateHTTP: js.UndefOr[Boolean] = js.native
     
-    var emulateJSON: scala.Unit | Boolean = js.native
+    var emulateJSON: js.UndefOr[Boolean] = js.native
     
-    var headers: scala.Unit | js.Any = js.native
+    var headers: js.UndefOr[js.Any] = js.native
     
-    var method: scala.Unit | String = js.native
+    var method: js.UndefOr[String] = js.native
     
-    var params: scala.Unit | js.Any = js.native
+    var params: js.UndefOr[js.Any] = js.native
     
-    var progress: scala.Unit | (js.Function1[/* event */ js.Any, ?]) = js.native
+    var progress: js.UndefOr[js.Function1[/* event */ js.Any, ?]] = js.native
     
     var root: String = js.native
     
-    var url: scala.Unit | String = js.native
+    var url: js.UndefOr[String] = js.native
   }
   object HttpOptionsrootstring {
     
@@ -193,30 +193,30 @@ object anon {
   trait headersHttpHeadersundefin
     extends /* key */ StringDictionary[js.Any] {
     
-    var before: scala.Unit | (js.Function1[/* request */ js.Any, ?]) = js.native
+    var before: js.UndefOr[js.Function1[/* request */ js.Any, ?]] = js.native
     
-    var body: scala.Unit | js.Any = js.native
+    var body: js.UndefOr[js.Any] = js.native
     
-    var credentials: scala.Unit | Boolean = js.native
+    var credentials: js.UndefOr[Boolean] = js.native
     
-    var emulateHTTP: scala.Unit | Boolean = js.native
+    var emulateHTTP: js.UndefOr[Boolean] = js.native
     
-    var emulateJSON: scala.Unit | Boolean = js.native
+    var emulateJSON: js.UndefOr[Boolean] = js.native
     
-    var headers: (scala.Unit | HttpHeaders) & (scala.Unit | js.Any) = js.native
+    var headers: js.UndefOr[HttpHeaders] & js.UndefOr[js.Any] = js.native
     
-    var method: scala.Unit | String = js.native
+    var method: js.UndefOr[String] = js.native
     
-    var params: scala.Unit | js.Any = js.native
+    var params: js.UndefOr[js.Any] = js.native
     
-    var progress: scala.Unit | (js.Function1[/* event */ js.Any, ?]) = js.native
+    var progress: js.UndefOr[js.Function1[/* event */ js.Any, ?]] = js.native
     
-    var url: scala.Unit | String = js.native
+    var url: js.UndefOr[String] = js.native
   }
   object headersHttpHeadersundefin {
     
     @scala.inline
-    def apply(headers: (scala.Unit | HttpHeaders) & (scala.Unit | js.Any)): headersHttpHeadersundefin = {
+    def apply(headers: js.UndefOr[HttpHeaders] & js.UndefOr[js.Any]): headersHttpHeadersundefin = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[headersHttpHeadersundefin]
     }
@@ -255,7 +255,7 @@ object anon {
       def setEmulateJSONUndefined: Self = StObject.set(x, "emulateJSON", ())
       
       @scala.inline
-      def setHeaders(value: (scala.Unit | HttpHeaders) & (scala.Unit | js.Any)): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.UndefOr[HttpHeaders] & js.UndefOr[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])

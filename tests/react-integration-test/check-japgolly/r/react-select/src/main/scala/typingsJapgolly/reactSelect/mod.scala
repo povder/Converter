@@ -22,7 +22,7 @@ object mod {
   /* property */ StringDictionary[js.Any] {
     
     /** Value for searching */
-    var value: scala.Unit | TValue = js.native
+    var value: js.UndefOr[TValue] = js.native
   }
   object Option {
     
@@ -61,7 +61,7 @@ object mod {
       * text to display when `allowCreate` is true.
       * @default 'Add "{label}"?'
       */
-    var addLabelText: scala.Unit | String = js.native
+    var addLabelText: js.UndefOr[String] = js.native
   }
   object ReactSelectProps {
     

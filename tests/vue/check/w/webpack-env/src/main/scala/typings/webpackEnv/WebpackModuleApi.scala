@@ -15,12 +15,12 @@ object WebpackModuleApi {
     /**
       * Indicates that apply() is automatically called by check function
       */
-    var autoApply: scala.Unit | Boolean = js.native
+    var autoApply: js.UndefOr[Boolean] = js.native
     
     /**
       * If true the update process continues even if some modules are not accepted (and would bubble to the entry point).
       */
-    var ignoreUnaccepted: scala.Unit | Boolean = js.native
+    var ignoreUnaccepted: js.UndefOr[Boolean] = js.native
   }
   object AcceptOptions {
     
@@ -188,7 +188,7 @@ object WebpackModuleApi {
     
     var filename: String = js.native
     
-    var hot: scala.Unit | Hot = js.native
+    var hot: js.UndefOr[Hot] = js.native
     
     var id: String = js.native
     
@@ -209,7 +209,7 @@ object WebpackModuleApi {
   @js.native
   trait NodeProcess extends StObject {
     
-    var env: scala.Unit | js.Any = js.native
+    var env: js.UndefOr[js.Any] = js.native
   }
   object NodeProcess {
     

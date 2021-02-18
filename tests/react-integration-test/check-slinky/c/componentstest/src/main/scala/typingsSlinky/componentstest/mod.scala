@@ -58,7 +58,7 @@ object mod {
   @js.native
   trait B extends Props {
     
-    var bCallback: scala.Unit | js.Function0[String] = js.native
+    var bCallback: js.UndefOr[js.Function0[String]] = js.native
     
     var bMember: String = js.native
   }
@@ -87,13 +87,13 @@ object mod {
   @js.native
   trait CardGridProps extends StObject {
     
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
-    var hoverable: scala.Unit | Boolean = js.native
+    var hoverable: js.UndefOr[Boolean] = js.native
     
-    var prefixCls: scala.Unit | String = js.native
+    var prefixCls: js.UndefOr[String] = js.native
     
-    var style: scala.Unit | CSSProperties = js.native
+    var style: js.UndefOr[CSSProperties] = js.native
   }
   object CardGridProps {
     
@@ -142,9 +142,9 @@ object mod {
   @js.native
   trait CardProps extends StObject {
     
-    var onClick: scala.Unit | MouseEventHandler[HTMLDivElement] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
     
-    var prefixCls: scala.Unit | String = js.native
+    var prefixCls: js.UndefOr[String] = js.native
   }
   object CardProps {
     

@@ -35,14 +35,14 @@ object documentClientMod {
         * An optional flag indicating that the document client should cast
         * empty strings, buffers, and sets to NULL shapes
         */
-      var convertEmptyValues: scala.Unit | Boolean = js.native
+      var convertEmptyValues: js.UndefOr[Boolean] = js.native
       
       /**
         * Whether to return numbers as a NumberValue object instead of
         * converting them to native JavaScript numbers. This allows for the
         * safe round-trip transport of numbers of arbitrary size.
         */
-      var wrapNumbers: scala.Unit | Boolean = js.native
+      var wrapNumbers: js.UndefOr[Boolean] = js.native
     }
     object ConverterOptions {
       
@@ -75,12 +75,12 @@ object documentClientMod {
       /**
         * An optional map of parameters to bind to every request sent by this service object.
         */
-      var params: scala.Unit | StringDictionary[js.Any] = js.native
+      var params: js.UndefOr[StringDictionary[js.Any]] = js.native
       
       /**
         * An optional pre-configured instance of the AWS.DynamoDB service object to use for requests. The object may bound parameters used by the document client.
         */
-      var service: scala.Unit | ^ = js.native
+      var service: js.UndefOr[^] = js.native
     }
     object DocumentClientOptions {
       

@@ -10,71 +10,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var accept: scala.Unit | String = js.native
+  var accept: js.UndefOr[String] = js.native
   
-  var alt: scala.Unit | String = js.native
+  var alt: js.UndefOr[String] = js.native
   
-  var autoComplete: scala.Unit | String = js.native
+  var autoComplete: js.UndefOr[String] = js.native
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var capture: scala.Unit | Boolean | String = js.native
+  var capture: js.UndefOr[Boolean | String] = js.native
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
-  var checked: scala.Unit | Boolean = js.native
+  var checked: js.UndefOr[Boolean] = js.native
   
-  var crossOrigin: scala.Unit | String = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var formAction: scala.Unit | String = js.native
+  var formAction: js.UndefOr[String] = js.native
   
-  var formEncType: scala.Unit | String = js.native
+  var formEncType: js.UndefOr[String] = js.native
   
-  var formMethod: scala.Unit | String = js.native
+  var formMethod: js.UndefOr[String] = js.native
   
-  var formNoValidate: scala.Unit | Boolean = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.native
   
-  var formTarget: scala.Unit | String = js.native
+  var formTarget: js.UndefOr[String] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var list: scala.Unit | String = js.native
+  var list: js.UndefOr[String] = js.native
   
-  var max: scala.Unit | Double | String = js.native
+  var max: js.UndefOr[Double | String] = js.native
   
-  var maxLength: scala.Unit | Double = js.native
+  var maxLength: js.UndefOr[Double] = js.native
   
-  var min: scala.Unit | Double | String = js.native
+  var min: js.UndefOr[Double | String] = js.native
   
-  var minLength: scala.Unit | Double = js.native
+  var minLength: js.UndefOr[Double] = js.native
   
-  var multiple: scala.Unit | Boolean = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
   @JSName("onChange")
-  var onChange_InputHTMLAttributes: scala.Unit | ChangeEventHandler[T] = js.native
+  var onChange_InputHTMLAttributes: js.UndefOr[ChangeEventHandler[T]] = js.native
   
-  var pattern: scala.Unit | String = js.native
+  var pattern: js.UndefOr[String] = js.native
   
-  var readOnly: scala.Unit | Boolean = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
   
-  var required: scala.Unit | Boolean = js.native
+  var required: js.UndefOr[Boolean] = js.native
   
-  var size: scala.Unit | Double = js.native
+  var size: js.UndefOr[Double] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var step: scala.Unit | Double | String = js.native
+  var step: js.UndefOr[Double | String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 object InputHTMLAttributes {
   

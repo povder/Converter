@@ -97,26 +97,28 @@ object mod {
   @js.native
   trait ContextMenuProps extends StObject {
     
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
-    var data: scala.Unit | js.Any = js.native
+    var data: js.UndefOr[js.Any] = js.native
     
-    var hideOnLeave: scala.Unit | Boolean = js.native
+    var hideOnLeave: js.UndefOr[Boolean] = js.native
     
     var id: String = js.native
     
-    var onHide: scala.Unit | (js.Function1[/* event */ js.Any, Unit]) = js.native
+    var onHide: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
     
-    var onMouseLeave: scala.Unit | (js.Function3[
-        /* event */ SyntheticMouseEvent[HTMLElement], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
-        /* target */ HTMLElement, 
-        Unit
-      ]) | js.Function = js.native
+    var onMouseLeave: js.UndefOr[
+        (js.Function3[
+          /* event */ SyntheticMouseEvent[HTMLElement], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
+          /* target */ HTMLElement, 
+          Unit
+        ]) | js.Function
+      ] = js.native
     
-    var onShow: scala.Unit | (js.Function1[/* event */ js.Any, Unit]) = js.native
+    var onShow: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
     
-    var rtl: scala.Unit | Boolean = js.native
+    var rtl: js.UndefOr[Boolean] = js.native
   }
   object ContextMenuProps {
     
@@ -191,17 +193,17 @@ object mod {
   @js.native
   trait ContextMenuTriggerProps extends StObject {
     
-    var attributes: scala.Unit | HTMLAttributes[?] = js.native
+    var attributes: js.UndefOr[HTMLAttributes[?]] = js.native
     
-    var collect: scala.Unit | (js.Function1[/* data */ js.Any, ?]) = js.native
+    var collect: js.UndefOr[js.Function1[/* data */ js.Any, ?]] = js.native
     
-    var disable: scala.Unit | Boolean = js.native
+    var disable: js.UndefOr[Boolean] = js.native
     
-    var holdToDisplay: scala.Unit | Double = js.native
+    var holdToDisplay: js.UndefOr[Double] = js.native
     
     var id: String = js.native
     
-    var renderTag: scala.Unit | ReactType[js.Any] = js.native
+    var renderTag: js.UndefOr[ReactType[js.Any]] = js.native
   }
   object ContextMenuTriggerProps {
     
@@ -258,24 +260,28 @@ object mod {
   @js.native
   trait MenuItemProps extends StObject {
     
-    var attributes: scala.Unit | HTMLAttributes[HTMLDivElement] = js.native
+    var attributes: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
     
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
-    var data: scala.Unit | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ js.Any) = js.native
+    var data: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ js.Any
+      ] = js.native
     
-    var disabled: scala.Unit | Boolean = js.native
+    var disabled: js.UndefOr[Boolean] = js.native
     
-    var divider: scala.Unit | Boolean = js.native
+    var divider: js.UndefOr[Boolean] = js.native
     
-    var onClick: scala.Unit | (js.Function3[
-        /* event */ SyntheticTouchEvent[HTMLDivElement] | SyntheticMouseEvent[HTMLDivElement], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
-        /* target */ HTMLElement, 
-        Unit
-      ]) | js.Function = js.native
+    var onClick: js.UndefOr[
+        (js.Function3[
+          /* event */ SyntheticTouchEvent[HTMLDivElement] | SyntheticMouseEvent[HTMLDivElement], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
+          /* target */ HTMLElement, 
+          Unit
+        ]) | js.Function
+      ] = js.native
     
-    var preventClose: scala.Unit | Boolean = js.native
+    var preventClose: js.UndefOr[Boolean] = js.native
   }
   object MenuItemProps {
     
@@ -349,22 +355,24 @@ object mod {
   @js.native
   trait SubMenuProps extends StObject {
     
-    var className: scala.Unit | String = js.native
+    var className: js.UndefOr[String] = js.native
     
-    var disabled: scala.Unit | Boolean = js.native
+    var disabled: js.UndefOr[Boolean] = js.native
     
-    var hoverDelay: scala.Unit | Double = js.native
+    var hoverDelay: js.UndefOr[Double] = js.native
     
-    var onClick: scala.Unit | (js.Function3[
-        /* event */ SyntheticTouchEvent[HTMLDivElement] | SyntheticMouseEvent[HTMLDivElement], 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
-        /* target */ HTMLElement, 
-        Unit
-      ]) | js.Function = js.native
+    var onClick: js.UndefOr[
+        (js.Function3[
+          /* event */ SyntheticTouchEvent[HTMLDivElement] | SyntheticMouseEvent[HTMLDivElement], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Object */ /* data */ js.Any, 
+          /* target */ HTMLElement, 
+          Unit
+        ]) | js.Function
+      ] = js.native
     
-    var preventCloseOnClick: scala.Unit | Boolean = js.native
+    var preventCloseOnClick: js.UndefOr[Boolean] = js.native
     
-    var rtl: scala.Unit | Boolean = js.native
+    var rtl: js.UndefOr[Boolean] = js.native
     
     var title: ReactElement | ReactText = js.native
   }

@@ -48,7 +48,7 @@ object mod {
   @js.native
   trait ServeStaticOptions extends StObject {
     
-    var setHeaders: scala.Unit | (js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, ?]) = js.native
+    var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, ?]] = js.native
   }
   object ServeStaticOptions {
     

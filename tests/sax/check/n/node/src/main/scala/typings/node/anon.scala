@@ -9,7 +9,7 @@ object anon {
   @js.native
   trait End extends StObject {
     
-    var end: scala.Unit | Boolean = js.native
+    var end: js.UndefOr[Boolean] = js.native
   }
   object End {
     

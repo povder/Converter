@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SourceHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var sizes: scala.Unit | String = js.native
+  var sizes: js.UndefOr[String] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var srcSet: scala.Unit | String = js.native
+  var srcSet: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 object SourceHTMLAttributes {
   

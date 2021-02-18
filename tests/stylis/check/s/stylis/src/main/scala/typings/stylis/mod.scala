@@ -60,19 +60,21 @@ object mod extends Shortcut {
   @js.native
   trait Options extends StObject {
     
-    var cascade: scala.Unit | Boolean = js.native
+    var cascade: js.UndefOr[Boolean] = js.native
     
-    var compress: scala.Unit | Boolean = js.native
+    var compress: js.UndefOr[Boolean] = js.native
     
-    var global: scala.Unit | Boolean = js.native
+    var global: js.UndefOr[Boolean] = js.native
     
-    var keyframe: scala.Unit | Boolean = js.native
+    var keyframe: js.UndefOr[Boolean] = js.native
     
-    var prefix: scala.Unit | Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ Double, Boolean]) = js.native
+    var prefix: js.UndefOr[
+        Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ Double, Boolean])
+      ] = js.native
     
-    var preserve: scala.Unit | Boolean = js.native
+    var preserve: js.UndefOr[Boolean] = js.native
     
-    var semicolon: scala.Unit | Boolean = js.native
+    var semicolon: js.UndefOr[Boolean] = js.native
   }
   object Options {
     

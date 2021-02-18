@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProxiedPerson extends StObject {
   
-  var age: scala.Unit | Get = js.native
+  var age: js.UndefOr[Get] = js.native
   
   var name: Set = js.native
 }

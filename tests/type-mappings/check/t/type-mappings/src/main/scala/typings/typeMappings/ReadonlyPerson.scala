@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReadonlyPerson extends StObject {
   
-  val age: scala.Unit | scala.Double | Null = js.native
+  val age: js.UndefOr[scala.Double | Null] = js.native
   
   val name: String = js.native
 }

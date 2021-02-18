@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassicComponentClass[P]
   extends ComponentClass[P, js.Object] {
   
-  var getDefaultProps: scala.Unit | js.Function0[P] = js.native
+  var getDefaultProps: js.UndefOr[js.Function0[P]] = js.native
 }

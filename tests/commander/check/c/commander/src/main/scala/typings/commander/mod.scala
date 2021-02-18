@@ -49,9 +49,9 @@ object mod extends Shortcut {
   @js.native
   trait CommandOptions extends StObject {
     
-    var isDefault: scala.Unit | Boolean = js.native
+    var isDefault: js.UndefOr[Boolean] = js.native
     
-    var noHelp: scala.Unit | Boolean = js.native
+    var noHelp: js.UndefOr[Boolean] = js.native
   }
   object CommandOptions {
     
@@ -82,13 +82,13 @@ object mod extends Shortcut {
   trait CommanderStatic
     extends typings.commander.mod.local.Command {
     
-    var Command: Instantiable1[/* name */ scala.Unit | String, typings.commander.mod.local.Command] = js.native
+    var Command: Instantiable1[/* name */ js.UndefOr[String], typings.commander.mod.local.Command] = js.native
     
     var CommandOptions: typings.commander.mod.CommandOptions = js.native
     
     var Option: Instantiable2[
         /* flags */ String, 
-        /* description */ scala.Unit | String, 
+        /* description */ js.UndefOr[String], 
         typings.commander.mod.local.Option
       ] = js.native
     
@@ -429,7 +429,7 @@ object mod extends Shortcut {
       
       var required: Boolean = js.native
       
-      var short: scala.Unit | String = js.native
+      var short: js.UndefOr[String] = js.native
     }
     object Option {
       

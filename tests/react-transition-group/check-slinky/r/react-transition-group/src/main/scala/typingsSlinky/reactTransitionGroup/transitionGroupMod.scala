@@ -41,7 +41,7 @@ object transitionGroupMod {
   @js.native
   trait IntrinsicTransitionGroupProps[T /* <: abbr | animate */] extends StObject {
     
-    var component: scala.Unit | T = js.native
+    var component: js.UndefOr[T] = js.native
   }
   object IntrinsicTransitionGroupProps {
     

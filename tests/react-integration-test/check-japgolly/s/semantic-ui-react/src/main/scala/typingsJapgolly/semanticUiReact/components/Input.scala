@@ -353,7 +353,7 @@ object Input {
     
     @scala.inline
     def iconFunction3(
-      value: (/* component */ ReactType[InputProps], InputProps, /* children */ scala.Unit | Node | ReactNodeArray) => Element | Null
+      value: (/* component */ ReactType[InputProps], InputProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
     ): this.type = set("icon", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -373,7 +373,7 @@ object Input {
     
     @scala.inline
     def inputFunction3(
-      value: (/* component */ ReactType[HtmlInputrops], HtmlInputrops, /* children */ scala.Unit | Node | ReactNodeArray) => Element | Null
+      value: (/* component */ ReactType[HtmlInputrops], HtmlInputrops, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
     ): this.type = set("input", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -414,7 +414,7 @@ object Input {
     def labelFunction3(
       value: (/* component */ ReactType[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any
-        ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any, /* children */ scala.Unit | Node | ReactNodeArray) => Element | Null
+        ], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LabelProps */ js.Any, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
     ): this.type = set("label", js.Any.fromFunction3(value))
     
     @scala.inline

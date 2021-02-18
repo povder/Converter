@@ -7,216 +7,216 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AllHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var default: scala.Unit | Boolean = js.native
+  var default: js.UndefOr[Boolean] = js.native
   
   // Standard HTML Attributes
-  var accept: scala.Unit | String = js.native
+  var accept: js.UndefOr[String] = js.native
   
-  var acceptCharset: scala.Unit | String = js.native
+  var acceptCharset: js.UndefOr[String] = js.native
   
-  var action: scala.Unit | String = js.native
+  var action: js.UndefOr[String] = js.native
   
-  var allowFullScreen: scala.Unit | Boolean = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.native
   
-  var allowTransparency: scala.Unit | Boolean = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.native
   
-  var alt: scala.Unit | String = js.native
+  var alt: js.UndefOr[String] = js.native
   
-  var as: scala.Unit | String = js.native
+  var as: js.UndefOr[String] = js.native
   
-  var async: scala.Unit | Boolean = js.native
+  var async: js.UndefOr[Boolean] = js.native
   
-  var autoComplete: scala.Unit | String = js.native
+  var autoComplete: js.UndefOr[String] = js.native
   
-  var autoFocus: scala.Unit | Boolean = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
   
-  var autoPlay: scala.Unit | Boolean = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
   
-  var capture: scala.Unit | Boolean | String = js.native
+  var capture: js.UndefOr[Boolean | String] = js.native
   
-  var cellPadding: scala.Unit | Double | String = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.native
   
-  var cellSpacing: scala.Unit | Double | String = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.native
   
-  var challenge: scala.Unit | String = js.native
+  var challenge: js.UndefOr[String] = js.native
   
-  var charSet: scala.Unit | String = js.native
+  var charSet: js.UndefOr[String] = js.native
   
-  var checked: scala.Unit | Boolean = js.native
+  var checked: js.UndefOr[Boolean] = js.native
   
-  var cite: scala.Unit | String = js.native
+  var cite: js.UndefOr[String] = js.native
   
-  var classID: scala.Unit | String = js.native
+  var classID: js.UndefOr[String] = js.native
   
-  var colSpan: scala.Unit | Double = js.native
+  var colSpan: js.UndefOr[Double] = js.native
   
-  var cols: scala.Unit | Double = js.native
+  var cols: js.UndefOr[Double] = js.native
   
-  var content: scala.Unit | String = js.native
+  var content: js.UndefOr[String] = js.native
   
-  var controls: scala.Unit | Boolean = js.native
+  var controls: js.UndefOr[Boolean] = js.native
   
-  var coords: scala.Unit | String = js.native
+  var coords: js.UndefOr[String] = js.native
   
-  var crossOrigin: scala.Unit | String = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
   
-  var data: scala.Unit | String = js.native
+  var data: js.UndefOr[String] = js.native
   
-  var dateTime: scala.Unit | String = js.native
+  var dateTime: js.UndefOr[String] = js.native
   
-  var defer: scala.Unit | Boolean = js.native
+  var defer: js.UndefOr[Boolean] = js.native
   
-  var disabled: scala.Unit | Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
   
-  var download: scala.Unit | js.Any = js.native
+  var download: js.UndefOr[js.Any] = js.native
   
-  var encType: scala.Unit | String = js.native
+  var encType: js.UndefOr[String] = js.native
   
-  var form: scala.Unit | String = js.native
+  var form: js.UndefOr[String] = js.native
   
-  var formAction: scala.Unit | String = js.native
+  var formAction: js.UndefOr[String] = js.native
   
-  var formEncType: scala.Unit | String = js.native
+  var formEncType: js.UndefOr[String] = js.native
   
-  var formMethod: scala.Unit | String = js.native
+  var formMethod: js.UndefOr[String] = js.native
   
-  var formNoValidate: scala.Unit | Boolean = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.native
   
-  var formTarget: scala.Unit | String = js.native
+  var formTarget: js.UndefOr[String] = js.native
   
-  var frameBorder: scala.Unit | Double | String = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.native
   
-  var headers: scala.Unit | String = js.native
+  var headers: js.UndefOr[String] = js.native
   
-  var height: scala.Unit | Double | String = js.native
+  var height: js.UndefOr[Double | String] = js.native
   
-  var high: scala.Unit | Double = js.native
+  var high: js.UndefOr[Double] = js.native
   
-  var href: scala.Unit | String = js.native
+  var href: js.UndefOr[String] = js.native
   
-  var hrefLang: scala.Unit | String = js.native
+  var hrefLang: js.UndefOr[String] = js.native
   
-  var htmlFor: scala.Unit | String = js.native
+  var htmlFor: js.UndefOr[String] = js.native
   
-  var httpEquiv: scala.Unit | String = js.native
+  var httpEquiv: js.UndefOr[String] = js.native
   
-  var integrity: scala.Unit | String = js.native
+  var integrity: js.UndefOr[String] = js.native
   
-  var keyParams: scala.Unit | String = js.native
+  var keyParams: js.UndefOr[String] = js.native
   
-  var keyType: scala.Unit | String = js.native
+  var keyType: js.UndefOr[String] = js.native
   
-  var kind: scala.Unit | String = js.native
+  var kind: js.UndefOr[String] = js.native
   
-  var label: scala.Unit | String = js.native
+  var label: js.UndefOr[String] = js.native
   
-  var list: scala.Unit | String = js.native
+  var list: js.UndefOr[String] = js.native
   
-  var loop: scala.Unit | Boolean = js.native
+  var loop: js.UndefOr[Boolean] = js.native
   
-  var low: scala.Unit | Double = js.native
+  var low: js.UndefOr[Double] = js.native
   
-  var manifest: scala.Unit | String = js.native
+  var manifest: js.UndefOr[String] = js.native
   
-  var marginHeight: scala.Unit | Double = js.native
+  var marginHeight: js.UndefOr[Double] = js.native
   
-  var marginWidth: scala.Unit | Double = js.native
+  var marginWidth: js.UndefOr[Double] = js.native
   
-  var max: scala.Unit | Double | String = js.native
+  var max: js.UndefOr[Double | String] = js.native
   
-  var maxLength: scala.Unit | Double = js.native
+  var maxLength: js.UndefOr[Double] = js.native
   
-  var media: scala.Unit | String = js.native
+  var media: js.UndefOr[String] = js.native
   
-  var mediaGroup: scala.Unit | String = js.native
+  var mediaGroup: js.UndefOr[String] = js.native
   
-  var method: scala.Unit | String = js.native
+  var method: js.UndefOr[String] = js.native
   
-  var min: scala.Unit | Double | String = js.native
+  var min: js.UndefOr[Double | String] = js.native
   
-  var minLength: scala.Unit | Double = js.native
+  var minLength: js.UndefOr[Double] = js.native
   
-  var multiple: scala.Unit | Boolean = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
   
-  var muted: scala.Unit | Boolean = js.native
+  var muted: js.UndefOr[Boolean] = js.native
   
-  var name: scala.Unit | String = js.native
+  var name: js.UndefOr[String] = js.native
   
-  var noValidate: scala.Unit | Boolean = js.native
+  var noValidate: js.UndefOr[Boolean] = js.native
   
-  var nonce: scala.Unit | String = js.native
+  var nonce: js.UndefOr[String] = js.native
   
-  var open: scala.Unit | Boolean = js.native
+  var open: js.UndefOr[Boolean] = js.native
   
-  var optimum: scala.Unit | Double = js.native
+  var optimum: js.UndefOr[Double] = js.native
   
-  var pattern: scala.Unit | String = js.native
+  var pattern: js.UndefOr[String] = js.native
   
-  var playsInline: scala.Unit | Boolean = js.native
+  var playsInline: js.UndefOr[Boolean] = js.native
   
-  var poster: scala.Unit | String = js.native
+  var poster: js.UndefOr[String] = js.native
   
-  var preload: scala.Unit | String = js.native
+  var preload: js.UndefOr[String] = js.native
   
-  var readOnly: scala.Unit | Boolean = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
   
-  var rel: scala.Unit | String = js.native
+  var rel: js.UndefOr[String] = js.native
   
-  var required: scala.Unit | Boolean = js.native
+  var required: js.UndefOr[Boolean] = js.native
   
-  var reversed: scala.Unit | Boolean = js.native
+  var reversed: js.UndefOr[Boolean] = js.native
   
-  var rowSpan: scala.Unit | Double = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
   
-  var rows: scala.Unit | Double = js.native
+  var rows: js.UndefOr[Double] = js.native
   
-  var sandbox: scala.Unit | String = js.native
+  var sandbox: js.UndefOr[String] = js.native
   
-  var scope: scala.Unit | String = js.native
+  var scope: js.UndefOr[String] = js.native
   
-  var scoped: scala.Unit | Boolean = js.native
+  var scoped: js.UndefOr[Boolean] = js.native
   
-  var scrolling: scala.Unit | String = js.native
+  var scrolling: js.UndefOr[String] = js.native
   
-  var seamless: scala.Unit | Boolean = js.native
+  var seamless: js.UndefOr[Boolean] = js.native
   
-  var selected: scala.Unit | Boolean = js.native
+  var selected: js.UndefOr[Boolean] = js.native
   
-  var shape: scala.Unit | String = js.native
+  var shape: js.UndefOr[String] = js.native
   
-  var size: scala.Unit | Double = js.native
+  var size: js.UndefOr[Double] = js.native
   
-  var sizes: scala.Unit | String = js.native
+  var sizes: js.UndefOr[String] = js.native
   
-  var span: scala.Unit | Double = js.native
+  var span: js.UndefOr[Double] = js.native
   
-  var src: scala.Unit | String = js.native
+  var src: js.UndefOr[String] = js.native
   
-  var srcDoc: scala.Unit | String = js.native
+  var srcDoc: js.UndefOr[String] = js.native
   
-  var srcLang: scala.Unit | String = js.native
+  var srcLang: js.UndefOr[String] = js.native
   
-  var srcSet: scala.Unit | String = js.native
+  var srcSet: js.UndefOr[String] = js.native
   
-  var start: scala.Unit | Double = js.native
+  var start: js.UndefOr[Double] = js.native
   
-  var step: scala.Unit | Double | String = js.native
+  var step: js.UndefOr[Double | String] = js.native
   
-  var summary: scala.Unit | String = js.native
+  var summary: js.UndefOr[String] = js.native
   
-  var target: scala.Unit | String = js.native
+  var target: js.UndefOr[String] = js.native
   
-  var `type`: scala.Unit | String = js.native
+  var `type`: js.UndefOr[String] = js.native
   
-  var useMap: scala.Unit | String = js.native
+  var useMap: js.UndefOr[String] = js.native
   
-  var value: scala.Unit | String | js.Array[String] | Double = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
   
-  var width: scala.Unit | Double | String = js.native
+  var width: js.UndefOr[Double | String] = js.native
   
-  var wmode: scala.Unit | String = js.native
+  var wmode: js.UndefOr[String] = js.native
   
-  var wrap: scala.Unit | String = js.native
+  var wrap: js.UndefOr[String] = js.native
 }
 object AllHTMLAttributes {
   

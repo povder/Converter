@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RefAttributes[T] extends Attributes {
   
-  var ref: scala.Unit | japgolly.scalajs.react.raw.React.Ref = js.native
+  var ref: js.UndefOr[japgolly.scalajs.react.raw.React.Ref] = js.native
 }
 object RefAttributes {
   

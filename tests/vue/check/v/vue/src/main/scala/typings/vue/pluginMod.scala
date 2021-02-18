@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pluginMod {
   
-  type PluginFunction[T] = js.Function2[/* Vue */ VueConstructor[Vue], /* options */ scala.Unit | T, Unit]
+  type PluginFunction[T] = js.Function2[/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[T], Unit]
   
   @js.native
   trait PluginObject[T]

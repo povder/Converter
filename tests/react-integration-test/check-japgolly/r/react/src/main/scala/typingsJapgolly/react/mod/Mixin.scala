@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Mixin[P, S]
   extends ComponentLifecycle[P, S, js.Any] {
   
-  var childContextTypes: scala.Unit | ValidationMap[?] = js.native
+  var childContextTypes: js.UndefOr[ValidationMap[?]] = js.native
   
-  var contextTypes: scala.Unit | ValidationMap[?] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[?]] = js.native
   
-  var displayName: scala.Unit | String = js.native
+  var displayName: js.UndefOr[String] = js.native
   
-  var getDefaultProps: scala.Unit | js.Function0[P] = js.native
+  var getDefaultProps: js.UndefOr[js.Function0[P]] = js.native
   
-  var getInitialState: scala.Unit | js.Function0[S] = js.native
+  var getInitialState: js.UndefOr[js.Function0[S]] = js.native
   
-  var mixins: scala.Unit | (js.Array[Mixin[P, S]]) = js.native
+  var mixins: js.UndefOr[js.Array[Mixin[P, S]]] = js.native
   
-  var propTypes: scala.Unit | ValidationMap[?] = js.native
+  var propTypes: js.UndefOr[ValidationMap[?]] = js.native
   
-  var statics: scala.Unit | StringDictionary[js.Any] = js.native
+  var statics: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 object Mixin {
   

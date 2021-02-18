@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OlHTMLAttributes[T] extends HTMLAttributes[T] {
   
-  var reversed: scala.Unit | Boolean = js.native
+  var reversed: js.UndefOr[Boolean] = js.native
   
-  var start: scala.Unit | Double = js.native
+  var start: js.UndefOr[Double] = js.native
   
-  var `type`: scala.Unit | `1` | a_ | A | i_ | I = js.native
+  var `type`: js.UndefOr[`1` | a_ | A | i_ | I] = js.native
 }
 object OlHTMLAttributes {
   
