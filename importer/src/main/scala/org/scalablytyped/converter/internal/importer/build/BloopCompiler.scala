@@ -118,7 +118,7 @@ class BloopCompiler private (
     val outDir     = compilerPaths.baseDir / "target"
 
     val projectFile = BloopConfig.File(
-      "1.4.7",
+      "1.4.8",
       BloopConfig.Project(
         name         = name,
         directory    = compilerPaths.baseDir.toNIO,

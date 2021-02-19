@@ -2,7 +2,7 @@ package org.scalablytyped.converter.internal
 package scalajs
 
 object Versions {
-  val sbtVersion = "1.4.2"
+  val sbtVersion = "1.4.7"
 
   private val StableVersion = "(\\d+).(\\d+).(\\d+)".r
   private val Milestone     = "(.+)-bin-(.+)".r
